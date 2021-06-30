@@ -1,10 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .social {
-    position: absolute;
+    position: fixed;
     right: 2%;
     bottom: 15%;
     background-color: rgb(52,58,64);
@@ -15,6 +19,7 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .icon {
@@ -22,4 +27,36 @@ a {
     margin-bottom: 10px;
     color: rgb(155,155,155);
     font-size: 20px;
+}
+
+.pt-1 {
+    padding-top: 3em;
+}
+
+h2 {
+    margin: 1.5em;
+    text-shadow: 1px 1px 1px grey;
+    color: rgb(50,50,50);
+}
+
+h3 {
+    text-align: center;
+    text-shadow: 1px 1px 1px grey;
+    color: rgb(50,50,50);
+}
+
+.wrapper {
+    justify-content: center;
+}
+
+.square {
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    border: 1px solid grey;
+}
+
+table {
+    text-align: center;
+    border-radius: 15px;
 }
