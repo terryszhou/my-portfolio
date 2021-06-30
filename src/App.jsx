@@ -7,6 +7,7 @@ import { About } from './components/About'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
 import { Nav } from './components/Nav'
+import { Social } from './components/Social'
 
 export const App = () => {
     return (
@@ -28,6 +29,7 @@ export const App = () => {
                 component={Contact}
             />
             <Nav />
+            <Social />
         </BrowserRouter>
     )
 }
