@@ -1,6 +1,5 @@
 import './App.css';
-import { useState } from 'react'
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { Home } from './components/Home'
 import { About } from './components/About'
@@ -11,7 +10,7 @@ import { Social } from './components/Social'
 
 export const App = () => {
     return (
-        <BrowserRouter>
+        <Router>
             <Route
                 exact path="/"
                 component={Home}
@@ -30,6 +29,6 @@ export const App = () => {
             />
             <Nav />
             <Social />
-        </BrowserRouter>
+        </Router>
     )
 }

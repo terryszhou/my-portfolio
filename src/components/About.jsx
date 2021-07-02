@@ -2,37 +2,50 @@ export const About = () => {
     return (
         <div className="container pt-3">
             <h2>About</h2>
-            <div className="wrapper pt-3">
+            <div className="about-wrapper pt-3">
                 <h3>My Toolbox</h3>
-                <div class="table-responsive">
-                    <table class="table table-striped table-dark table-borderless">
-                        <tbody>
-                            <tr>
-                                <td>HTML</td>
-                                <td>CSS</td>
-                                <td>JavaScript</td>
-                                <td>Bootstrap</td>
-                                <td>Express</td>
-                                <td>EJS</td>
-                            </tr>
-                            <tr>
-                                <td>Axios</td>
-                                <td>React</td>
-                                <td>PostgreSQL</td>
-                                <td>Node.js</td>
-                                <td>Sequelize</td>
-                                <td>MongoDB</td>
-                            </tr>
-                            <tr>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="card">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-dark table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <th>Languages</th>
+                                        <td>HTML5</td>
+                                        <td>CSS3</td>
+                                        <td>JavaScript/ES6</td>
+                                        <td>SQL</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Libraries</th>
+                                        <td>jQuery</td>
+                                        <td>Bootstrap</td>
+                                        <td>EJS</td>
+                                        <td>Axios</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Frameworks</th>
+                                        <td>React</td>
+                                        <td>Express</td>
+                                        <td>Node</td>
+                                        <td>Django</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Databases</th>
+                                        <td>PostgreSQL</td>
+                                        <td>Sequelize</td>
+                                        <td>MongoDB</td>
+                                        <td>Mongoose</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Other</th>
+                                        <td>RESTful Routing</td>
+                                        <td>AJAX</td>
+                                        <td>JSON</td>
+                                        <td>SCRUM</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
                 </div>
             </div>
         </div>

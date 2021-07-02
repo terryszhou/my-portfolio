@@ -2,9 +2,19 @@
     box-sizing: border-box;
 }
 
-a {
+body {
+    background-color: rgb(69,87,96);
+}
+
+.nav-link {
     text-transform: uppercase;
     font-weight: bold;
+    border: 2px solid rgb(52,58,64);
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid white;
+    transition-duration: 0.2s;
 }
 
 .social {
@@ -19,7 +29,7 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    box-shadow: 2px 2px 2px grey;
+    box-shadow: 2px 2px 2px black;
 }
 
 .icon {
@@ -29,34 +39,70 @@ a {
     font-size: 20px;
 }
 
+.icon:hover {
+    transform: scale(1.2);
+    color: white;
+    transition-duration: 0.1s;
+}
+
 .pt-1 {
     padding-top: 3em;
 }
 
 h2 {
     margin: 1.5em;
-    text-shadow: 1px 1px 1px grey;
-    color: rgb(50,50,50);
+    text-shadow: 1px 1px 1px black;
+    color: white;
 }
 
 h3 {
     text-align: center;
-    text-shadow: 1px 1px 1px grey;
-    color: rgb(50,50,50);
+    text-shadow: 1px 1px 1px black;
+    color: white;
 }
 
 .wrapper {
     justify-content: center;
 }
 
-.square {
+.wrap {
+    position: relative;
     height: 500px;
     width: 500px;
-    background-color: black;
-    border: 1px solid grey;
 }
 
-table {
+.square {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+}
+
+.square:hover {
+    opacity: 0%;
+    transition-duration: 0.2s;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: rgb(52,58,64);
+}
+
+.table-responsive {
+    border-radius: 15px;
+    width: 60vw;
+}
+
+.table {
     text-align: center;
     border-radius: 15px;
+    margin-bottom: 0;
 }
