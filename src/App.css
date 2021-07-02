@@ -100,6 +100,10 @@ h3 {
     margin-bottom: 50px;
 }
 
+label {
+    color: rgb(220,220,220);
+}
+
 .card {
     border-radius: 15px;
     background-color: rgb(52,58,64);
@@ -122,9 +126,20 @@ h3 {
     margin-left: 50px;
 }
 
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-text-fill-color: rgb(220,220,220);
+    -webkit-box-shadow: 0 0 0px 1000px rgb(52,58,64) inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 .form-control {
     border-color: grey;
     background-color: rgb(52,58,64) !important;
     color: white !important;
     resize: none;
+}
+
+.form-control:focus {
+    border-color: rgb(255,0,0);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
 }
