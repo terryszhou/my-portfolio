@@ -1,27 +1,29 @@
+import { NavLink } from 'react-router-dom'
+
 export const Nav = () => {
     return (
         <div className="container">
             <nav className="justify-content-center navbar navbar-expand navbar-dark bg-dark fixed-bottom">
                 <div class="navbar-nav">
                     <div class="nav-item">
-                        <a href="/" class="nav-link">
+                        <NavLink to="/" className="nav-link" exact>
                             Home
-                        </a>
+                        </NavLink>
                     </div>
                     <div class="nav-item">
-                        <a href="/about" class="nav-link">
+                        <NavLink to="/about" className="nav-link">
                             About
-                        </a>
+                        </NavLink>
                     </div>
                     <div class="nav-item">
-                        <a href="/projects" class="nav-link">
+                        <NavLink to="/projects" className="nav-link">
                             Projects
-                        </a>
+                        </NavLink>
                     </div>
                     <div class="nav-item">
-                        <a href="/contact" class="nav-link">
+                        <NavLink to="/contact" className="nav-link">
                             Contact
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </nav>

@@ -17,7 +17,7 @@ export const About = () => {
                                         <td>HTML5</td>
                                         <td>CSS3</td>
                                         <td>JavaScript/ES6</td>
-                                        <td>SQL</td>
+                                        <td>Python</td>
                                     </tr>
                                     <tr>
                                         <th>Libraries</th>
@@ -45,7 +45,7 @@ export const About = () => {
                                         <td>RESTful Routing</td>
                                         <td>AJAX</td>
                                         <td>JSON</td>
-                                        <td>SCRUM</td>
+                                        <td>MERN</td>
                                     </tr>
                                 </tbody>
                             </table>

@@ -63,6 +63,7 @@ h3 {
 
 .wrapper {
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .wrap {
@@ -79,6 +80,7 @@ h3 {
     background-color: grey;
     border-radius: 15px;
     transition-duration: 0.2s;
+    z-index: 1;
 }
 
 .square:hover {
@@ -102,6 +104,7 @@ h3 {
 
 label {
     color: rgb(220,220,220);
+    text-shadow: 1px 1px 1px black;
 }
 
 .card {
@@ -126,7 +129,7 @@ label {
     margin-left: 50px;
 }
 
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+input:-webkit-autofill, input:-webkit-autofill:focus {
     -webkit-text-fill-color: rgb(220,220,220);
     -webkit-box-shadow: 0 0 0px 1000px rgb(52,58,64) inset;
     transition: background-color 5000s ease-in-out 0s;
@@ -137,9 +140,37 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     background-color: rgb(52,58,64) !important;
     color: white !important;
     resize: none;
+    box-shadow: 2px 2px 2px black;
 }
 
 .form-control:focus {
     border-color: rgb(255,0,0);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(255,0,0,0.6);
+}
+
+.mask {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: grey; */
+}
+
+.desc {
+    margin-top: 20%;
+}
+
+.project-about {
+    text-align: center;
+    color: rgb(220,220,220);
+    margin: 0 20%;
+    font-weight: bold;
+}
+
+.project-skills {
+    text-align: center;
+    color: rgb(220,220,220);
+    margin: 10% 20%;
+    font-weight: bold;
 }
