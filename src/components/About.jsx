@@ -1,3 +1,5 @@
+import resume from '../static/terryzhou-resume.pdf'
+
 export const About = () => {
     return (
         <div className="container pt-3">
@@ -15,11 +17,34 @@ export const About = () => {
                 </div>
                 <h2>About</h2>
             </div>
+            <h3 className="pt-5">Get to Know Me</h3>
+            <fieldset>
+                <div className="question-wrapper">
+                    <p className="question-text">What made you want to become a software developer?</p>
+                </div>
+                <div className="answer-wrapper">
+                    <p className="answer-text">This is a test answer.</p>
+                </div>
+                <div className="question-wrapper">
+                    <p className="question-text">What do you believe are a coder's most important skills?</p>
+                </div>
+                <div className="answer-wrapper">
+                    <p className="answer-text">This is a test answer.</p>
+                </div>
+                <div className="question-wrapper">
+                    <p className="question-text">What was your previous occupation?</p>
+                </div>
+                <div className="answer-wrapper">
+                    <p className="answer-text">This is a test answer.</p>
+                </div>
+                <div className="question-wrapper">
+                    <p className="question-text">What do you like to do in your spare time?</p>
+                </div>
+                <div className="answer-wrapper">
+                    <p className="answer-text">This is a test answer.</p>
+                </div>
+            </fieldset>
             <div className="about-wrapper pt-3">
-                <p className="about-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel nibh in turpis porta elementum in eleifend dolor. Sed condimentum nisi vitae ligula imperdiet, ac ullamcorper nibh tempus. Maecenas ornare, neque nec vulputate feugiat, leo turpis interdum erat, ac bibendum orci tellus ut augue. Vivamus egestas placerat venenatis. Cras hendrerit lacinia eleifend. Donec mattis est sit amet justo scelerisque malesuada. Suspendisse in magna non est gravida molestie et vitae nisl. Phasellus posuere pellentesque suscipit. Sed dictum egestas tortor non accumsan. Mauris nisi sapien, ultricies non pellentesque a, gravida vitae leo. Sed suscipit elementum quam a tincidunt.
-                    Praesent accumsan tellus metus, vitae ornare velit sollicitudin eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam mattis viverra pellentesque. Pellentesque id mattis tortor. Nunc finibus at urna eu condimentum. Donec ornare et lorem ac maximus. Nunc dolor odio, suscipit sed elementum nec, aliquet vel ipsum. Maecenas sit amet venenatis ante. Donec vehicula lectus id aliquam consequat.
-                </p>
                 <h3>My Toolbox</h3>
                 <div className="card">
                     <div className="table-responsive">
@@ -64,6 +89,11 @@ export const About = () => {
                         </table>
                     </div>
                 </div>
+                <h3>Want to Know More?</h3>
+                <a href={resume} target="_blank" rel="noreferrer">
+                    <div className="icon fas fa-download"/>
+                </a>
+                <p id="resume-text">Check out my resume!</p>
             </div>
         </div>
     )
