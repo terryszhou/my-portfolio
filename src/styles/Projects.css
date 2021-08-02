@@ -1,0 +1,169 @@
+.project-wrapper {
+    position: relative;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: -115px;
+    margin-bottom: 1140px;
+}
+
+.project-hex {
+    width: 400px;
+    height: 240px;
+    position: relative;
+}
+
+
+.project-hex::before, .project-hex::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+}
+
+.project-hex::before {
+    top: -120px;
+}
+
+.project-hex::after {
+    bottom: -120px;
+}
+
+.project-hex:hover .desc {
+    opacity: 100%;
+    transition-duration: 0.3s;
+}
+
+.project-hex:hover .project-pic {
+    opacity: 0%;
+    transition-duration: 0.3s;
+}
+
+#project-1 {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    background: rgb(110,14,34)
+}
+
+#project-1::before {
+    border-bottom: 120px solid rgb(110,14,34);
+}
+
+#project-1::after {
+    border-top: 120px solid rgb(110,14,34);
+}
+
+#project-2 {
+    position: absolute;
+    top: 630px;
+    left: 260px;
+    background: rgb(61,75,130);
+}
+
+#project-2::before {
+    border-bottom: 120px solid rgb(61,75,130);
+}
+
+#project-2::after {
+    border-top: 120px solid rgb(61,75,130);
+}
+
+#project-3 {
+    position: absolute;
+    top: 250px;
+    left: 470px;
+    background: rgb(117,77,180);
+}
+
+#project-3::before {
+    border-bottom: 120px solid rgb(117,77,180);
+}
+
+#project-3::after {
+    border-top: 120px solid rgb(117,77,180);
+}
+
+
+#project-4 {
+    position: absolute;
+    top: 630px;
+    left: 680px;
+    background: rgb(193,98,204);
+}
+
+#project-4::before {
+    border-bottom: 120px solid rgb(193,98,204);
+}
+
+#project-4::after {
+    border-top: 120px solid rgb(193,98,204);
+}
+
+#project-5 {
+    position: absolute;
+    top: 250px;
+    left: 890px;
+    background: rgb(88,17,132);
+}
+
+#project-5::before {
+    border-bottom: 120px solid rgb(88,17,132);
+}
+
+#project-5::after {
+    border-top: 120px solid rgb(88,17,132);
+}
+
+.desc {
+    position: absolute;
+    top: -30px;
+    opacity: 0%;
+    transition-duration: 0.3s;
+}
+
+.desc h3 {
+    color: gold;
+}
+
+.project-pic {
+    width: 120%;
+    transition-duration: 0.3s;
+    position: absolute;
+    left: -10%;
+    top: -10%;
+    /* -webkit-filter: drop-shadow(0 0 1rem white); */
+    /* filter: drop-shadow(0 0 1rem white); */
+}
+
+.project-about {
+    text-align: center;
+    color: rgb(220,220,220);
+    margin: 0 10%;
+    font-weight: bold;
+}
+
+.project-skills {
+    text-align: center;
+    color: rgb(220,220,220);
+    margin: 10% 10%;
+    font-weight: bold;
+}
+
+.project-links {
+    text-align: center;
+    color: rgb(220,220,220);
+    margin: 10% 10%;
+    font-weight: bold;
+}
+
+.project-links a {
+    color: rgb(220,220,220);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    border-bottom: 2px solid white;
+}

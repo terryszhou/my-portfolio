@@ -24,13 +24,13 @@ export const About = () => {
                 <div className="card">
                     <div className="table-responsive">
                         <table className="table table-striped table-dark table-borderless">
-                                <tbody>
+                            <tbody>
                                     <tr>
                                         <th>Languages</th>
+                                        <td>Python</td>
+                                        <td>JavaScript/ES6</td>
                                         <td>HTML5</td>
                                         <td>CSS3</td>
-                                        <td>JavaScript/ES6</td>
-                                        <td>Python</td>
                                     </tr>
                                     <tr>
                                         <th>Libraries</th>
@@ -61,7 +61,7 @@ export const About = () => {
                                         <td>MERN</td>
                                     </tr>
                                 </tbody>
-                            </table>
+                        </table>
                     </div>
                 </div>
             </div>
