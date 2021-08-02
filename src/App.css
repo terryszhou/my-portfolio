@@ -172,7 +172,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
 
 .desc {
     position: absolute;
-    top: -30px;
+    top: -40px;
     opacity: 0%;
     transition-duration: 0.2s;
 }
@@ -185,15 +185,31 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
 .project-about {
     text-align: center;
     color: rgb(220,220,220);
-    margin: 0 20%;
+    margin: 0 10%;
     font-weight: bold;
 }
 
 .project-skills {
     text-align: center;
     color: rgb(220,220,220);
-    margin: 10% 20%;
+    margin: 10% 10%;
     font-weight: bold;
+}
+
+.project-links {
+    text-align: center;
+    color: rgb(220,220,220);
+    margin: 10% 10%;
+    font-weight: bold;
+}
+
+.project-links a {
+    color: rgb(220,220,220);
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    border-bottom: 2px solid white;
 }
 
 .shape-box {
