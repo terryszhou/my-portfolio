@@ -173,6 +173,21 @@
     border-top: 120px solid rgb(88,17,132);
 }
 
+@media (max-width:700px) {
+    #project-3 {
+        top: 1010px;
+        left: 50px;
+    }
+    #project-4 {
+        top: 1390px;
+        left: 260px;
+    }
+    #project-5 {
+        top: 1770px;
+        left: 50px;
+    }
+}
+
 .desc {
     position: absolute;
     top: -30px;
