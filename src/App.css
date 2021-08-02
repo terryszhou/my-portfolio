@@ -171,8 +171,14 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
 }
 
 .desc {
-    /* margin-top: 20%; */
+    position: absolute;
+    top: -30px;
     opacity: 0%;
+    transition-duration: 0.2s;
+}
+
+.project-pic {
+    width: 100%;
     transition-duration: 0.2s;
 }
 
@@ -486,6 +492,11 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
     transition-duration: 0.2s;
 }
 
+.project-hex:hover .project-pic {
+    opacity: 0%;
+    transition-duration: 0.2s;
+}
+
 .project-hex::before {
     content: "";
     position: absolute;
@@ -502,6 +513,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
     position: absolute;
     width: 0;
     height: 0;
+    left: 0px;
     bottom: -120px;
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
