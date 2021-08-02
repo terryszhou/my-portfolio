@@ -91,6 +91,7 @@ label {
 .table-responsive {
     border-radius: 15px;
     width: 60vw;
+    border: 2px solid goldenrod;
 }
 
 .table {

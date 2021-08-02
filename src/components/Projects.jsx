@@ -23,6 +23,8 @@ export const Projects = () => {
             </div>
             <div className="project-wrapper">
                 <div className="project-hex" id="project-1">
+                    <div className="project-hex-2"/>
+                    <div className="project-hex-3"/>
                     <img className="project-pic" src={catCrawlerDesktop} alt="cat-crawler"/>
                     <div className="desc">
                         <h3>Cat Crawler</h3>
@@ -36,6 +38,8 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className="project-hex" id="project-2">
+                    <div className="project-hex-2"/>
+                    <div className="project-hex-3"/>
                     <img className="project-pic" src={pokemap} alt="pokemap"/>
                     <div className="desc">
                         <h3>PokéMap</h3>
@@ -49,6 +53,8 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className="project-hex" id="project-3">
+                    <div className="project-hex-2"/>
+                    <div className="project-hex-3"/>
                     <img className="project-pic" src={totemize} alt="totemize"/>
                     <div className="desc">
                         <h3>Totemize</h3>
@@ -64,6 +70,8 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className="project-hex" id="project-4">
+                    <div className="project-hex-2"/>
+                    <div className="project-hex-3"/>
                     <img className="project-pic" src={pixelRunner} alt="pixel-runner"/>
                     <div className="desc">
                         <h3>Pixel Runner</h3>
@@ -75,6 +83,8 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className="project-hex" id="project-5">
+                    <div className="project-hex-2"/>
+                    <div className="project-hex-3"/>
                     <img className="project-pic" src={gameOfLife} alt="game-of-life"/>
                     <div className="desc">
                         <h3>Terry's Game of Life</h3>

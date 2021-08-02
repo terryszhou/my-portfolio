@@ -7,11 +7,10 @@
 }
 
 .project-hex {
+    position: relative;
     width: 400px;
     height: 240px;
-    position: relative;
 }
-
 
 .project-hex::before, .project-hex::after {
     content: "";
@@ -38,6 +37,64 @@
 .project-hex:hover .project-pic {
     opacity: 0%;
     transition-duration: 0.3s;
+}
+
+.project-hex-2 {
+    position: absolute;
+    width: 410px;
+    height: 250px;
+    top: -5px;
+    left: -5px;
+    background-color: rgb(70,87,96);
+    z-index: -1;
+}
+
+.project-hex-2::before, .project-hex-2::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 205px solid transparent;
+    border-right: 205px solid transparent;
+}
+
+.project-hex-2::before {
+    top: -125px;
+    border-bottom: 125px solid rgb(70,87,96);
+}
+
+.project-hex-2::after {
+    bottom: -125px;
+    border-top: 125px solid rgb(70,87,96);
+}
+
+.project-hex-3 {
+    position: absolute;
+    width: 420px;
+    height: 260px;
+    top: -10px;
+    left: -10px;
+    background-color: goldenrod;
+    z-index: -2;
+}
+
+.project-hex-3::before, .project-hex-3::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 210px solid transparent;
+    border-right: 210px solid transparent;
+}
+
+.project-hex-3::before {
+    top: -130px;
+    border-bottom: 130px solid goldenrod;
+}
+
+.project-hex-3::after {
+    bottom: -130px;
+    border-top: 130px solid goldenrod;
 }
 
 #project-1 {
