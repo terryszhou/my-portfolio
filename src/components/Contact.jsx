@@ -1,7 +1,20 @@
 export const Contact = () => {
     return (
         <div className="container pt-3">
-            <h2>Contact</h2>
+            <div className="shape-box">
+                <div id="hex-outer"/>
+                <div id="hex-grey"/>
+                <div id="hex-gold">
+                    <div id="hex-goldenrod">
+                        <div id="hex-small">
+                            <div id="hex-smaller">
+                                <div id="hex-smallest"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Contact</h2>
+            </div>
             <form id="contact-form">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -16,6 +29,7 @@ export const Contact = () => {
                     <textarea class="form-control" name="message"></textarea>
                 </div>
             </form>
+            <div id="hourglass"/>
         </div>
     )
 }
