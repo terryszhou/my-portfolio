@@ -1,3 +1,5 @@
+import resume from '../static/terryzhou-resume.pdf'
+
 export const Social = () => {
     return (
         <div class="social">
@@ -12,6 +14,9 @@ export const Social = () => {
             </a>
             <a href="https://instagram.com/terry.s.zhou" target="_blank" rel="noreferrer">
                 <div class="icon fab fa-instagram"></div>
+            </a>
+            <a href={resume} target="_blank" rel="noreferrer">
+                <div class="icon far fa-file"></div>
             </a>
         </div>
     )

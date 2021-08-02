@@ -3,7 +3,7 @@
     justify-content: center;
     margin-top: 80px;
     margin-left: -115px;
-    margin-bottom: 1140px;
+    margin-bottom: 1190px;
 }
 
 .project-hex {
@@ -100,7 +100,7 @@
 #project-1 {
     position: absolute;
     top: 250px;
-    left: 50px;
+    left: 70px;
     background: rgb(110,14,34)
 }
 
@@ -115,7 +115,7 @@
 #project-2 {
     position: absolute;
     top: 630px;
-    left: 260px;
+    left: 280px;
     background: rgb(61,75,130);
 }
 
@@ -130,7 +130,7 @@
 #project-3 {
     position: absolute;
     top: 250px;
-    left: 470px;
+    left: 490px;
     background: rgb(117,77,180);
 }
 
@@ -146,7 +146,7 @@
 #project-4 {
     position: absolute;
     top: 630px;
-    left: 680px;
+    left: 700px;
     background: rgb(193,98,204);
 }
 
@@ -161,7 +161,7 @@
 #project-5 {
     position: absolute;
     top: 250px;
-    left: 890px;
+    left: 910px;
     background: rgb(88,17,132);
 }
 
@@ -174,17 +174,26 @@
 }
 
 @media (max-width:700px) {
+    .project-wrapper {
+        padding-bottom: 1040px;
+    }
+    #project-1 {
+        left: 70px;
+    }
+    #project-2 {
+        left: 280px;
+    }
     #project-3 {
         top: 1010px;
-        left: 50px;
+        left: 70px;
     }
     #project-4 {
         top: 1390px;
-        left: 260px;
+        left: 280px;
     }
     #project-5 {
         top: 1770px;
-        left: 50px;
+        left: 70px;
     }
 }
 
