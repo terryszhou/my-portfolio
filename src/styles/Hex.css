@@ -50,6 +50,7 @@
     padding-right: 10px;
     bottom: -95px;
     left: 120px;
+    text-shadow: 1px 1px 1px grey;
 }
 
 .shape-box h2::before {
