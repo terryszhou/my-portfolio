@@ -22,7 +22,8 @@ export const Home = () => {
                 <div id="hex-home-outer"/>
                 <div id="hex-home-grey"/>
                 <div id="hex-home">
-                    <img className="home-pic" src={headshot} alt="headshot"/>
+                    <h2>Image here?</h2>
+                    {/* <img className="home-pic" src={headshot} alt="headshot"/> */}
                     {/* <img className="home-pic" src={headshot2} alt="headshot"/> */}
                 </div>
             </div>

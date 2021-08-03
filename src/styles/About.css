@@ -6,6 +6,35 @@
     align-items: center;
 }
 
+.about-header {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgb(220,220,220);
+    color: rgb(26,29,32);
+    text-shadow: 1px 1px 1px white;
+}
+
+.about-header::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: -1.7rem;
+    border-left: 28px solid transparent;
+    border-bottom: 33px solid rgb(220,220,220);
+}
+
+.about-header::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: -1.7rem;
+    border-right: 28px solid transparent;
+    border-top: 33px solid rgb(220,220,220);
+}
+
 .about-field {
     position: relative;
     border: 2px solid goldenrod;

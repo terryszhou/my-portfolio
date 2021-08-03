@@ -18,7 +18,7 @@ export const About = () => {
                 <h2>About</h2>
             </div>
             <div className="about-wrapper about-corners">
-                <h3 className="mb-3">Get to Know Me</h3>
+                <h3 className="mb-3 about-header">Get to Know Me</h3>
                 <div className="about-corners-outer"/>
                 <fieldset className="about-field">
                     <div className="question-wrapper">
@@ -48,7 +48,7 @@ export const About = () => {
                 </fieldset>
             </div>
             <div className="about-wrapper pt-3">
-                <h3>My Toolbox</h3>
+                <h3 className="about-header">My Toolbox</h3>
                 <div className="card">
                     <div className="table-responsive">
                         <table className="table table-striped table-dark table-borderless">
@@ -92,7 +92,7 @@ export const About = () => {
                         </table>
                     </div>
                 </div>
-                <h3>Want to Know More?</h3>
+                <h3 className="about-header">Want to Know More?</h3>
                 <a href={resume} target="_blank" rel="noreferrer">
                     <div className="icon fas fa-download text-warning"/>
                 </a>
