@@ -45,8 +45,31 @@
 
 .shape-box h2 {
     position: absolute;
+    background: rgb(26,29,32);
+    padding-left: 10px;
+    padding-right: 10px;
     bottom: -95px;
-    left: 90px;
+    left: 120px;
+}
+
+.shape-box h2::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: -1.75rem;
+    border-left: 28px solid transparent;
+    border-top: 38px solid rgb(26,29,32);
+}
+
+.shape-box h2::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: -1.75rem;
+    border-right: 28px solid transparent;
+    border-bottom: 38px solid rgb(26,29,32);
 }
 
 #hex-gold {
