@@ -17,33 +17,35 @@ export const About = () => {
                 </div>
                 <h2>About</h2>
             </div>
-            <h3 className="pt-5">Get to Know Me</h3>
-            <fieldset>
-                <div className="question-wrapper">
-                    <p className="question-text">What made you want to become a software developer?</p>
-                </div>
-                <div className="answer-wrapper">
-                    <p className="answer-text">This is a test answer.</p>
-                </div>
-                <div className="question-wrapper">
-                    <p className="question-text">What do you believe are a coder's most important skills?</p>
-                </div>
-                <div className="answer-wrapper">
-                    <p className="answer-text">This is a test answer.</p>
-                </div>
-                <div className="question-wrapper">
-                    <p className="question-text">What was your previous occupation?</p>
-                </div>
-                <div className="answer-wrapper">
-                    <p className="answer-text">This is a test answer.</p>
-                </div>
-                <div className="question-wrapper">
-                    <p className="question-text">What do you like to do in your spare time?</p>
-                </div>
-                <div className="answer-wrapper">
-                    <p className="answer-text">This is a test answer.</p>
-                </div>
-            </fieldset>
+            <div className="about-wrapper about-corners">
+                <h3>Get to Know Me</h3>
+                <fieldset>
+                    <div className="question-wrapper">
+                        <p className="question-text">What made you want to become a software developer?</p>
+                    </div>
+                    <div className="answer-wrapper">
+                        <p className="answer-text">This is a test answer.</p>
+                    </div>
+                    <div className="question-wrapper">
+                        <p className="question-text">What do you believe are a coder's most important skills?</p>
+                    </div>
+                    <div className="answer-wrapper">
+                        <p className="answer-text">This is a test answer.</p>
+                    </div>
+                    <div className="question-wrapper">
+                        <p className="question-text">What was your previous occupation?</p>
+                    </div>
+                    <div className="answer-wrapper">
+                        <p className="answer-text">This is a test answer.</p>
+                    </div>
+                    <div className="question-wrapper">
+                        <p className="question-text">What do you like to do in your spare time?</p>
+                    </div>
+                    <div className="answer-wrapper">
+                        <p className="answer-text">This is a test answer.</p>
+                    </div>
+                </fieldset>
+            </div>
             <div className="about-wrapper pt-3">
                 <h3>My Toolbox</h3>
                 <div className="card">
