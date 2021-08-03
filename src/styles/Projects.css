@@ -101,15 +101,15 @@
     position: absolute;
     top: 36vh;
     left: 9vw;
-    background: rgb(182,57,40)
+    background: rgb(187,53,156);
 }
 
 #project-1::before {
-    border-bottom: 120px solid rgb(182,57,40);
+    border-bottom: 120px solid rgb(187,53,156);
 }
 
 #project-1::after {
-    border-top: 120px solid rgb(182,57,40);
+    border-top: 120px solid rgb(187,53,156);
 }
 
 #project-2 {

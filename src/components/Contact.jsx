@@ -15,7 +15,7 @@ export const Contact = () => {
                 </div>
                 <h2>Contact</h2>
             </div>
-            <form id="contact-form">
+            <form action="mailto:terryszhou@gmail.com" method="POST" id="contact-form">
                 <div id="contact-form-outer"/>
                 <div className="form-group">
                     <label for="name">Name</label>
@@ -29,6 +29,7 @@ export const Contact = () => {
                     <label for="message">Message</label>
                     <textarea className="form-control" name="message"></textarea>
                 </div>
+                <button type="submit">Send</button>
             </form>
             <div id="hourglass"/>
         </div>

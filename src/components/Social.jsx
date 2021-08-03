@@ -15,6 +15,9 @@ export const Social = () => {
             <a href="https://instagram.com/terry.s.zhou" target="_blank" rel="noreferrer">
                 <div class="icon fab fa-instagram"></div>
             </a>
+            <a href="mailto:terryszhou@gmail.com" target="_blank" rel="noreferrer">
+                <div class="icon fas fa-envelope"></div>
+            </a>
             <a href={resume} target="_blank" rel="noreferrer">
                 <div class="icon far fa-file"></div>
             </a>
