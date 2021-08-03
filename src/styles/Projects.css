@@ -1,9 +1,9 @@
 .project-wrapper {
     position: relative;
     justify-content: center;
-    margin-top: 80px;
-    margin-left: -115px;
-    margin-bottom: 1190px;
+    margin-top: 12vh;
+    margin-left: -9vw;
+    margin-bottom: 160vh;
 }
 
 .project-hex {
@@ -175,7 +175,8 @@
 
 @media (max-width:700px) {
     .project-wrapper {
-        padding-bottom: 1040px;
+        margin-left: -14vw;
+        padding-bottom: 135vh;
     }
     #project-1 {
         left: 11vw;

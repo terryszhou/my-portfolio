@@ -67,9 +67,51 @@ h3 {
 }
 
 #contact-form {
+    position: relative;
     width: 60vw;
     margin-left: 13vw;
     margin-top: 25vh;
+    background: rgb(26,29,32);
+    padding: 20px;
+    border: 2px solid goldenrod;
+    border-radius: 15px;
+}
+
+#contact-form::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: -1rem;
+    left: -1rem;
+    border-right: 50px solid transparent;
+    border-top: 50px solid goldenrod;
+}
+
+#contact-form::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: -1rem;
+    right: -1rem;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid goldenrod;
+}
+
+#contact-form-outer {
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    height: 110%;
+    width: 104.3%;
+    border: 2px solid goldenrod;
+}
+
+@media (max-width: 700px) {
+    #contact-form-outer {
+        width: 108.5%;
+    }
 }
 
 input:-webkit-autofill, input:-webkit-autofill:focus {
