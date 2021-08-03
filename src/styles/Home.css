@@ -1,0 +1,92 @@
+#hex-home-outer {
+    position: absolute;
+    top: 26%;
+    left: 34%;
+    width: 400px;
+    height: 240px;
+    background: goldenrod;
+}
+
+#hex-home-outer::before, #hex-home-outer::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+}
+
+#hex-home-outer::before {
+    top: -120px;
+    border-bottom: 120px solid goldenrod;
+}
+
+#hex-home-outer::after {
+    bottom: -120px;
+    border-top: 120px solid goldenrod;
+}
+
+#hex-home-grey {
+    position: absolute;
+    top: 27.5%;
+    left: 35.6%;
+    width: 360px;
+    height: 216px;
+    background: rgb(69,87,96);
+}
+
+#hex-home-grey::before, #hex-home-grey::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+}
+
+#hex-home-grey::before {
+    top: -108px;
+    border-bottom: 108px solid rgb(69,87,96);
+}
+
+#hex-home-grey::after {
+    bottom: -108px;
+    border-top: 108px solid rgb(69,87,96);
+}
+
+#hex-home {
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    width: 300px;
+    height: 180px;
+    background: goldenrod;
+    z-index: 1;
+}
+
+#hex-home::before, #hex-home::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+}
+
+#hex-home::before {
+    top: -90px;
+    border-bottom: 90px solid goldenrod;
+}
+
+#hex-home::after {
+    bottom: -90px;
+    border-top: 90px solid goldenrod;
+    z-index: -1;
+}
+
+.home-pic {
+    position: absolute;
+    top: -63px;
+    width: 100%;
+    border-radius: 50%;
+}

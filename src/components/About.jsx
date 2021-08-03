@@ -18,8 +18,9 @@ export const About = () => {
                 <h2>About</h2>
             </div>
             <div className="about-wrapper about-corners">
-                <h3>Get to Know Me</h3>
-                <fieldset>
+                <h3 className="mb-3">Get to Know Me</h3>
+                <div className="about-corners-outer"/>
+                <fieldset className="about-field">
                     <div className="question-wrapper">
                         <p className="question-text">What made you want to become a software developer?</p>
                     </div>
@@ -93,7 +94,7 @@ export const About = () => {
                 </div>
                 <h3>Want to Know More?</h3>
                 <a href={resume} target="_blank" rel="noreferrer">
-                    <div className="icon fas fa-download"/>
+                    <div className="icon fas fa-download text-warning"/>
                 </a>
                 <p id="resume-text">Check out my resume!</p>
             </div>

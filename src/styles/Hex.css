@@ -1,6 +1,46 @@
 .shape-box {
-    margin-top: 50px;
     position: relative;
+    margin-top: 50px;
+}
+
+.shape-box:hover #hex-gold {
+    animation: rotation 8s linear infinite;
+}
+
+.shape-box:hover #hex-smallest {
+    transform: translateY(-45px);
+    transition-duration: 0.3s;
+}
+
+.shape-box:hover #hex-goldenrod {
+    animation: counterRotation 2s linear infinite;
+    animation-delay: 0ms, 300ms;
+}
+
+.shape-box:hover #hex-grey {
+    animation: rotation 2s linear infinite;
+    transition-duration: 0.3s;
+}
+
+.shape-box:hover #hex-outer {
+    animation: rotation 2s linear infinite;
+    transition-duration: 0.3s;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes counterRotation {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(-360deg);
+    }
 }
 
 .shape-box h2 {
@@ -10,16 +50,16 @@
 }
 
 #hex-gold {
+    position: absolute;
     width: 100px;
     height: 60px;
     background: gold;
-    position: absolute;
     z-index: 1;
 }
 
 #hex-gold::before, #hex-gold::after {
-    content: "";
     position: absolute;
+    content: "";
     width: 0;
     height: 0;
     border-left: 50px solid transparent;
@@ -38,17 +78,18 @@
 }
 
 #hex-grey {
+    position: absolute;
     width: 140px;
     height: 84px;
     background: rgb(69,87,96);
-    position: absolute;
     top: -13px;
     left: -20px;
+    transition-duration: 0.3s;
 }
 
 #hex-grey::before, #hex-grey::after {
-    content: "";
     position: absolute;
+    content: "";
     width: 0;
     height: 0;
     border-left: 70px solid transparent;
@@ -66,18 +107,19 @@
 }
 
 #hex-outer {
+    position: absolute;
     width: 150px;
     height: 86px;
     background: goldenrod;
-    position: absolute;
     top: -14px;
     left: -25px;
     z-index: -2;
+    transition-duration: 0.3s;
 }
 
 #hex-outer::before, #hex-outer::after {
-    content: "";
     position: absolute;
+    content: "";
     width: 0;
     height: 0;
     border-left: 75px solid transparent;
@@ -95,18 +137,19 @@
 }
 
 #hex-goldenrod {
+    position: absolute;
     width: 80px;
     height: 48px;
     background: goldenrod;
-    position: absolute;
     top: 50px;
     left: 37px;
     opacity: 80%;
+    transition-duration: 0.3s;
 }
 
 #hex-goldenrod::before, #hex-goldenrod::after {
-    content: "";
     position: absolute;
+    content: "";
     width: 0;
     height: 0;
     border-left: 40px solid transparent;
@@ -124,17 +167,17 @@
 }
 
 #hex-small {
+    position: absolute;
     width: 36px;
     height: 22px;
     background: yellow;
-    position: absolute;
     bottom: -40px;
     left: -40px;
 }
 
 #hex-small::before, #hex-small::after {
-    content: "";
     position: absolute;
+    content: "";
     width: 0;
     height: 0;
     border-left: 18px solid transparent;
@@ -152,17 +195,17 @@
 }
 
 #hex-smaller {
+    position: absolute;
     width: 24px;
     height: 14px;
     background: rgb(69,87,96);
-    position: absolute;
     top: 3px;
     left: 6px;
 }
 
 #hex-smaller::before, #hex-smaller::after {
-    content: "";
     position: absolute;
+    content: "";
     width: 0;
     height: 0;
     border-left: 12px solid transparent;
@@ -181,16 +224,18 @@
 }
 
 #hex-smallest {
+    position: absolute;
     width: 24px;
     height: 14.4px;
     background: gold;
-    position: absolute;
     top: 45px;
+    z-index: 2;
+    transition-duration: 0.3s;
 }
 
 #hex-smallest::before, #hex-smallest::after {
-    content: "";
     position: absolute;
+    content: "";
     width: 0;
     height: 0;
     border-left: 12px solid transparent;
