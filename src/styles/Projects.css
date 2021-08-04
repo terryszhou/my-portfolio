@@ -200,7 +200,7 @@
 
 .desc {
     position: absolute;
-    top: -30px;
+    top: -50px;
     opacity: 0%;
     transition-duration: 0.3s;
 }

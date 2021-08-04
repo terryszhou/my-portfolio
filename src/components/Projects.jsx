@@ -75,7 +75,7 @@ export const Projects = () => {
                     <img className="project-pic" src={pixelRunner} alt="pixel-runner"/>
                     <div className="desc">
                         <h3>Pixel Runner</h3>
-                        <p className="project-about">One-day sprint based on Pygame tutorial. Improved from source code with full arrow key movement, scrolling backgrounds, and various bug fixes.</p>
+                        <p className="project-about">One-day sprint based on Pygame tutorial. Improved with full arrow key movement, scrolling backgrounds, and various bug fixes.</p>
                         <p className="project-skills">Python, Pygame</p>
                         <p className="project-links">
                             <a href="https://github.com/terryszhou/pixel-runner/" target="_blank" rel="noreferrer">Github Repo</a>
