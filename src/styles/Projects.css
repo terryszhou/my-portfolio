@@ -200,7 +200,7 @@
 
 .desc {
     position: absolute;
-    top: -50px;
+    top: -60px;
     opacity: 0%;
     transition-duration: 0.3s;
 }
@@ -242,10 +242,11 @@
 
 .project-links a {
     color: rgb(220,220,220);
+    color: goldenrod;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 .project-links a:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid goldenrod;
 }

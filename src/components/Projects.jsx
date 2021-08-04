@@ -63,9 +63,9 @@ export const Projects = () => {
                         <p className="project-links">
                             <a href="https://friendly-sinoussi-f96db3.netlify.app/" target="_blank" rel="noreferrer">Live Site </a>
                             |
-                            <a href="https://github.com/terryszhou/MERN-Auth-Server/" target="_blank" rel="noreferrer"> Backend Repo </a>
+                            <a href="https://github.com/terryszhou/MERN-Auth-Server/" target="_blank" rel="noreferrer"> Backend </a>
                             |
-                            <a href="https://github.com/terryszhou/P3-auth-client/" target="_blank" rel="noreferrer"> Frontend Repo</a>
+                            <a href="https://github.com/terryszhou/P3-auth-client/" target="_blank" rel="noreferrer"> Frontend</a>
                         </p>
                     </div>
                 </div>
@@ -87,8 +87,8 @@ export const Projects = () => {
                     <div className="project-hex-3"/>
                     <img className="project-pic" src={gameOfLife} alt="game-of-life"/>
                     <div className="desc">
-                        <h3>Terry's Game of Life</h3>
-                        <p className="project-about">Three-day sprint based on Conway's Game of Life. Features full simulation with three alternate rulesets and user input.</p>
+                        <h3>Python of Life</h3>
+                        <p className="project-about">Three-day sprint based on Conway's Game of Life. Features three alternate rulesets and full user input.</p>
                         <p className="project-skills">Python, Pygame</p>
                         <p className="project-links">
                             <a href="https://github.com/terryszhou/p4-python-of-life/" target="_blank" rel="noreferrer">Github Repo</a>

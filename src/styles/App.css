@@ -50,6 +50,22 @@ body {
     transition-duration: 0.1s;
 }
 
+.icon:hover .tip-text {
+    visibility: visible;
+}
+
+.tip-text {
+    position: absolute;
+    font-size: 12px;
+    background-color: rgb(26,29,32);
+    padding: 5px;
+    border-radius: 10px;
+    top: -0.2rem;
+    left: -4.5rem;
+    visibility: hidden;
+    opacity: 80%;
+}
+
 .pt-1 {
     padding-top: 3em;
 }
