@@ -1,3 +1,5 @@
+import resume from '../static/terryzhou-resume.pdf'
+
 export const Contact = () => {
     return (
         <div className="container pt-3">
@@ -15,23 +17,40 @@ export const Contact = () => {
                 </div>
                 <h2>Contact</h2>
             </div>
-            <form action="mailto:terryszhou@gmail.com" method="POST" id="contact-form">
-                <div id="contact-form-outer"/>
-                <div className="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" className="form-control" name="name"/>
-                </div>
-                <div className="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" className="form-control" name="email"/>
-                </div>
-                <div className="form-group">
-                    <label for="message">Message</label>
-                    <textarea className="form-control" name="message"></textarea>
-                </div>
-                <button type="submit">Send</button>
-            </form>
-            <div id="hourglass"/>
+            <div className="about-wrapper about-corners">
+                <h3 className="mb-3 about-header">Let's Get in Touch!</h3>
+                <div className="about-corners-outer"/>
+                <fieldset className="about-field">
+                    <div className="contact-box">
+                        <a href="https://github.com/terryszhou" target="_blank" rel="noreferrer">
+                            <div className="contact-icon fab fa-github">
+                                <p>github.com/terryszhou</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="contact-box">
+                        <a href="mailto:terryszhou@gmail.com" target="_blank" rel="noreferrer">
+                            <div className="contact-icon fas fa-envelope">
+                                <p>terryszhou@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="contact-box">
+                        <a href="https://www.linkedin.com/in/terryszhou/" target="_blank" rel="noreferrer">
+                            <div className="contact-icon fab fa-linkedin">
+                                <p>linkedin.com/in/terryszhou/</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="contact-box">
+                        <a href={resume} target="_blank" rel="noreferrer">
+                            <div className="contact-icon far fa-file">
+                                <p>(Here's my resume again)</p>
+                            </div>
+                        </a>
+                    </div>
+                </fieldset>
+            </div>
         </div>
     )
 }

@@ -29,7 +29,6 @@ export const Home = () => {
                     <img className="home-pic" src={glasses} alt="glasses"/>
                 </div>
             </div>
-            <div id="hourglass"/>
         </div>
     )
 }

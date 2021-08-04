@@ -1,11 +1,18 @@
+#home-box {
+    animation: 1.5s ease-out 1 fadeIn;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
 #hex-home-outer {
     position: absolute;
-    /* top: 26%;
-    left: 40%; */
-    /* width: 400px;
-    height: 240px; */
-    /* background: rgb(169, 127, 21); */
-
     top: 30%;
     left: 49%;
     transform: rotate(-90deg);
@@ -15,25 +22,6 @@
     height: 0;
     width: 450px;
 }
-
-/* #hex-home-outer::before, #hex-home-outer::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-}
-
-#hex-home-outer::before {
-    top: -120px;
-    border-bottom: 120px solid rgb(169, 127, 21);
-}
-
-#hex-home-outer::after {
-    bottom: -120px;
-    border-top: 120px solid rgb(169, 127, 21);
-} */
 
 #hex-home-grey {
     position: absolute;

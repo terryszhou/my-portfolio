@@ -42,8 +42,10 @@
     margin-bottom: -20vh;
     margin-left: 20vw;
     margin-right: 20vw;
+    min-width: 530px;
     padding: 10px;
     background-color: rgb(26,29,32);
+    min-height: 380px;
     max-height: 400px;
     overflow: scroll;
 }
@@ -111,6 +113,7 @@
     .about-field {
         margin-left: 10vw;
         margin-right: 10vw;
+        min-width: 380px;
     }
 
     .about-corners-outer::before {
