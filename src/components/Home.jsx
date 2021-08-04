@@ -3,7 +3,9 @@ import glasses from '../images/glasses.jpeg'
 export const Home = () => {
     return (
         <div className="container pt-3">
-            {/* <div className="shape-box">
+            <div id="test-back"/>
+            <div id="test-back-2"/>
+            <div className="shape-box home-position">
                 <div id="hex-outer"/>
                 <div id="hex-grey"/>
                 <div id="hex-gold">
@@ -15,7 +17,7 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
             <div className="name-box">
                 <h1 id="first-name">Terry S. Zhou</h1>
                 <h2 id="title">Full Stack Developer</h2>
@@ -27,11 +29,6 @@ export const Home = () => {
                     <img className="home-pic" src={glasses} alt="glasses"/>
                 </div>
             </div>
-            {/* <div id="circle-1"/> */}
-            {/* <div id="padlock"/>
-            <div id="spinning-top">
-                <div id="spinning-top-center"/>
-            </div> */}
             <div id="hourglass"/>
         </div>
     )
