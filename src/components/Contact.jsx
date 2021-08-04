@@ -1,4 +1,5 @@
 import resume from '../static/terryzhou-resume.pdf'
+import cardQR from '../images/card-qr2.png'
 
 export const Contact = () => {
     return (
@@ -22,16 +23,16 @@ export const Contact = () => {
                 <div className="about-corners-outer"/>
                 <fieldset className="about-field">
                     <div className="contact-box">
-                        <a href="https://github.com/terryszhou" target="_blank" rel="noreferrer">
-                            <div className="contact-icon fab fa-github">
-                                <p>github.com/terryszhou</p>
+                        <a href="mailto:terryszhou@gmail.com" target="_blank" rel="noreferrer">
+                            <div className="contact-icon fas fa-envelope">
+                                <p>terryszhou@gmail.com</p>
                             </div>
                         </a>
                     </div>
                     <div className="contact-box">
-                        <a href="mailto:terryszhou@gmail.com" target="_blank" rel="noreferrer">
-                            <div className="contact-icon fas fa-envelope">
-                                <p>terryszhou@gmail.com</p>
+                        <a href="https://github.com/terryszhou" target="_blank" rel="noreferrer">
+                            <div className="contact-icon fab fa-github">
+                                <p>github.com/terryszhou</p>
                             </div>
                         </a>
                     </div>
@@ -50,6 +51,10 @@ export const Contact = () => {
                         </a>
                     </div>
                 </fieldset>
+            </div>
+            <div className="qrbox">
+                <img id="qrcode" src={cardQR} alt="cardQR"/>
+                <p>Here's my business card!</p>
             </div>
         </div>
     )
