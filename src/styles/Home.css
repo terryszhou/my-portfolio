@@ -100,6 +100,11 @@
     border-radius: 50%;
 }
 
+.name-box {
+    position: absolute;
+    top: 14%;
+}
+
 #first-name {
     position: relative;
     text-align: center;
@@ -276,4 +281,14 @@
     } to {
         transform: rotate(360deg);
     }
+}
+
+#circle-1 {
+    position: fixed;
+    bottom: -15vh;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(26,29,32);
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px black;
 }
