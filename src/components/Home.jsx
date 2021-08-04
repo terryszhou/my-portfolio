@@ -1,5 +1,4 @@
-import headshot from '../images/headshot.jpg'
-import headshot2 from '../images/headshot-2.jpg'
+import glasses from '../images/glasses.jpeg'
 
 export const Home = () => {
     return (
@@ -16,17 +15,22 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
-                <h2>Home</h2>
+                {/* <h2>Home</h2> */}
             </div>
-            <div className="home-box">
+            <h1 id="first-name">Terry S. Zhou</h1>
+            <h2 id="title">Full Stack Developer</h2>
+            <div id="home-box">
                 <div id="hex-home-outer"/>
                 <div id="hex-home-grey"/>
                 <div id="hex-home">
                     <h2>Image here?</h2>
-                    {/* <img className="home-pic" src={headshot} alt="headshot"/> */}
-                    {/* <img className="home-pic" src={headshot2} alt="headshot"/> */}
+                    <img className="home-pic" src={glasses} alt="glasses"/>
                 </div>
             </div>
+            {/* <div id="padlock"/>
+            <div id="spinning-top">
+                <div id="spinning-top-center"/>
+            </div> */}
             <div id="hourglass"/>
         </div>
     )

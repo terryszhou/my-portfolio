@@ -101,15 +101,15 @@
     position: absolute;
     top: 36vh;
     left: 9vw;
-    background: rgb(187,53,156);
+    background: rgb(99,40,52);
 }
 
 #project-1::before {
-    border-bottom: 120px solid rgb(187,53,156);
+    border-bottom: 120px solid rgb(99,40,52);
 }
 
 #project-1::after {
-    border-top: 120px solid rgb(187,53,156);
+    border-top: 120px solid rgb(99,40,52);
 }
 
 #project-2 {
@@ -162,15 +162,15 @@
     position: absolute;
     top: 36vh;
     left: 67.7vw;
-    background: rgb(88,17,132);
+    background: rgb(108,37,152);
 }
 
 #project-5::before {
-    border-bottom: 120px solid rgb(88,17,132);
+    border-bottom: 120px solid rgb(108,37,152);
 }
 
 #project-5::after {
-    border-top: 120px solid rgb(88,17,132);
+    border-top: 120px solid rgb(108,37,152);
 }
 
 @media (max-width:700px) {

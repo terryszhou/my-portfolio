@@ -24,7 +24,6 @@
 
 .shape-box:hover #hex-outer {
     animation: rotation 2s linear infinite;
-    transition-duration: 0.3s;
 }
 
 @keyframes rotation {
@@ -50,7 +49,7 @@
     padding-right: 10px;
     bottom: -95px;
     left: 120px;
-    text-shadow: 1px 1px 1px grey;
+    text-shadow: 2px 2px 1px rgb(70,87,96);
 }
 
 .shape-box h2::before {

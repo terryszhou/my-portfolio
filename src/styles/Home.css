@@ -1,13 +1,22 @@
 #hex-home-outer {
     position: absolute;
-    top: 26%;
-    left: 34%;
-    width: 400px;
-    height: 240px;
-    background: goldenrod;
+    /* top: 26%;
+    left: 40%; */
+    /* width: 400px;
+    height: 240px; */
+    /* background: rgb(169, 127, 21); */
+
+    top: 30%;
+    left: 49%;
+    transform: rotate(-90deg);
+    border-bottom: 180px solid rgb(169, 127, 21);
+    border-left: 112.5px solid transparent;
+    border-right: 112.5px solid transparent;
+    height: 0;
+    width: 450px;
 }
 
-#hex-home-outer::before, #hex-home-outer::after {
+/* #hex-home-outer::before, #hex-home-outer::after {
     position: absolute;
     content: "";
     width: 0;
@@ -18,18 +27,18 @@
 
 #hex-home-outer::before {
     top: -120px;
-    border-bottom: 120px solid goldenrod;
+    border-bottom: 120px solid rgb(169, 127, 21);
 }
 
 #hex-home-outer::after {
     bottom: -120px;
-    border-top: 120px solid goldenrod;
-}
+    border-top: 120px solid rgb(169, 127, 21);
+} */
 
 #hex-home-grey {
     position: absolute;
     top: 27.5%;
-    left: 35.6%;
+    left: 60.6%;
     width: 360px;
     height: 216px;
     background: rgb(69,87,96);
@@ -57,7 +66,7 @@
 #hex-home {
     position: absolute;
     top: 30%;
-    left: 38%;
+    left: 63%;
     width: 300px;
     height: 180px;
     background: goldenrod;
@@ -89,4 +98,182 @@
     top: -63px;
     width: 100%;
     border-radius: 50%;
+}
+
+#first-name {
+    position: relative;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgb(70,87,96);
+    width: 300px;
+    padding: 5px;
+    color: rgb(220,220,220);
+    background-color: rgb(25,28,31);
+    font-size: 44px;
+    top: 20vh;
+    left: 20vw;
+}
+
+#first-name::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0rem;
+    left: -3.1rem;
+    border-left: 50px solid transparent;
+    border-top: 62px solid rgb(26,29,32);
+}
+
+#first-name::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0rem;
+    right: -3.1rem;
+    border-right: 50px solid transparent;
+    border-bottom: 62px solid rgb(26,29,32);
+}
+
+#title {
+    position: relative;
+    text-align: center;
+    height: 60px;
+    top: 13.3vh;
+    left: 16.2vw;
+    width: 300px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: rgb(25,28,31);
+    background-color: rgb(220,220,220);
+    text-shadow: 2px 2px 1px white;
+}
+
+#title::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0rem;
+    left: -3.1rem;
+    border-left: 50px solid transparent;
+    border-bottom: 60px solid rgb(220,220,220);
+}
+
+#title::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0rem;
+    right: -3.1rem;
+    border-right: 50px solid transparent;
+    border-top: 60px solid rgb(220,220,220);
+}
+
+#padlock {
+    font-size: 0.25em;
+    position: relative;
+    width: 18em;
+    height: 13em;
+    border-radius: 2em;
+    top: 60em;
+    box-sizing: border-box;
+    border: 3.5em solid black;
+    border-right-width: 7.5em;
+    border-left-width: 7.5em;
+    z-index: 1;
+}
+
+#padlock::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: 2.5em solid black;
+    width: 14em;
+    height: 12em;
+    left: 50%;
+    margin-left: -7em;
+    top: -12em;
+    border-top-left-radius: 7em;
+    border-top-right-radius: 7em;
+    border-bottom: none;
+    transition-duration: 0.3s;
+}
+
+#padlock::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: 1em solid black;
+    width: 5em;
+    height: 8em;
+    border-radius: 2.5em;
+    left: 50%;
+    top: -1em;
+    margin-left: -2.5em;
+}
+
+#padlock:hover::before {
+    transform: translateX(-45px) scaleX(-1);
+    transition-duration: 0.3s;
+}
+
+#spinning-top {
+    position: relative;
+    top: 400px;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+}
+
+#spinning-top::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid goldenrod;
+    z-index: -1;
+}
+
+#spinning-top::after {
+    position: absolute;
+    content: "";
+    top: -8px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid goldenrod;
+}
+
+#spinning-top-center {
+    position: absolute;
+    content: "";
+    top: 17px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid black;
+    z-index: 1;
+}
+
+#spinning-top:hover {
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
 }
