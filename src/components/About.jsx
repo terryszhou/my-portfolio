@@ -1,7 +1,9 @@
 export const About = (props) => {
     return (
         <div className="container pt-3">
-            <div className="shape-box">
+            <div id="square-back"/>
+            <div id="square-back-2"/>
+            <div className="shape-box about-hex">
                 <div id="hex-outer"/>
                 <div id="hex-grey"/>
                 <div id="hex-gold">

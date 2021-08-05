@@ -238,3 +238,71 @@ label {
     width: 85px;
     opacity: 90%;
 }
+
+.about-hex {
+    animation: 1.5s ease-out 1 slideRight;
+}
+
+.about-hex #hex-grey, .about-hex #hex-smaller {
+    background-color: rgb(25,28,31);
+}
+
+.about-hex #hex-grey::before {
+    border-bottom: 42px solid rgb(25,28,31);
+}
+
+.about-hex #hex-grey::after {
+    border-top: 42px solid rgb(25,28,31);
+}
+
+.about-hex #hex-smaller::before {
+    border-bottom: 7px solid rgb(25,28,31);
+}
+
+.about-hex #hex-smaller::after {
+    border-top: 7px solid rgb(25,28,31);
+}
+
+#square-back {
+    position: fixed;
+    background-color: rgb(26,29,32);
+    top: -20%;
+    left: -15%;
+    width: 500px;
+    height: 1200px;
+    z-index: -2;
+    animation: 1.5s ease-out 1 slideRight;
+}
+
+#square-back-2 {
+    position: fixed;
+    background-color: rgb(26,29,32);
+    top: -20%;
+    right: -15%;
+    width: 500px;
+    height: 1200px;
+    z-index: -2;
+    animation: 1.5s ease-out 1 slideLeft;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
