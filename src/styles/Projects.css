@@ -250,3 +250,27 @@
 .project-links a:hover {
     border-bottom: 2px solid goldenrod;
 }
+
+#project-back {
+    position: fixed;
+    width: 0;
+    height: 0;
+    top: -20%;
+    left: -10%;
+    border-top: 1000px solid rgb(50,67,76);
+    border-right: 1000px solid transparent;
+    z-index: -2;
+    animation: 1.5s ease-out 1 slideRight;
+}
+
+#project-back-2 {
+    position: fixed;
+    width: 0;
+    height: 0;
+    bottom: -20%;
+    right: -10%;
+    border-bottom: 1000px solid rgb(50,67,76);
+    border-left: 1000px solid transparent;
+    z-index: -2;
+    animation: 1.5s ease-out 1 slideLeft;
+}

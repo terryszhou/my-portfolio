@@ -4,8 +4,8 @@ export const Social = (props) => {
             <div className="seal-box">
                 <img id="seal" src={props.sealSig} alt="seal"></img>
                 <div className="tip-text seal-tip">
-                    <p>周思佳</p>
-                    <p>Zhōu Sījīa</p>
+                    <p className="text-left" style={{marginLeft: "20px"}}>汉字: 周思佳</p>
+                    <p className="text-left" style={{marginLeft: "20px"}}>Pīnyīn: Zhōu Sījīa</p>
                     <p className="text-left" style={{marginLeft: "20px"}}>Sī: (to) think</p>
                     <p className="text-left" style={{marginLeft: "20px"}}>Jīa: (with) excellence & beauty</p>
                 </div>

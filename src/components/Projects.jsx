@@ -1,7 +1,10 @@
 export const Projects = (props) => {
     return (
         <div className="container pt-1">
-            <div className="shape-box">
+            <img className="background-image" src={props.flowersWhite} alt="background"/>
+            <div id="project-back"/>
+            <div id="project-back-2"/>
+            <div className="shape-box about-hex">
                 <div id="hex-outer"/>
                 <div id="hex-grey"/>
                 <div id="hex-gold">

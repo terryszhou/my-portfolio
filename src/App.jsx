@@ -13,7 +13,7 @@ import { Nav } from './components/Nav'
 import { Social } from './components/Social'
 
 import resume from './static/terryzhou-resume.pdf'
-import headshot from './images/headshot2.png'
+import headshot from './images/headshot3.png'
 import catCrawlerDesktop from './images/cat-crawler-desktop.png'
 import pokemap from './images/pokemap-desktop.png'
 import totemize from './images/totemize-mobile.png'
@@ -51,6 +51,7 @@ export const App = () => {
             <Route
                 path="/projects"
                 render={() => <Projects
+                        flowersWhite={flowersWhite}
                         catCrawlerDesktop={catCrawlerDesktop}
                         pokemap={pokemap}
                         totemize={totemize}
