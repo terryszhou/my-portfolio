@@ -1,10 +1,7 @@
-import resume from '../static/terryzhou-resume.pdf'
-import sealSig from '../images/seal-sig.png'
-
-export const Social = () => {
+export const Social = (props) => {
     return (
         <>
-            <img id="seal" src={sealSig} alt="seal"/>
+            <img id="seal" src={props.sealSig} alt="seal"/>
             <div className="social">
                 <a href="https://www.linkedin.com/in/terryszhou/" target="_blank" rel="noreferrer">
                     <div className="icon fab fa-linkedin">
@@ -31,7 +28,7 @@ export const Social = () => {
                         <p className="tip-text">Email</p>
                     </div>
                 </a>
-                <a href={resume} target="_blank" rel="noreferrer">
+                <a href={props.resume} target="_blank" rel="noreferrer">
                     <div className="icon far fa-file">
                         <p className="tip-text">Resume</p>
                     </div>

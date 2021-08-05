@@ -1,6 +1,4 @@
-import resume from '../static/terryzhou-resume.pdf'
-
-export const About = () => {
+export const About = (props) => {
     return (
         <div className="container pt-3">
             <div className="shape-box">
@@ -47,7 +45,36 @@ export const About = () => {
                     </div>
                 </fieldset>
             </div>
-            <div className="about-wrapper pt-3">
+            <div className="about-wrapper">
+                <h3 className="about-header">My Key Skills</h3>
+                <div className="card">
+                    <div className="table-responsive">
+                        <table className="table table-striped table-dark table-borderless">
+                            <tbody>
+                                <th>
+                                    <i className="key-icon text-primary fab fa-python"/>
+                                </th>
+                                <th>
+                                    <i className="key-icon text-warning fab fa-js-square"/>
+                                </th>
+                                <th>
+                                    <i className="key-icon text-success fas fa-database"/>
+                                </th>
+                                <th>
+                                    <i className="key-icon text-info fab fa-css3-alt"/>
+                                </th>
+                                <th>
+                                    <i className="key-icon fab fa-react"/>
+                                </th>
+                                <th>
+                                    <i className="key-icon fab fa-node-js"/>
+                                </th>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div className="about-wrapper">
                 <h3 className="about-header">My Toolbox</h3>
                 <div className="card">
                     <div className="table-responsive">
@@ -93,7 +120,7 @@ export const About = () => {
                     </div>
                 </div>
                 <h3 className="about-header">Want to Know More?</h3>
-                <a href={resume} target="_blank" rel="noreferrer">
+                <a href={props.resume} target="_blank" rel="noreferrer">
                     <div className="icon fas fa-download text-warning"/>
                 </a>
                 <p id="resume-text">Check out my resume!</p>

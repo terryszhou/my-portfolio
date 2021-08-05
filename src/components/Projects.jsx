@@ -1,10 +1,4 @@
-import catCrawlerDesktop from '../images/cat-crawler-desktop.png'
-import pokemap from '../images/pokemap-desktop.png'
-import totemize from '../images/totemize-mobile.png'
-import pixelRunner from '../images/pixel-runner-desktop.png'
-import gameOfLife from '../images/game-of-life-desktop.png'
-
-export const Projects = () => {
+export const Projects = (props) => {
     return (
         <div className="container pt-1">
             <div className="shape-box">
@@ -25,7 +19,7 @@ export const Projects = () => {
                 <div className="project-hex" id="project-1">
                     <div className="project-hex-2"/>
                     <div className="project-hex-3"/>
-                    <img className="project-pic" src={catCrawlerDesktop} alt="cat-crawler"/>
+                    <img className="project-pic" src={props.catCrawlerDesktop} alt="cat-crawler"/>
                     <div className="desc">
                         <h3>Cat Crawler</h3>
                         <p className="project-about">Dungeon crawler-style video game featuring WASD controls and randomly generated enemies.</p>
@@ -40,7 +34,7 @@ export const Projects = () => {
                 <div className="project-hex" id="project-2">
                     <div className="project-hex-2"/>
                     <div className="project-hex-3"/>
-                    <img className="project-pic" src={pokemap} alt="pokemap"/>
+                    <img className="project-pic" src={props.pokemap} alt="pokemap"/>
                     <div className="desc">
                         <h3>PokéMap</h3>
                         <p className="project-about">Full stack app that combines a fully functioning Pokédex with a map of the Kanto region.</p>
@@ -55,7 +49,7 @@ export const Projects = () => {
                 <div className="project-hex" id="project-3">
                     <div className="project-hex-2"/>
                     <div className="project-hex-3"/>
-                    <img className="project-pic" src={totemize} alt="totemize"/>
+                    <img className="project-pic" src={props.totemize} alt="totemize"/>
                     <div className="desc">
                         <h3>Totemize</h3>
                         <p className="project-about">Full stack MERN festival app that allows users to login, create events, and find their friends on a map.</p>
@@ -72,7 +66,7 @@ export const Projects = () => {
                 <div className="project-hex" id="project-4">
                     <div className="project-hex-2"/>
                     <div className="project-hex-3"/>
-                    <img className="project-pic" src={pixelRunner} alt="pixel-runner"/>
+                    <img className="project-pic" src={props.pixelRunner} alt="pixel-runner"/>
                     <div className="desc">
                         <h3>Pixel Runner</h3>
                         <p className="project-about">One-day sprint based on Pygame tutorial. Improved with full arrow key movement, scrolling backgrounds, and various bug fixes.</p>
@@ -85,7 +79,7 @@ export const Projects = () => {
                 <div className="project-hex" id="project-5">
                     <div className="project-hex-2"/>
                     <div className="project-hex-3"/>
-                    <img className="project-pic" src={gameOfLife} alt="game-of-life"/>
+                    <img className="project-pic" src={props.gameOfLife} alt="game-of-life"/>
                     <div className="desc">
                         <h3>Python of Life</h3>
                         <p className="project-about">Three-day sprint based on Conway's Game of Life. Features three alternate rulesets and full user input.</p>

@@ -1,6 +1,4 @@
-import glasses from '../images/glasses.jpeg'
-
-export const Home = () => {
+export const Home = (props) => {
     return (
         <div className="container pt-3">
             <div id="test-back"/>
@@ -26,7 +24,7 @@ export const Home = () => {
                 <div id="hex-home-outer"/>
                 <div id="hex-home-grey"/>
                 <div id="hex-home">
-                    <img className="home-pic" src={glasses} alt="glasses"/>
+                    <img className="home-pic" src={props.glasses} alt="glasses"/>
                 </div>
             </div>
         </div>

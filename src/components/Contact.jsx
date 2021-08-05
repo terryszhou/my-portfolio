@@ -1,7 +1,4 @@
-import resume from '../static/terryzhou-resume.pdf'
-import cardQR from '../images/card-qr2.png'
-
-export const Contact = () => {
+export const Contact = (props) => {
     return (
         <div className="container pt-3">
             <div className="shape-box">
@@ -44,7 +41,7 @@ export const Contact = () => {
                         </a>
                     </div>
                     <div className="contact-box">
-                        <a href={resume} target="_blank" rel="noreferrer">
+                        <a href={props.resume} target="_blank" rel="noreferrer">
                             <div className="contact-icon far fa-file">
                                 <p>(Here's my resume again)</p>
                             </div>
@@ -53,7 +50,9 @@ export const Contact = () => {
                 </fieldset>
             </div>
             <div className="qrbox">
-                <img id="qrcode" src={cardQR} alt="cardQR"/>
+                <a href="https://hihello.me/p/c2fcf08c-ba21-4fe6-8e72-c542170b10e2" target="_blank" rel="noreferrer">
+                    <img id="qrcode" src={props.cardQR} alt="cardQR"/>
+                </a>
                 <p>Here's my business card!</p>
             </div>
         </div>

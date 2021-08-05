@@ -40,19 +40,20 @@
     position: relative;
     border: 2px solid goldenrod;
     border-radius: 15px;
-    margin-bottom: -20vh;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin: auto 20vw -20vh 20vw;
     min-width: 530px;
     padding: 10px;
     background-color: rgb(26,29,32);
     min-height: 380px;
     max-height: 400px;
     overflow: scroll;
+    transition-duration: 0.2s;
 }
 
-.about-corners {
-    position: relative;
+.about-field:hover {
+    transform: scale(1.04);
+    border-radius: 0;
+    transition-duration: 0.2s;
 }
 
 .about-corners::before {
@@ -86,12 +87,13 @@
 .about-corners-outer::before {
     position: absolute;
     content:"";
-    left: 21.9vw;
-    top: 5.4vh;
-    height: 57.5vh;
-    width: 43vw;
+    left: 21.8vw;
+    top: 5.6vh;
+    height: 57.4vh;
+    width: 43.2vw;
     border: 2px solid goldenrod;
     box-shadow: 2px 2px 2px 2px black;
+    transition-duration: 0.2s;
 }
 
 .about-text {
@@ -177,10 +179,13 @@
     border-top: 25px solid rgb(220,220,220);
 }
 
-
 label {
     color: rgb(220,220,220);
     text-shadow: 1px 1px 1px black;
+}
+
+.key-icon {
+    font-size: 48px;
 }
 
 .card {
@@ -194,11 +199,16 @@ label {
     width: 60vw;
     border: 2px solid goldenrod;
     box-shadow: 2px 2px 2px 2px black;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+.table-responsive:hover {
+    transform: scale(1.04);
+    transition-duration: 0.2s;
 }
 
 .table {
-    text-align: center;
-    border-radius: 15px;
     margin-bottom: 0;
 }
 
