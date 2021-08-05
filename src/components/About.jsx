@@ -1,6 +1,7 @@
 export const About = (props) => {
     return (
         <div className="container pt-3">
+            <img className="background-image" src={props.flowersWhite} alt="background"/>
             <div id="square-back"/>
             <div id="square-back-2"/>
             <div className="shape-box about-hex">

@@ -86,23 +86,23 @@
 }
 
 .home-position #hex-grey, .home-position #hex-smaller {
-    background-color: rgb(25,28,31);
+    background-color: rgb(50,67,76);
 }
 
 .home-position #hex-grey::before {
-    border-bottom: 42px solid rgb(25,28,31);
+    border-bottom: 42px solid rgb(50,67,76);
 }
 
 .home-position #hex-grey::after {
-    border-top: 42px solid rgb(25,28,31);
+    border-top: 42px solid rgb(50,67,76);
 }
 
 .home-position #hex-smaller::before {
-    border-bottom: 7px solid rgb(25,28,31);
+    border-bottom: 7px solid rgb(50,67,76);
 }
 
 .home-position #hex-smaller::after {
-    border-top: 7px solid rgb(25,28,31);
+    border-top: 7px solid rgb(50,67,76);
 }
 
 .name-box {
@@ -189,7 +189,7 @@
     height: 0;
     top: -12%;
     left: -5%;
-    border-top: 42em solid rgb(26,29,32);
+    border-top: 42em solid rgb(50,67,76);
     border-right: 74em solid transparent;
     z-index: -2;
     animation: 1.5s ease-out 1 slideRight;
@@ -201,7 +201,7 @@
     height: 0;
     right: 0%;
     bottom: -13%;
-    border-bottom: 42em solid rgb(26,29,32);
+    border-bottom: 42em solid rgb(50,67,76);
     border-left: 74em solid transparent;
     animation: 1.5s ease-out 1 slideLeft;
 }

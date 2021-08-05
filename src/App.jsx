@@ -21,6 +21,10 @@ import pixelRunner from './images/pixel-runner-desktop.png'
 import gameOfLife from './images/game-of-life-desktop.png'
 import cardQR from './images/card-qr2.png'
 import sealSig from './images/seal-sig.png'
+import backgroundWhite from './images/background-white.png'
+import backgroundHex from './images/background-hex.png'
+import flowers from './images/flowers.png'
+import flowersWhite from './images/flowers-white.png'
 
 export const App = () => {
     return (
@@ -31,7 +35,14 @@ export const App = () => {
             />
             <Route
                 path="/about"
-                render={() => <About resume={resume}/>}
+                render={() => <About 
+                        resume={resume}
+                        backgroundWhite={backgroundWhite}
+                        backgroundHex={backgroundHex}
+                        flowers={flowers}
+                        flowersWhite={flowersWhite}
+                    />
+                }
             />
             <Route
                 path="/projects"

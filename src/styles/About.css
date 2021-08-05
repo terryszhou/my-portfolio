@@ -244,54 +244,67 @@ label {
 }
 
 .about-hex #hex-grey, .about-hex #hex-smaller {
-    background-color: rgb(25,28,31);
+    background-color: rgb(50,67,76);
 }
 
 .about-hex #hex-grey::before {
-    border-bottom: 42px solid rgb(25,28,31);
+    border-bottom: 42px solid rgb(50,67,76);
 }
 
 .about-hex #hex-grey::after {
-    border-top: 42px solid rgb(25,28,31);
+    border-top: 42px solid rgb(50,67,76);
 }
 
 .about-hex #hex-smaller::before {
-    border-bottom: 7px solid rgb(25,28,31);
+    border-bottom: 7px solid rgb(50,67,76);
 }
 
 .about-hex #hex-smaller::after {
-    border-top: 7px solid rgb(25,28,31);
+    border-top: 7px solid rgb(50,67,76);
 }
 
 #square-back {
     position: fixed;
-    background-color: rgb(26,29,32);
+    background-color: rgb(50,67,76);
     top: -20%;
     left: -15%;
     width: 500px;
     height: 1200px;
     z-index: -2;
-    animation: 1.5s ease-out 1 slideRight;
+    transform: skew(8deg);
+    animation: 1.5s ease-out 1 slideRightSkew;
 }
 
 #square-back-2 {
     position: fixed;
-    background-color: rgb(26,29,32);
+    background-color: rgb(50,67,76);
     top: -20%;
     right: -15%;
     width: 500px;
     height: 1200px;
     z-index: -2;
-    animation: 1.5s ease-out 1 slideLeft;
+    transform: skew(-8deg);
+    animation: 1.5s ease-out 1 slideLeftSkew;
 }
 
-@keyframes slideLeft {
+@keyframes slideLeftSkew {
     0% {
-        transform: translateX(100%);
+        transform: skew(-8deg) translateX(100%);
         opacity: 0
     }
     100% {
-        transform: translateX(0);
+        transform: skew(-8deg) translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes slideRightSkew {
+    0% {
+        transform: skew(8deg) translateX(-100%);
+        opacity: 0
+    }
+    100% {
+        transform: skew(8deg) translateX(0);
         opacity: 100%;
     }
 }

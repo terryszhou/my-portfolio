@@ -7,6 +7,16 @@ body {
     padding: 10px;
 }
 
+.background-image {
+    width: 90%;
+    position: fixed;
+    z-index: -2;
+    top: -37%;
+    left: 5.1%;
+    opacity: 20%;
+    animation: 2s ease-in 1 backFade;
+}
+
 .navbar-dark {
     box-shadow: 0 5px 5px 8px black;
 }
@@ -317,5 +327,13 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
         transform: rotate(0deg);
     } to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes backFade {
+    from {
+        opacity: 0%;
+    } to {
+        opacity: 20%;
     }
 }
