@@ -3,6 +3,7 @@ export const Contact = (props) => {
         <div className="container pt-3">
             <div id="square-back"/>
             <div id="square-back-2"/>
+            <img className="background-image" src={props.flowersWhite} alt="background"/>
             <div className="shape-box about-hex">
                 <div id="hex-outer"/>
                 <div id="hex-grey"/>

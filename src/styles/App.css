@@ -10,7 +10,7 @@ body {
 .background-image {
     width: 90%;
     position: fixed;
-    z-index: -2;
+    z-index: -3;
     top: -37%;
     left: 5.1%;
     opacity: 20%;

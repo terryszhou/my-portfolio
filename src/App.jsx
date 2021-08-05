@@ -13,7 +13,7 @@ import { Nav } from './components/Nav'
 import { Social } from './components/Social'
 
 import resume from './static/terryzhou-resume.pdf'
-import glasses from './images/glasses.jpeg'
+import headshot from './images/headshot2.png'
 import catCrawlerDesktop from './images/cat-crawler-desktop.png'
 import pokemap from './images/pokemap-desktop.png'
 import totemize from './images/totemize-mobile.png'
@@ -31,7 +31,11 @@ export const App = () => {
         <Router>
             <Route
                 exact path="/"
-                render={() => <Home glasses={glasses}/>}
+                render={() => <Home 
+                        headshot={headshot}
+                        flowersWhite={flowersWhite}
+                    />
+                }
             />
             <Route
                 path="/about"
@@ -61,6 +65,7 @@ export const App = () => {
                 render={() => <Contact
                         resume={resume}
                         cardQR={cardQR}
+                        flowersWhite={flowersWhite}
                     />
                 }
             />

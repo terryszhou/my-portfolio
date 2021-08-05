@@ -1,6 +1,7 @@
 export const Home = (props) => {
     return (
         <div className="container pt-3">
+            <img className="background-image" src={props.flowersWhite} alt="background"/>
             <div id="test-back"/>
             <div id="test-back-2"/>
             <div className="shape-box home-position">
@@ -24,7 +25,7 @@ export const Home = (props) => {
                 <div id="hex-home-outer"/>
                 <div id="hex-home-grey"/>
                 <div id="hex-home">
-                    <img className="home-pic" src={props.glasses} alt="glasses"/>
+                    <img className="home-pic" src={props.headshot} alt="glasses"/>
                 </div>
             </div>
         </div>
