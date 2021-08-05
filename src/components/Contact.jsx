@@ -21,30 +21,30 @@ export const Contact = (props) => {
                 <fieldset className="about-field">
                     <div className="contact-box">
                         <a href="mailto:terryszhou@gmail.com" target="_blank" rel="noreferrer">
-                            <div className="contact-icon fas fa-envelope">
+                            <i className="contact-icon fas fa-envelope">
                                 <p>terryszhou@gmail.com</p>
-                            </div>
+                            </i>
                         </a>
                     </div>
                     <div className="contact-box">
                         <a href="https://github.com/terryszhou" target="_blank" rel="noreferrer">
-                            <div className="contact-icon fab fa-github">
+                            <i className="contact-icon fab fa-github">
                                 <p>github.com/terryszhou</p>
-                            </div>
+                            </i>
                         </a>
                     </div>
                     <div className="contact-box">
                         <a href="https://www.linkedin.com/in/terryszhou/" target="_blank" rel="noreferrer">
-                            <div className="contact-icon fab fa-linkedin">
+                            <i className="contact-icon fab fa-linkedin">
                                 <p>linkedin.com/in/terryszhou/</p>
-                            </div>
+                            </i>
                         </a>
                     </div>
                     <div className="contact-box">
                         <a href={props.resume} target="_blank" rel="noreferrer">
-                            <div className="contact-icon far fa-file">
+                            <i className="contact-icon far fa-file">
                                 <p>(Here's my resume again)</p>
-                            </div>
+                            </i>
                         </a>
                     </div>
                 </fieldset>

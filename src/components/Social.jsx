@@ -4,34 +4,34 @@ export const Social = (props) => {
             <img id="seal" src={props.sealSig} alt="seal"/>
             <div className="social">
                 <a href="https://www.linkedin.com/in/terryszhou/" target="_blank" rel="noreferrer">
-                    <div className="icon fab fa-linkedin">
+                    <i className="icon fab fa-linkedin">
                         <p className="tip-text">LinkedIn</p>
-                    </div>
+                    </i>
                 </a>
                 <a href="https://github.com/terryszhou" target="_blank" rel="noreferrer">
-                    <div className="icon fab fa-github">
+                    <i className="icon fab fa-github">
                         <p className="tip-text">GitHub</p>
-                    </div>
+                    </i>
                 </a>
                 <a href="https://codepen.io/terryszhou" target="_blank" rel="noreferrer">
-                    <div className="icon fab fa-codepen">
+                    <i className="icon fab fa-codepen">
                         <p className="tip-text">CodePen</p>
-                    </div>
+                    </i>
                 </a>
                 <a href="https://instagram.com/terry.s.zhou" target="_blank" rel="noreferrer">
-                    <div className="icon fab fa-instagram">
+                    <i className="icon fab fa-instagram">
                         <p className="tip-text">Instagram</p>
-                    </div>
+                    </i>
                 </a>
                 <a href="mailto:terryszhou@gmail.com" target="_blank" rel="noreferrer">
-                    <div className="icon fas fa-envelope">
+                    <i className="icon fas fa-envelope">
                         <p className="tip-text">Email</p>
-                    </div>
+                    </i>
                 </a>
                 <a href={props.resume} target="_blank" rel="noreferrer">
-                    <div className="icon far fa-file">
+                    <i className="icon far fa-file">
                         <p className="tip-text">Resume</p>
-                    </div>
+                    </i>
                 </a>
             </div>
         </>

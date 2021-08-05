@@ -186,6 +186,13 @@ label {
 
 .key-icon {
     font-size: 48px;
+    transition-duration: 0.3s;
+}
+
+.key-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.8);
+    transition-duration: 0.3s;
 }
 
 .card {
@@ -217,4 +224,15 @@ label {
     font-weight: bold;
     color: rgb(220,220,220);
     margin-bottom: 100px;
+}
+
+.key-icon:hover .tip-text {
+    visibility: visible;
+}
+
+.key-icon-tip {
+    top: 30%;
+    left: -20px;
+    width: 85px;
+    opacity: 90%;
 }

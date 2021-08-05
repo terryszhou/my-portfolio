@@ -36,25 +36,28 @@ export const App = () => {
             <Route
                 path="/projects"
                 render={() => <Projects
-                    catCrawlerDesktop={catCrawlerDesktop}
-                    pokemap={pokemap}
-                    totemize={totemize}
-                    pixelRunner={pixelRunner}
-                    gameOfLife={gameOfLife}
-                />}
+                        catCrawlerDesktop={catCrawlerDesktop}
+                        pokemap={pokemap}
+                        totemize={totemize}
+                        pixelRunner={pixelRunner}
+                        gameOfLife={gameOfLife}
+                    />
+
+                }
             />
             <Route
                 path="/contact"
                 render={() => <Contact
-                    resume={resume}
-                    cardQR={cardQR}
-                />}
+                        resume={resume}
+                        cardQR={cardQR}
+                    />
+                }
             />
-            <Nav />
             <Social 
                 resume={resume}
                 sealSig={sealSig}
             />
+            <Nav />
         </Router>
     )
 }

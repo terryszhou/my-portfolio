@@ -35,6 +35,12 @@ body {
     align-items: center;
     border-radius: 30px;
     box-shadow: 2px 2px 2px black;
+    transition-duration: 0.3s;
+}
+
+.social:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
 }
 
 .icon {
