@@ -147,11 +147,12 @@
 }
 
 #title {
+    font-size: 28px;
     position: relative;
     text-align: center;
     height: 60px;
-    top: 13.3vh;
-    left: 16.2vw;
+    top: 14vh;
+    left: 16.6vw;
     width: 300px;
     padding-top: 10px;
     padding-left: 10px;

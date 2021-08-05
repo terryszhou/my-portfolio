@@ -1,6 +1,7 @@
 .shape-box {
     position: relative;
     margin-top: 50px;
+    margin-bottom: 200px;
 }
 
 .shape-box:hover #hex-gold {
