@@ -21,6 +21,7 @@ import pokemap from './images/pokemap-desktop.png'
 import totemize from './images/totemize-mobile.png'
 import pixelRunner from './images/pixel-runner-desktop.png'
 import gameOfLife from './images/game-of-life-desktop.png'
+import nidoking from './images/nidoking.png'
 import cardQR from './images/card-qr2.png'
 import sealSig from './images/seal-sig.png'
 import flowersWhite from './images/flowers-white.png'
@@ -42,6 +43,7 @@ export const App = () => {
                     <About 
                         resume={resume}
                         flowersWhite={flowersWhite}
+                        nidoking={nidoking}
                     />}
             />
             <Route

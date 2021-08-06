@@ -31,65 +31,66 @@
     box-shadow: 0px 12px 12px -12px black;
 }
 
-.question-text {
+.question-text, .answer-text {
     position: relative;
     display: inline-block;
     padding: 10px;
     text-align: left;
     font-weight: bold;
     max-width: 250px;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+}
+
+.question-text {
     background-color: rgb(52,58,64);
     color: rgb(220,220,220);
-    border-radius: 15px;
     margin-top: 10px;
     margin-right: 20vw;
 }
 
-.question-text::before {
+.answer-text {
+    background-color: rgb(220,220,220);
+    color: rgb(52,58,64);
+}
+
+.question-text::before, .answer-text::before {
     position: absolute;
     content:"";
     width: 0;
     height: 0;
     bottom: -15px;
+}
+
+.question-text::before {
     border-right: 30px solid transparent;
     border-top: 25px solid rgb(52,58,64);
+}
+
+.answer-text::before {
+    right: 10px;
+    border-left: 30px solid transparent;
+    border-top: 25px solid rgb(220,220,220);
 }
 
 .answer-box {
     float: right;
 }
 
-.answer-text {
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    text-align: right;
-    font-weight: bold;
-    max-width: 250px;
-    background-color: rgb(220,220,220);
-    color: rgb(52,58,64);
-    border-radius: 15px;
+.question-text:hover, .answer-text:hover {
+    transform: scale(1.05);
+    filter: brightness(1.5);
+    transition-duration: 0.2s;
 }
 
-.answer-text::before {
-    position: absolute;
-    content:"";
-    width: 0;
-    height: 0;
-    bottom: -15px;
-    right: 10px;
-    border-left: 30px solid transparent;
-    border-top: 25px solid rgb(220,220,220);
-}
-
-.table-card {
-    border-radius: 15px;
-    background-color: rgb(52,58,64);
-    margin-bottom: 50px;
+.pokemon-sprite {
+    width: 80px;
+    margin-bottom: 25px;
 }
 
 .table-responsive {
     border-radius: 15px;
+    margin-bottom: 50px;
     width: 60vw;
     border: 2px solid goldenrod;
     box-shadow: 2px 2px 2px 2px black;
@@ -146,6 +147,10 @@
 
     .content-box-outer::after {
         right: -23%;
+    }
+
+    .question-text, .answer-text {
+        font-size: 12px;
     }
 
     .key-icon {

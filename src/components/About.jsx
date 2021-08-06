@@ -24,37 +24,50 @@ export const About = (props) => {
                     <h3 className="content-box-heading mb-3 ">Get to Know Me</h3>
                     <fieldset className="content-field">
                         <div className="question-box">
-                            <p className="question-text">What made you want to become a software developer?</p>
+                            <p className="question-text">What do you love most about software development?</p>
                         </div>
                         <div className="answer-box">
-                            <p className="answer-text">This is a test answer.</p>
-                        </div>
-                        <div className="question-box">
-                            <p className="question-text">What do you believe are a coder's most important skills?</p>
-                        </div>
-                        <div className="answer-box">
-                            <p className="answer-text">This is a test answer.</p>
+                            <p className="answer-text">The creative blend of freedom and structure. A good piece of code is efficient, elegant, and eminently practical.</p>
                         </div>
                         <div className="question-box">
                             <p className="question-text">What was your previous occupation?</p>
                         </div>
                         <div className="answer-box">
-                            <p className="answer-text">This is a test answer.</p>
+                            <p className="answer-text">I've worked in both fine dining and real estate. Both professions taught me a lot about teamwork and negotiation, but nothing beats the feeling of cracking a tough coding problem!</p>
                         </div>
                         <div className="question-box">
-                            <p className="question-text">What do you like to do in your spare time?</p>
+                            <p className="question-text">What are your most important professional values?</p>
                         </div>
                         <div className="answer-box">
-                            <p className="answer-text">This is a test answer.</p>
+                            <p className="answer-text">Honesty, communication, and a constant drive to learn and improve.</p>
+                        </div>
+                        <div className="question-box">
+                            <p className="question-text">What are your top hobbies?</p>
+                        </div>
+                        <div className="answer-box">
+                            <p className="answer-text">When I'm not coding, I'm probably reading/writing science-fiction and fantasy stories, or rock climbing at my local gym. I also make a mean stir-fry!</p>
+                        </div>
+                        <div className="question-box">
+                            <p className="question-text">Favourite Pokémon?</p>
+                        </div>
+                        <div className="answer-box">
+                            <img className="pokemon-sprite" src={props.nidoking} alt="nidoking"/>
+                            <p className="answer-text">Nidoking!</p>
+                        </div>
+                        <div className="question-box">
+                            <p className="question-text">Okay, seriously...what's with the hexagons??</p>
+                        </div>
+                        <div className="answer-box">
+                            <p className="answer-text">Because hexagons are the bestagons, obviously! I think they evoke both simplicity and industriousness—like me!</p>
                         </div>
                     </fieldset>
                 </div>
                 <div className="content-box">
                     <h3 className="content-box-heading">Key Skills</h3>
-                    <div className="table-card">
-                        <div className="table-responsive">
-                            <table className="table table-striped table-dark table-borderless">
-                                <tbody>
+                    <div className="table-responsive">
+                        <table className="table table-striped table-dark table-borderless">
+                            <tbody>
+                                <tr>
                                     <th>
                                         <i className="key-icon fab fa-python" style={{color: "rgb(54,113,158"}}>
                                             <p className="tip-text key-icon-tip">Python</p>
@@ -85,9 +98,9 @@ export const About = (props) => {
                                             <p className="tip-text key-icon-tip">CSS</p>
                                         </i>
                                     </th>
-                                </tbody>
-                            </table>
-                        </div>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 <div className="content-box">
