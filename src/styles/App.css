@@ -17,6 +17,30 @@ body {
     animation: 2s ease-in 1 backFade;
 }
 
+#skew-bg-left {
+    position: fixed;
+    background-color: rgb(50,67,76);
+    top: -20%;
+    left: -15%;
+    width: 500px;
+    height: 1200px;
+    z-index: -2;
+    transform: skew(8deg);
+    animation: 1.4s ease-out 1 slideRightSkew;
+}
+
+#skew-bg-right {
+    position: fixed;
+    background-color: rgb(50,67,76);
+    top: -20%;
+    right: -15%;
+    width: 500px;
+    height: 1200px;
+    z-index: -2;
+    transform: skew(-8deg);
+    animation: 1.4s ease-out 1 slideLeftSkew;
+}
+
 .hex-box-other {
     animation: 1.8s ease-out 1 slideRight;
 }
@@ -389,6 +413,16 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
 
     #qrcode {
         width: 160px;
+    }
+
+    #skew-bg-left {
+        transform: skew(8deg);
+        left: -45%;
+    }
+
+    #skew-bg-right {
+        transform: skew(-8deg);
+        right: -45%;
     }
 }
 
