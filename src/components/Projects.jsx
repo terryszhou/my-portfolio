@@ -2,8 +2,8 @@ export const Projects = (props) => {
     return (
         <div className="container pt-1">
             <img className="bg-image" src={props.flowersWhite} alt="background"/>
-            <div id="project-back"/>
-            <div id="project-back-2"/>
+            <div id="project-bg-left"/>
+            <div id="project-bg-right"/>
             <div className="hex-box-main hex-box-other">
                 <div id="hex-ring-lg"/>
                 <div id="hex-greyspace-lg"/>
@@ -18,12 +18,12 @@ export const Projects = (props) => {
                 </div>
                 <h2>Projects</h2>
             </div>
-            <div className="project-wrapper">
+            <div className="project-box">
                 <div className="project-hex" id="project-1">
                     <div className="project-hex-2"/>
                     <div className="project-hex-3"/>
                     <img className="project-pic" src={props.catCrawlerDesktop} alt="cat-crawler"/>
-                    <div className="desc">
+                    <div className="project-desc">
                         <h3>Cat Crawler</h3>
                         <p className="project-about">Dungeon crawler-style video game featuring WASD controls and randomly generated enemies.</p>
                         <p className="project-skills">HTML5 Canvas API, JavaScript, CSS</p>
@@ -38,7 +38,7 @@ export const Projects = (props) => {
                     <div className="project-hex-2"/>
                     <div className="project-hex-3"/>
                     <img className="project-pic" src={props.pokemap} alt="pokemap"/>
-                    <div className="desc">
+                    <div className="project-desc">
                         <h3>PokéMap</h3>
                         <p className="project-about">Full stack app that combines a fully functioning Pokédex with a map of the Kanto region.</p>
                         <p className="project-skills">Express, React, Axios, PostgreSQL, Sequelize, Bootstrap</p>
@@ -53,7 +53,7 @@ export const Projects = (props) => {
                     <div className="project-hex-2"/>
                     <div className="project-hex-3"/>
                     <img className="project-pic" src={props.totemize} alt="totemize"/>
-                    <div className="desc">
+                    <div className="project-desc">
                         <h3>Totemize</h3>
                         <p className="project-about">Full stack MERN festival app that allows users to login, create events, and find their friends on a map.</p>
                         <p className="project-skills">Express, React, Axios, MongoDB, Mongoose, Bootstrap, JWT</p>
@@ -70,7 +70,7 @@ export const Projects = (props) => {
                     <div className="project-hex-2"/>
                     <div className="project-hex-3"/>
                     <img className="project-pic" src={props.pixelRunner} alt="pixel-runner"/>
-                    <div className="desc">
+                    <div className="project-desc">
                         <h3>Pixel Runner</h3>
                         <p className="project-about">One-day sprint based on Pygame tutorial. Improved with full arrow key movement, scrolling backgrounds, and various bug fixes.</p>
                         <p className="project-skills">Python, Pygame</p>
@@ -83,7 +83,7 @@ export const Projects = (props) => {
                     <div className="project-hex-2"/>
                     <div className="project-hex-3"/>
                     <img className="project-pic" src={props.gameOfLife} alt="game-of-life"/>
-                    <div className="desc">
+                    <div className="project-desc">
                         <h3>Python of Life</h3>
                         <p className="project-about">Three-day sprint based on Conway's Game of Life. Features three alternate rulesets and full user input.</p>
                         <p className="project-skills">Python, Pygame</p>

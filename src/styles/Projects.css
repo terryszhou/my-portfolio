@@ -1,6 +1,29 @@
-.project-wrapper {
+#project-bg-left {
+    position: fixed;
+    width: 0;
+    height: 0;
+    top: -20%;
+    left: -20%;
+    border-top: 1000px solid rgb(50,67,76);
+    border-right: 1000px solid transparent;
+    z-index: -2;
+    animation: 1.5s ease-out 1 slideRight;
+}
+
+#project-bg-right {
+    position: fixed;
+    width: 0;
+    height: 0;
+    bottom: -20%;
+    right: -10%;
+    border-bottom: 1000px solid rgb(50,67,76);
+    border-left: 1000px solid transparent;
+    z-index: -2;
+    animation: 1.5s ease-out 1 slideLeft;
+}
+
+.project-box {
     position: relative;
-    justify-content: center;
     margin-top: 12vh;
     margin-left: -9vw;
     margin-bottom: 160vh;
@@ -29,7 +52,7 @@
     bottom: -120px;
 }
 
-.project-hex:hover .desc {
+.project-hex:hover .project-desc {
     opacity: 100%;
     transition-duration: 0.3s;
 }
@@ -142,7 +165,6 @@
     border-top: 120px solid rgb(117,77,180);
 }
 
-
 #project-4 {
     position: absolute;
     top: 85.4vh;
@@ -174,7 +196,7 @@
 }
 
 @media (max-width:700px) {
-    .project-wrapper {
+    .project-box {
         margin-left: -14vw;
         padding-bottom: 135vh;
     }
@@ -198,25 +220,23 @@
     }
 }
 
-.desc {
-    position: absolute;
-    top: -60px;
-    opacity: 0%;
-    transition-duration: 0.3s;
-}
-
-.desc h3 {
-    color: gold;
-}
-
 .project-pic {
     width: 120%;
     transition-duration: 0.3s;
     position: absolute;
     left: -10%;
     top: -10%;
-    /* -webkit-filter: drop-shadow(0 0 1rem white);
-    filter: drop-shadow(0 0 1rem white); */
+}
+
+.project-desc {
+    position: absolute;
+    top: -60px;
+    opacity: 0%;
+    transition-duration: 0.3s;
+}
+
+.project-desc h3 {
+    color: gold;
 }
 
 .project-about {
@@ -234,16 +254,15 @@
 }
 
 .project-links {
-    text-align: center;
-    color: rgb(220,220,220);
     margin: 10% 10%;
+    color: goldenrod;
+    text-align: center;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .project-links a {
-    color: rgb(220,220,220);
     color: goldenrod;
-    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -251,36 +270,12 @@
     border-bottom: 2px solid goldenrod;
 }
 
-#project-back {
-    position: fixed;
-    width: 0;
-    height: 0;
-    top: -20%;
-    left: -20%;
-    border-top: 1000px solid rgb(50,67,76);
-    border-right: 1000px solid transparent;
-    z-index: -2;
-    animation: 1.5s ease-out 1 slideRight;
-}
-
-#project-back-2 {
-    position: fixed;
-    width: 0;
-    height: 0;
-    bottom: -20%;
-    right: -10%;
-    border-bottom: 1000px solid rgb(50,67,76);
-    border-left: 1000px solid transparent;
-    z-index: -2;
-    animation: 1.5s ease-out 1 slideLeft;
-}
-
 @media (max-width: 700px) {
-    #project-back {
+    #project-bg-left {
         left: -60%;
     }
 
-    #project-back-2 {
-        right: -50%;
+    #project-bg-right {
+        right: -60%;
     }
 }
