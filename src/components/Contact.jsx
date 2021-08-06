@@ -1,10 +1,10 @@
 export const Contact = (props) => {
     return (
         <div className="container pt-3">
-            <div id="square-back"/>
-            <div id="square-back-2"/>
+            <div id="skew-bg-left"/>
+            <div id="skew-bg-right"/>
             <img className="bg-image" src={props.flowersWhite} alt="background"/>
-            <div className="hex-box-main about-hex">
+            <div className="hex-box-main hex-box-other">
                 <div id="hex-ring-lg"/>
                 <div id="hex-greyspace-lg"/>
                 <div id="hex-gold">
@@ -18,8 +18,8 @@ export const Contact = (props) => {
                 </div>
                 <h2>Contact</h2>
             </div>
-            <div className="about-wrapper about-corners">
-                <h3 className="mb-3 about-header">Let's Get in Touch!</h3>
+            <div className="about-box about-corners">
+                <h3 className="mb-3 about-box-heading">Let's Get in Touch!</h3>
                 <div className="about-corners-outer"/>
                 <fieldset className="about-field">
                     <div className="contact-box">

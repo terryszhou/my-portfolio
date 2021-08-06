@@ -17,6 +17,10 @@ body {
     animation: 2s ease-in 1 backFade;
 }
 
+.hex-box-other {
+    animation: 1.8s ease-out 1 slideRight;
+}
+
 .navbar-dark {
     box-shadow: 0 5px 5px 8px black;
 }
@@ -314,6 +318,10 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
 }
 
 @media (max-width: 700px) {
+    .hex-box-other {
+        left: -7%;
+    }
+
     #contact-form-outer {
         width: 108.5%;
     }
@@ -324,14 +332,6 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
 
     #qrcode {
         width: 160px;
-    }
-}
-
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    } to {
-        transform: rotate(360deg);
     }
 }
 

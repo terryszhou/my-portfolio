@@ -2,9 +2,9 @@ export const About = (props) => {
     return (
         <div className="container pt-3">
             <img className="bg-image" src={props.flowersWhite} alt="background"/>
-            <div id="square-back"/>
-            <div id="square-back-2"/>
-            <div className="hex-box-main about-hex">
+            <div id="skew-bg-left"/>
+            <div id="skew-bg-right"/>
+            <div className="hex-box-main hex-box-other">
                 <div id="hex-ring-lg"/>
                 <div id="hex-greyspace-lg"/>
                 <div id="hex-gold">
@@ -19,9 +19,9 @@ export const About = (props) => {
                 <h2>About</h2>
             </div>
             <div className="d-flex flex-column">
-                <div className="about-wrapper about-corners">
-                    <h3 className="mb-3 about-header">Get to Know Me</h3>
-                    <div className="about-corners-outer"/>
+                <div className="about-box">
+                    <div className="about-box-outer"/>
+                    <h3 className="about-box-heading mb-3 ">Get to Know Me</h3>
                     <fieldset className="about-field">
                         <div className="question-wrapper">
                             <p className="question-text">What made you want to become a software developer?</p>
@@ -49,8 +49,8 @@ export const About = (props) => {
                         </div>
                     </fieldset>
                 </div>
-                <div className="about-wrapper">
-                    <h3 className="about-header">Key Skills</h3>
+                <div className="about-box">
+                    <h3 className="about-box-heading">Key Skills</h3>
                     <div className="card">
                         <div className="table-responsive">
                             <table className="table table-striped table-dark table-borderless">
@@ -90,8 +90,8 @@ export const About = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="about-wrapper">
-                    <h3 className="about-header">Full Toolbox</h3>
+                <div className="about-box">
+                    <h3 className="about-box-heading">Full Toolbox</h3>
                     <div className="card">
                         <div className="table-responsive">
                             <table className="table table-striped table-dark table-borderless">
@@ -135,7 +135,9 @@ export const About = (props) => {
                             </table>
                         </div>
                     </div>
-                    <h3 className="about-header">Want to Know More?</h3>
+                </div>
+                <div className="about-box">
+                    <h3 className="about-box-heading">Want to Know More?</h3>
                     <a href={props.resume} target="_blank" rel="noreferrer">
                         <div className="icon fas fa-download text-warning"/>
                     </a>

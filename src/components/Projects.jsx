@@ -4,7 +4,7 @@ export const Projects = (props) => {
             <img className="bg-image" src={props.flowersWhite} alt="background"/>
             <div id="project-back"/>
             <div id="project-back-2"/>
-            <div className="hex-box-main about-hex">
+            <div className="hex-box-main hex-box-other">
                 <div id="hex-ring-lg"/>
                 <div id="hex-greyspace-lg"/>
                 <div id="hex-gold">

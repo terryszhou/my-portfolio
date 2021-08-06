@@ -29,41 +29,40 @@ export const App = () => {
         <Router>
             <Route
                 exact path="/"
-                render={() => <Home 
+                render={() => 
+                    <Home 
                         headshot={headshot}
                         flowersWhite={flowersWhite}
-                    />
-                }
+                    />}
             />
             <Route
                 path="/about"
-                render={() => <About 
+                render={() => 
+                    <About 
                         resume={resume}
                         flowersWhite={flowersWhite}
-                    />
-                }
+                    />}
             />
             <Route
                 path="/projects"
-                render={() => <Projects
+                render={() => 
+                    <Projects
                         flowersWhite={flowersWhite}
                         catCrawlerDesktop={catCrawlerDesktop}
                         pokemap={pokemap}
                         totemize={totemize}
                         pixelRunner={pixelRunner}
                         gameOfLife={gameOfLife}
-                    />
-
-                }
+                    />}
             />
             <Route
                 path="/contact"
-                render={() => <Contact
+                render={() => 
+                    <Contact
                         resume={resume}
                         cardQR={cardQR}
                         flowersWhite={flowersWhite}
-                    />
-                }
+                    />}
             />
             <Social 
                 resume={resume}

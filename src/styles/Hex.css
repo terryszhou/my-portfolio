@@ -27,78 +27,34 @@
     animation: rotation 2s linear infinite;
 }
 
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    } to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes counterRotation {
-    from {
-        transform: rotate(0deg);
-    } to {
-        transform: rotate(-360deg);
-    }
-}
-
-.hex-box-main h2 {
+#hex-ring-lg {
     position: absolute;
-    background: rgb(26,29,32);
-    padding-left: 10px;
-    padding-right: 10px;
-    bottom: -95px;
-    left: 120px;
-    text-shadow: 2px 2px 1px rgb(70,87,96);
+    width: 150px;
+    height: 86px;
+    background: goldenrod;
+    top: -14px;
+    left: -25px;
+    z-index: -2;
+    transition-duration: 0.3s;
 }
 
-.hex-box-main h2::before {
+#hex-ring-lg::before, #hex-ring-lg::after {
     position: absolute;
     content: "";
     width: 0;
     height: 0;
-    left: -1.75rem;
-    border-left: 28px solid transparent;
-    border-top: 38px solid rgb(26,29,32);
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
 }
 
-.hex-box-main h2::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    right: -1.75rem;
-    border-right: 28px solid transparent;
-    border-bottom: 38px solid rgb(26,29,32);
+#hex-ring-lg::before {
+    top: -45px;
+    border-bottom: 45px solid goldenrod;
 }
 
-#hex-gold {
-    position: absolute;
-    width: 100px;
-    height: 60px;
-    background: gold;
-    z-index: 1;
-}
-
-#hex-gold::before, #hex-gold::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-}
-
-#hex-gold::before {
-    top: -30px;
-    border-bottom: 30px solid gold;
-}
-
-#hex-gold::after {
-    bottom: -30px;
-    border-top: 30px solid gold;
-    z-index: -1;
+#hex-ring-lg::after {
+    bottom: -45px;
+    border-top: 45px solid goldenrod;
 }
 
 #hex-greyspace-lg {
@@ -130,34 +86,32 @@
     border-top: 42px solid rgb(50,67,76);
 }
 
-#hex-ring-lg {
+#hex-gold {
     position: absolute;
-    width: 150px;
-    height: 86px;
-    background: goldenrod;
-    top: -14px;
-    left: -25px;
-    z-index: -2;
-    transition-duration: 0.3s;
+    width: 100px;
+    height: 60px;
+    background: gold;
+    z-index: 1;
 }
 
-#hex-ring-lg::before, #hex-ring-lg::after {
+#hex-gold::before, #hex-gold::after {
     position: absolute;
     content: "";
     width: 0;
     height: 0;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
 }
 
-#hex-ring-lg::before {
-    top: -45px;
-    border-bottom: 45px solid goldenrod;
+#hex-gold::before {
+    top: -30px;
+    border-bottom: 30px solid gold;
 }
 
-#hex-ring-lg::after {
-    bottom: -45px;
-    border-top: 45px solid goldenrod;
+#hex-gold::after {
+    bottom: -30px;
+    border-top: 30px solid gold;
+    z-index: -1;
 }
 
 #hex-goldenrod {
@@ -275,4 +229,34 @@
     bottom: -7.2px;
     border-top: 7.2px solid gold;
     z-index: 1;
+}
+
+.hex-box-main h2 {
+    position: absolute;
+    background: rgb(26,29,32);
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: -95px;
+    left: 120px;
+    text-shadow: 2px 2px 1px rgb(70,87,96);
+}
+
+.hex-box-main h2::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: -1.75rem;
+    border-left: 28px solid transparent;
+    border-top: 38px solid rgb(26,29,32);
+}
+
+.hex-box-main h2::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: -1.75rem;
+    border-right: 28px solid transparent;
+    border-bottom: 38px solid rgb(26,29,32);
 }
