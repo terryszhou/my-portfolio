@@ -13,7 +13,7 @@ import { Nav } from './components/Nav'
 import { Social } from './components/Social'
 
 import resume from './static/terryzhou-resume.pdf'
-import headshot from './images/headshot3.png'
+import headshot from './images/headshot.png'
 import catCrawlerDesktop from './images/cat-crawler-desktop.png'
 import pokemap from './images/pokemap-desktop.png'
 import totemize from './images/totemize-mobile.png'
@@ -21,9 +21,6 @@ import pixelRunner from './images/pixel-runner-desktop.png'
 import gameOfLife from './images/game-of-life-desktop.png'
 import cardQR from './images/card-qr2.png'
 import sealSig from './images/seal-sig.png'
-import backgroundWhite from './images/background-white.png'
-import backgroundHex from './images/background-hex.png'
-import flowers from './images/flowers.png'
 import flowersWhite from './images/flowers-white.png'
 
 export const App = () => {
@@ -41,9 +38,6 @@ export const App = () => {
                 path="/about"
                 render={() => <About 
                         resume={resume}
-                        backgroundWhite={backgroundWhite}
-                        backgroundHex={backgroundHex}
-                        flowers={flowers}
                         flowersWhite={flowersWhite}
                     />
                 }

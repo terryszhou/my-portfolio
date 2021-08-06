@@ -256,7 +256,7 @@
     width: 0;
     height: 0;
     top: -20%;
-    left: -10%;
+    left: -20%;
     border-top: 1000px solid rgb(50,67,76);
     border-right: 1000px solid transparent;
     z-index: -2;
@@ -273,4 +273,14 @@
     border-left: 1000px solid transparent;
     z-index: -2;
     animation: 1.5s ease-out 1 slideLeft;
+}
+
+@media (max-width: 700px) {
+    #project-back {
+        left: -60%;
+    }
+
+    #project-back-2 {
+        right: -50%;
+    }
 }

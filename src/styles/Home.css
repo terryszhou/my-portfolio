@@ -80,29 +80,29 @@
     border-radius: 50%;
 }
 
-.home-position {
+.home-hex {
     top: 27.5vh;
     left: 3vw;
     animation: 1.5s ease-out 1 slideRight;
 }
 
-.home-position #hex-grey, .home-position #hex-smaller {
+.home-hex #hex-grey, .home-hex #hex-smaller {
     background-color: rgb(50,67,76);
 }
 
-.home-position #hex-grey::before {
+.home-hex #hex-grey::before {
     border-bottom: 42px solid rgb(50,67,76);
 }
 
-.home-position #hex-grey::after {
+.home-hex #hex-grey::after {
     border-top: 42px solid rgb(50,67,76);
 }
 
-.home-position #hex-smaller::before {
+.home-hex #hex-smaller::before {
     border-bottom: 7px solid rgb(50,67,76);
 }
 
-.home-position #hex-smaller::after {
+.home-hex #hex-smaller::after {
     border-top: 7px solid rgb(50,67,76);
 }
 
@@ -112,7 +112,7 @@
     animation: 1.5s ease-out 1 slideRight;
 }
 
-#first-name {
+#my-name {
     position: relative;
     text-align: center;
     text-shadow: 2px 2px 1px rgb(70,87,96);
@@ -125,7 +125,7 @@
     left: 20vw;
 }
 
-#first-name::before {
+#my-name::before {
     position: absolute;
     content: "";
     width: 0;
@@ -136,7 +136,7 @@
     border-top: 62px solid rgb(26,29,32);
 }
 
-#first-name::after {
+#my-name::after {
     position: absolute;
     content: "";
     width: 0;
@@ -184,7 +184,7 @@
     border-top: 60px solid rgb(220,220,220);
 }
 
-#test-back {
+#home-back {
     position: fixed;
     width: 0;
     height: 0;
@@ -196,7 +196,7 @@
     animation: 1.5s ease-out 1 slideRight;
 }
 
-#test-back-2 {
+#home-back-2 {
     position: fixed;
     width: 0;
     height: 0;
@@ -205,6 +205,54 @@
     border-bottom: 42em solid rgb(50,67,76);
     border-left: 74em solid transparent;
     animation: 1.5s ease-out 1 slideLeft;
+}
+
+@media (max-width: 700px) {
+    #home-back {
+        left: -50%;
+    }
+
+    #home-back-2 {
+        right: -40%;
+    }
+
+    .home-hex {
+        top: 0%;
+    }
+
+    .name-box {
+        left: -5%;
+        top: 20%;
+    }
+
+    #my-name {
+        font-size: 28px;
+        width: 200px;
+    }
+
+    #my-name::before {
+        border-top: 43px solid rgb(26,29,32);
+    }
+
+    #my-name::after {
+        border-bottom: 43px solid rgb(26,29,32);
+    }
+
+    #title {
+        font-size: 20px;
+        top: 110px;
+        left: 100px;
+        height: 45px;
+        width: 200px;
+    }
+
+    #title::before {
+        border-bottom: 45px solid rgb(220,220,220);
+    }
+
+    #title::after {
+        border-top: 45px solid rgb(220,220,220);
+    }
 }
 
 @keyframes fadeIn {

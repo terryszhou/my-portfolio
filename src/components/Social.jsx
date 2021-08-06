@@ -4,10 +4,18 @@ export const Social = (props) => {
             <div className="seal-box">
                 <img id="seal" src={props.sealSig} alt="seal"></img>
                 <div className="tip-text seal-tip">
-                    <p className="text-left" style={{marginLeft: "20px"}}>汉字: 周思佳</p>
-                    <p className="text-left" style={{marginLeft: "20px"}}>Pīnyīn: Zhōu Sījīa</p>
-                    <p className="text-left" style={{marginLeft: "20px"}}>Sī: (to) think</p>
-                    <p className="text-left" style={{marginLeft: "20px"}}>Jīa: (with) excellence & beauty</p>
+                    <p className="text-left" style={{marginLeft: "20px"}}>
+                        汉字: <span style={{color: "red"}}>周思佳</span>
+                    </p>
+                    <p className="text-left" style={{marginLeft: "20px"}}>
+                        Pīnyīn: <span style={{color: "red"}}>Zhōu Sījīa</span>
+                    </p>
+                    <p className="text-left" style={{marginLeft: "20px"}}>
+                        <span style={{color: "red"}}>Sī</span>: (to) think
+                    </p>
+                    <p className="text-left" style={{marginLeft: "20px"}}>
+                        <span style={{color: "red"}}>Jīa</span>: (with) excellence & beauty
+                    </p>
                 </div>
             </div>
             <div className="social">

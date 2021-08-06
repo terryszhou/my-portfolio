@@ -2,9 +2,9 @@ export const Home = (props) => {
     return (
         <div className="container pt-3">
             <img className="background-image" src={props.flowersWhite} alt="background"/>
-            <div id="test-back"/>
-            <div id="test-back-2"/>
-            <div className="shape-box home-position">
+            <div id="home-back"/>
+            <div id="home-back-2"/>
+            <div className="shape-box home-hex">
                 <div id="hex-outer"/>
                 <div id="hex-grey"/>
                 <div id="hex-gold">
@@ -18,7 +18,7 @@ export const Home = (props) => {
                 </div>
             </div>
             <div className="name-box">
-                <h1 id="first-name">Terry S. Zhou</h1>
+                <h1 id="my-name">Terry S. Zhou</h1>
                 <h2 id="title">Full Stack Developer</h2>
             </div>
             <div id="home-box">
