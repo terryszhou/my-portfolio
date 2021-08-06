@@ -211,7 +211,7 @@ label {
 .key-icon-tip {
     top: 30%;
     left: -20px;
-    width: 85px;
+    min-width: 85px;
     opacity: 90%;
 }
 
@@ -329,5 +329,14 @@ label {
 
     #square-back-2 {
         right: -45%;
+    }
+
+    .key-icon {
+        font-size: 36px;
+    }
+
+    .key-icon-tip {
+        font-size: 10px;
+        width: 70px;
     }
 }

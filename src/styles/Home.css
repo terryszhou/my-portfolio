@@ -220,8 +220,21 @@
         top: 0%;
     }
 
+    #hex-home-outer {
+        visibility: hidden;
+    }
+
+    #hex-home-grey {
+        visibility: hidden;
+    }
+
+    #hex-home {
+        top: 33%;
+        left: 52%;
+    }
+
     .name-box {
-        left: -5%;
+        left: -10%;
         top: 20%;
     }
 

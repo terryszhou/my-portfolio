@@ -46,6 +46,7 @@ body {
     border-radius: 30px;
     box-shadow: 2px 2px 2px black;
     transition-duration: 0.3s;
+    z-index: 2;
 }
 
 .social:hover {
