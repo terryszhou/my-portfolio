@@ -19,39 +19,39 @@ export const About = (props) => {
                 <h2>About</h2>
             </div>
             <div className="d-flex flex-column">
-                <div className="about-box">
-                    <div className="about-box-outer"/>
-                    <h3 className="about-box-heading mb-3 ">Get to Know Me</h3>
-                    <fieldset className="about-field">
-                        <div className="question-wrapper">
+                <div className="content-box">
+                    <div className="content-box-outer"/>
+                    <h3 className="content-box-heading mb-3 ">Get to Know Me</h3>
+                    <fieldset className="content-field">
+                        <div className="question-box">
                             <p className="question-text">What made you want to become a software developer?</p>
                         </div>
-                        <div className="answer-wrapper">
+                        <div className="answer-box">
                             <p className="answer-text">This is a test answer.</p>
                         </div>
-                        <div className="question-wrapper">
+                        <div className="question-box">
                             <p className="question-text">What do you believe are a coder's most important skills?</p>
                         </div>
-                        <div className="answer-wrapper">
+                        <div className="answer-box">
                             <p className="answer-text">This is a test answer.</p>
                         </div>
-                        <div className="question-wrapper">
+                        <div className="question-box">
                             <p className="question-text">What was your previous occupation?</p>
                         </div>
-                        <div className="answer-wrapper">
+                        <div className="answer-box">
                             <p className="answer-text">This is a test answer.</p>
                         </div>
-                        <div className="question-wrapper">
+                        <div className="question-box">
                             <p className="question-text">What do you like to do in your spare time?</p>
                         </div>
-                        <div className="answer-wrapper">
+                        <div className="answer-box">
                             <p className="answer-text">This is a test answer.</p>
                         </div>
                     </fieldset>
                 </div>
-                <div className="about-box">
-                    <h3 className="about-box-heading">Key Skills</h3>
-                    <div className="card">
+                <div className="content-box">
+                    <h3 className="content-box-heading">Key Skills</h3>
+                    <div className="table-card">
                         <div className="table-responsive">
                             <table className="table table-striped table-dark table-borderless">
                                 <tbody>
@@ -90,9 +90,9 @@ export const About = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="about-box">
-                    <h3 className="about-box-heading">Full Toolbox</h3>
-                    <div className="card">
+                <div className="content-box">
+                    <h3 className="content-box-heading">Full Toolbox</h3>
+                    <div className="table-card">
                         <div className="table-responsive">
                             <table className="table table-striped table-dark table-borderless">
                                 <tbody>
@@ -136,8 +136,8 @@ export const About = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="about-box">
-                    <h3 className="about-box-heading">Want to Know More?</h3>
+                <div className="content-box">
+                    <h3 className="content-box-heading">Want to Know More?</h3>
                     <a href={props.resume} target="_blank" rel="noreferrer">
                         <div className="icon fas fa-download text-warning"/>
                     </a>

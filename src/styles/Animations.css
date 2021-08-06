@@ -44,3 +44,25 @@
         opacity: 100%;
     }
 }
+
+@keyframes slideLeftSkew {
+    0% {
+        transform: skew(-8deg) translateX(100%);
+        opacity: 0
+    }
+    100% {
+        transform: skew(-8deg) translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes slideRightSkew {
+    0% {
+        transform: skew(8deg) translateX(-100%);
+        opacity: 0
+    }
+    100% {
+        transform: skew(8deg) translateX(0);
+        opacity: 100%;
+    }
+}

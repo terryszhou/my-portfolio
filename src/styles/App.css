@@ -21,6 +21,63 @@ body {
     animation: 1.8s ease-out 1 slideRight;
 }
 
+.content-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box-heading {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 300px;
+    background: rgb(220,220,220);
+    color: rgb(26,29,32);
+    text-shadow: 1px 1px 1px white;
+}
+
+.content-box-heading::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: -1.7rem;
+    border-left: 28px solid transparent;
+    border-bottom: 33px solid rgb(220,220,220);
+}
+
+.content-box-heading::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: -1.7rem;
+    border-right: 28px solid transparent;
+    border-top: 33px solid rgb(220,220,220);
+}
+
+.content-field {
+    position: relative;
+    border: 2px solid goldenrod;
+    border-radius: 15px;
+    margin: auto 20vw 10vh 20vw;
+    min-width: 48%;
+    padding: 10px;
+    background-color: rgb(26,29,32);
+    min-height: 380px;
+    max-height: 400px;
+    overflow: scroll;
+    transition-duration: 0.2s;
+}
+
+.content-field:hover {
+    transform: scale(1.04);
+    border-radius: 0;
+    transition-duration: 0.2s;
+}
+
 .navbar-dark {
     box-shadow: 0 5px 5px 8px black;
 }

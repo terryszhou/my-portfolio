@@ -18,10 +18,10 @@ export const Contact = (props) => {
                 </div>
                 <h2>Contact</h2>
             </div>
-            <div className="about-box about-corners">
-                <h3 className="mb-3 about-box-heading">Let's Get in Touch!</h3>
+            <div className="content-box about-corners">
+                <h3 className="mb-3 content-box-heading">Let's Get in Touch!</h3>
                 <div className="about-corners-outer"/>
-                <fieldset className="about-field">
+                <fieldset className="content-field">
                     <div className="contact-box">
                         <a href="mailto:terryszhou@gmail.com" target="_blank" rel="noreferrer">
                             <i className="contact-icon fas fa-envelope">
