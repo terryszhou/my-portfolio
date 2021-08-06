@@ -20,7 +20,10 @@ export const About = (props) => {
             </div>
             <div className="d-flex flex-column">
                 <div className="content-box">
-                    <div className="content-box-outer"/>
+                    <div id="content-box-outer"/>
+                    <div id="scroll-arrow">
+                        <p>Scroll</p>
+                    </div>
                     <h3 className="content-box-heading mb-3 ">Get to Know Me</h3>
                     <fieldset className="content-field">
                         <div className="question-box">
@@ -33,7 +36,7 @@ export const About = (props) => {
                             <p className="question-text">What was your previous occupation?</p>
                         </div>
                         <div className="answer-box">
-                            <p className="answer-text">I've worked in both fine dining and real estate. Both professions taught me a lot about teamwork and negotiation, but nothing beats the feeling of cracking a tough coding problem!</p>
+                            <p className="answer-text">I've worked in both fine dining 🥂 and real estate 🏠. Both professions taught me a lot about teamwork and negotiation, but nothing beats the feeling of cracking a tough coding problem!</p>
                         </div>
                         <div className="question-box">
                             <p className="question-text">What are your most important professional values?</p>
@@ -45,20 +48,22 @@ export const About = (props) => {
                             <p className="question-text">What are your top hobbies?</p>
                         </div>
                         <div className="answer-box">
-                            <p className="answer-text">When I'm not coding, I'm probably reading/writing science-fiction and fantasy stories, or rock climbing at my local gym. I also make a mean stir-fry!</p>
+                            <p className="answer-text">When I'm not coding, I'm probably reading/writing science-fiction 🤖 and fantasy 🐲 stories, or rock climbing at my local gym 💪🏽. I also make a mean stir-fry 🍲!</p>
                         </div>
                         <div className="question-box">
                             <p className="question-text">Favourite Pokémon?</p>
                         </div>
                         <div className="answer-box">
-                            <img className="pokemon-sprite" src={props.nidoking} alt="nidoking"/>
-                            <p className="answer-text">Nidoking!</p>
+                            <p className="answer-text">
+                                Nidoking!
+                                <img className="pokemon-sprite" src={props.nidoking} alt="nidoking"/>
+                            </p>
                         </div>
                         <div className="question-box">
                             <p className="question-text">Okay, seriously...what's with the hexagons??</p>
                         </div>
                         <div className="answer-box">
-                            <p className="answer-text">Because hexagons are the bestagons, obviously! I think they evoke both simplicity and industriousness—like me!</p>
+                            <p className="answer-text">Because hexagons are the bestagons, obviously! I think they evoke both simplicity ⎔ and industriousness 🐝—like me!</p>
                         </div>
                     </fieldset>
                 </div>
