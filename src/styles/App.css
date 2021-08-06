@@ -14,7 +14,7 @@ body {
     top: -37%;
     left: 5.1%;
     opacity: 20%;
-    animation: 2s ease-in 1 backFade;
+    animation: 2s ease-in 1 bgImageFade;
 }
 
 #skew-bg-left {
@@ -235,54 +235,6 @@ h3 {
     box-shadow: 2px 2px 2px 2px black;
 }
 
-.contact-box {
-    margin: 30px
-}
-
-.contact-icon {
-    position: relative;
-    color: goldenrod;
-    font-size: 48px;
-    transition-duration: 0.2s;
-}
-
-.contact-icon:hover {
-    color: gold;
-    transform: scale(1.2);
-    transition-duration: 0.2s;
-}
-
-.contact-icon p {
-    position: absolute;
-    top: 25%;
-    left: 120%;
-    color: rgb(220,220,220);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    width: 400px;
-}
-
-input:-webkit-autofill, input:-webkit-autofill:focus {
-    -webkit-text-fill-color: rgb(220,220,220);
-    -webkit-box-shadow: 0 0 0px 1000px rgb(52,58,64) inset;
-    box-shadow: 0 0 0px 1000px rgb(52,58,64) inset;
-    transition: background-color 5000s ease-in-out 0s;
-}
-
-.form-control {
-    border-color: grey;
-    background-color: rgb(52,58,64) !important;
-    color: white !important;
-    resize: none;
-    box-shadow: 2px 2px 2px black;
-}
-
-.form-control:focus {
-    border-color: rgb(255,0,0);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(255,0,0,0.6);
-}
-
 #hourglass {
     position: absolute;
     bottom: 15vh;
@@ -342,31 +294,6 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
     left: 34.5vw;
 }
 
-.qrbox p {
-    transition-duration: 0.3s;
-    color: rgb(220,220,220);
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 90px;
-}
-
-.qrbox:hover #qrcode {
-    transform: scale(1.1);
-    transition-duration: 0.3s;
-}
-
-.qrbox:hover p {
-    transform: translateY(-70px);
-    transition-duration: 0.3s;
-}
-
-#qrcode {
-    border: 10px solid rgb(26,29,32);
-    width: 200px;
-    border-radius: 35px;
-    transition-duration: 0.3s;
-}
-
 .seal-box {
     position: absolute;
     right: 2%;
@@ -403,18 +330,6 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
         left: -7%;
     }
 
-    #contact-form-outer {
-        width: 108.5%;
-    }
-
-    .qrbox {
-        left: 22vw;
-    }
-
-    #qrcode {
-        width: 160px;
-    }
-
     #skew-bg-left {
         transform: skew(8deg);
         left: -45%;
@@ -424,12 +339,8 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
         transform: skew(-8deg);
         right: -45%;
     }
-}
 
-@keyframes backFade {
-    from {
-        opacity: 0%;
-    } to {
-        opacity: 20%;
+    .content-field {
+        min-width: 52%;
     }
 }

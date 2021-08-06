@@ -3,6 +3,7 @@ import './styles/Hex.css';
 import './styles/Home.css';
 import './styles/Projects.css';
 import './styles/About.css';
+import './styles/Contact.css';
 import './styles/Animations.css';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 
