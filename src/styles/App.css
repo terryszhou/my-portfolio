@@ -7,7 +7,7 @@ body {
     padding: 10px;
 }
 
-.background-image {
+.bg-image {
     width: 90%;
     position: fixed;
     z-index: -3;
@@ -320,6 +320,10 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
 
     .qrbox {
         left: 22vw;
+    }
+
+    #qrcode {
+        width: 160px;
     }
 }
 

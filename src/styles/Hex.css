@@ -1,29 +1,29 @@
-.shape-box {
+.hex-box-main {
     position: relative;
     margin-top: 50px;
     margin-bottom: 200px;
 }
 
-.shape-box:hover #hex-gold {
+.hex-box-main:hover #hex-gold {
     animation: rotation 8s linear infinite;
 }
 
-.shape-box:hover #hex-smallest {
+.hex-box-main:hover #hex-smallest {
     transform: translateY(-45px);
     transition-duration: 0.3s;
 }
 
-.shape-box:hover #hex-goldenrod {
+.hex-box-main:hover #hex-goldenrod {
     animation: counterRotation 2s linear infinite;
     animation-delay: 0ms, 300ms;
 }
 
-.shape-box:hover #hex-grey {
+.hex-box-main:hover #hex-greyspace-lg {
     animation: rotation 2s linear infinite;
     transition-duration: 0.3s;
 }
 
-.shape-box:hover #hex-outer {
+.hex-box-main:hover #hex-ring-lg {
     animation: rotation 2s linear infinite;
 }
 
@@ -43,7 +43,7 @@
     }
 }
 
-.shape-box h2 {
+.hex-box-main h2 {
     position: absolute;
     background: rgb(26,29,32);
     padding-left: 10px;
@@ -53,7 +53,7 @@
     text-shadow: 2px 2px 1px rgb(70,87,96);
 }
 
-.shape-box h2::before {
+.hex-box-main h2::before {
     position: absolute;
     content: "";
     width: 0;
@@ -63,7 +63,7 @@
     border-top: 38px solid rgb(26,29,32);
 }
 
-.shape-box h2::after {
+.hex-box-main h2::after {
     position: absolute;
     content: "";
     width: 0;
@@ -101,17 +101,17 @@
     z-index: -1;
 }
 
-#hex-grey {
+#hex-greyspace-lg {
     position: absolute;
     width: 140px;
     height: 84px;
-    background: rgb(69,87,96);
+    background: rgb(50,67,76);
     top: -13px;
     left: -20px;
     transition-duration: 0.3s;
 }
 
-#hex-grey::before, #hex-grey::after {
+#hex-greyspace-lg::before, #hex-greyspace-lg::after {
     position: absolute;
     content: "";
     width: 0;
@@ -120,17 +120,17 @@
     border-right: 70px solid transparent;
 }
 
-#hex-grey::before {
+#hex-greyspace-lg::before {
     top: -42px;
-    border-bottom: 42px solid rgb(69,87,96);
+    border-bottom: 42px solid rgb(50,67,76);
 }
 
-#hex-grey::after {
+#hex-greyspace-lg::after {
     bottom: -42px;
-    border-top: 42px solid rgb(69,87,96);
+    border-top: 42px solid rgb(50,67,76);
 }
 
-#hex-outer {
+#hex-ring-lg {
     position: absolute;
     width: 150px;
     height: 86px;
@@ -141,7 +141,7 @@
     transition-duration: 0.3s;
 }
 
-#hex-outer::before, #hex-outer::after {
+#hex-ring-lg::before, #hex-ring-lg::after {
     position: absolute;
     content: "";
     width: 0;
@@ -150,12 +150,12 @@
     border-right: 75px solid transparent;
 }
 
-#hex-outer::before {
+#hex-ring-lg::before {
     top: -45px;
     border-bottom: 45px solid goldenrod;
 }
 
-#hex-outer::after {
+#hex-ring-lg::after {
     bottom: -45px;
     border-top: 45px solid goldenrod;
 }
@@ -190,7 +190,7 @@
     border-top: 24px solid goldenrod;
 }
 
-#hex-small {
+#hex-ring-sm {
     position: absolute;
     width: 36px;
     height: 22px;
@@ -199,7 +199,7 @@
     left: -40px;
 }
 
-#hex-small::before, #hex-small::after {
+#hex-ring-sm::before, #hex-ring-sm::after {
     position: absolute;
     content: "";
     width: 0;
@@ -208,26 +208,26 @@
     border-right: 18px solid transparent;
 }
 
-#hex-small::before {
+#hex-ring-sm::before {
     top: -11px;
     border-bottom: 11px solid yellow;
 }
 
-#hex-small::after {
+#hex-ring-sm::after {
     bottom: -11px;
     border-top: 11px solid yellow;
 }
 
-#hex-smaller {
+#hex-greyspace-sm {
     position: absolute;
     width: 24px;
     height: 14px;
-    background: rgb(69,87,96);
+    background: rgb(50,67,76);
     top: 3px;
     left: 6px;
 }
 
-#hex-smaller::before, #hex-smaller::after {
+#hex-greyspace-sm::before, #hex-greyspace-sm::after {
     position: absolute;
     content: "";
     width: 0;
@@ -236,14 +236,14 @@
     border-right: 12px solid transparent;
 }
 
-#hex-smaller::before {
+#hex-greyspace-sm::before {
     top: -7px;
-    border-bottom: 7px solid rgb(69,87,96);
+    border-bottom: 7px solid rgb(50,67,76);
 }
 
-#hex-smaller::after {
+#hex-greyspace-sm::after {
     bottom: -7px;
-    border-top: 7px solid rgb(69,87,96);
+    border-top: 7px solid rgb(50,67,76);
     z-index: 1;
 }
 

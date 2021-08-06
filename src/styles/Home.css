@@ -1,109 +1,30 @@
-#home-box {
-    animation: 1.5s ease-out 1 fadeIn;
-}
-
-#hex-home-outer {
-    position: absolute;
-    top: 28.5%;
-    left: 48.2%;
-    transform: rotate(-90deg);
-    border-bottom: 200px solid rgb(169, 127, 21);
-    border-left: 120px solid transparent;
-    border-right: 120px solid transparent;
-    height: 0;
-    width: 475px;
-}
-
-#hex-home-grey {
-    position: absolute;
-    top: 27.5%;
-    left: 60.6%;
-    width: 360px;
-    height: 216px;
-    background: rgb(69,87,96);
-}
-
-#hex-home-grey::before, #hex-home-grey::after {
-    position: absolute;
-    content: "";
+#home-bg-upper {
+    position: fixed;
     width: 0;
     height: 0;
-    border-left: 180px solid transparent;
-    border-right: 180px solid transparent;
-}
-
-#hex-home-grey::before {
-    top: -108px;
-    border-bottom: 108px solid rgb(69,87,96);
-}
-
-#hex-home-grey::after {
-    bottom: -108px;
-    border-top: 108px solid rgb(69,87,96);
-}
-
-#hex-home {
-    position: absolute;
-    top: 30%;
-    left: 63%;
-    width: 300px;
-    height: 180px;
-    background: goldenrod;
-    z-index: 1;
-}
-
-#hex-home::before, #hex-home::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-}
-
-#hex-home::before {
-    top: -90px;
-    border-bottom: 90px solid goldenrod;
-}
-
-#hex-home::after {
-    bottom: -90px;
-    border-top: 90px solid goldenrod;
-    z-index: -1;
-}
-
-.home-pic {
-    position: absolute;
-    top: -50px;
-    left: 65px;
-    width: 60%;
-    border-radius: 50%;
-}
-
-.home-hex {
-    top: 27.5vh;
-    left: 3vw;
+    top: -12%;
+    left: -5%;
+    border-top: 42em solid rgb(50,67,76);
+    border-right: 74em solid transparent;
+    z-index: -2;
     animation: 1.5s ease-out 1 slideRight;
 }
 
-.home-hex #hex-grey, .home-hex #hex-smaller {
-    background-color: rgb(50,67,76);
+#home-bg-lower {
+    position: fixed;
+    width: 0;
+    height: 0;
+    right: 0%;
+    bottom: -13%;
+    border-bottom: 42em solid rgb(50,67,76);
+    border-left: 74em solid transparent;
+    animation: 1.5s ease-out 1 slideLeft;
 }
 
-.home-hex #hex-grey::before {
-    border-bottom: 42px solid rgb(50,67,76);
-}
-
-.home-hex #hex-grey::after {
-    border-top: 42px solid rgb(50,67,76);
-}
-
-.home-hex #hex-smaller::before {
-    border-bottom: 7px solid rgb(50,67,76);
-}
-
-.home-hex #hex-smaller::after {
-    border-top: 7px solid rgb(50,67,76);
+.hex-box-home {
+    top: 27.5vh;
+    left: 3vw;
+    animation: 1.5s ease-out 1 slideRight;
 }
 
 .name-box {
@@ -147,7 +68,7 @@
     border-bottom: 62px solid rgb(26,29,32);
 }
 
-#title {
+#my-title {
     font-size: 28px;
     position: relative;
     text-align: center;
@@ -162,7 +83,7 @@
     text-shadow: 2px 2px 1px white;
 }
 
-#title::before {
+#my-title::before {
     position: absolute;
     content: "";
     width: 0;
@@ -173,7 +94,7 @@
     border-bottom: 60px solid rgb(220,220,220);
 }
 
-#title::after {
+#my-title::after {
     position: absolute;
     content: "";
     width: 0;
@@ -184,51 +105,116 @@
     border-top: 60px solid rgb(220,220,220);
 }
 
-#home-back {
-    position: fixed;
-    width: 0;
-    height: 0;
-    top: -12%;
-    left: -5%;
-    border-top: 42em solid rgb(50,67,76);
-    border-right: 74em solid transparent;
-    z-index: -2;
-    animation: 1.5s ease-out 1 slideRight;
+.pic-box {
+    animation: 1.5s ease-out 1 fadeIn;
 }
 
-#home-back-2 {
-    position: fixed;
+#pic-trapezoid {
+    position: absolute;
+    top: 28.5%;
+    left: 48.2%;
+    transform: rotate(-90deg);
+    border-bottom: 200px solid rgb(169, 127, 21);
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    height: 0;
+    width: 475px;
+}
+
+#pic-greyspace {
+    position: absolute;
+    top: 27.5%;
+    left: 60.6%;
+    width: 360px;
+    height: 216px;
+    background: rgb(69,87,96);
+}
+
+#pic-greyspace::before, #pic-greyspace::after {
+    position: absolute;
+    content: "";
     width: 0;
     height: 0;
-    right: 0%;
-    bottom: -13%;
-    border-bottom: 42em solid rgb(50,67,76);
-    border-left: 74em solid transparent;
-    animation: 1.5s ease-out 1 slideLeft;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+}
+
+#pic-greyspace::before {
+    top: -108px;
+    border-bottom: 108px solid rgb(69,87,96);
+}
+
+#pic-greyspace::after {
+    bottom: -108px;
+    border-top: 108px solid rgb(69,87,96);
+}
+
+#pic-hex {
+    position: absolute;
+    top: 30%;
+    left: 63%;
+    width: 300px;
+    height: 180px;
+    background: goldenrod;
+    z-index: 1;
+}
+
+#pic-hex::before, #pic-hex::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+}
+
+#pic-hex::before {
+    top: -90px;
+    border-bottom: 90px solid goldenrod;
+}
+
+#pic-hex::after {
+    bottom: -90px;
+    border-top: 90px solid goldenrod;
+}
+
+#my-face {
+    position: absolute;
+    top: -50px;
+    left: 65px;
+    width: 60%;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 5px white);    
+    transition-duration: 0.2s;
+}
+
+#my-face:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
 }
 
 @media (max-width: 700px) {
-    #home-back {
+    #home-bg-upper {
         left: -50%;
     }
 
-    #home-back-2 {
+    #home-bg-lower {
         right: -40%;
     }
 
-    .home-hex {
+    .hex-box-home {
         top: 0%;
     }
 
-    #hex-home-outer {
+    #pic-trapezoid {
         visibility: hidden;
     }
 
-    #hex-home-grey {
+    #pic-greyspace {
         visibility: hidden;
     }
 
-    #hex-home {
+    #pic-hex {
         top: 33%;
         left: 52%;
     }
@@ -251,7 +237,7 @@
         border-bottom: 43px solid rgb(26,29,32);
     }
 
-    #title {
+    #my-title {
         font-size: 20px;
         top: 110px;
         left: 100px;
@@ -259,42 +245,11 @@
         width: 200px;
     }
 
-    #title::before {
+    #my-title::before {
         border-bottom: 45px solid rgb(220,220,220);
     }
 
-    #title::after {
+    #my-title::after {
         border-top: 45px solid rgb(220,220,220);
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-
-@keyframes slideLeft {
-    0% {
-        transform: translateX(100%);
-        opacity: 0
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 100%;
-    }
-}
-
-@keyframes slideRight {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 100%;
     }
 }

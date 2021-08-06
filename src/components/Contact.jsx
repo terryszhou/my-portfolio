@@ -3,14 +3,14 @@ export const Contact = (props) => {
         <div className="container pt-3">
             <div id="square-back"/>
             <div id="square-back-2"/>
-            <img className="background-image" src={props.flowersWhite} alt="background"/>
-            <div className="shape-box about-hex">
-                <div id="hex-outer"/>
-                <div id="hex-grey"/>
+            <img className="bg-image" src={props.flowersWhite} alt="background"/>
+            <div className="hex-box-main about-hex">
+                <div id="hex-ring-lg"/>
+                <div id="hex-greyspace-lg"/>
                 <div id="hex-gold">
                     <div id="hex-goldenrod">
-                        <div id="hex-small">
-                            <div id="hex-smaller">
+                        <div id="hex-ring-sm">
+                            <div id="hex-greyspace-sm">
                                 <div id="hex-smallest"/>
                             </div>
                         </div>

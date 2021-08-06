@@ -219,26 +219,6 @@ label {
     animation: 1.8s ease-out 1 slideRight;
 }
 
-.about-hex #hex-grey, .about-hex #hex-smaller {
-    background-color: rgb(50,67,76);
-}
-
-.about-hex #hex-grey::before {
-    border-bottom: 42px solid rgb(50,67,76);
-}
-
-.about-hex #hex-grey::after {
-    border-top: 42px solid rgb(50,67,76);
-}
-
-.about-hex #hex-smaller::before {
-    border-bottom: 7px solid rgb(50,67,76);
-}
-
-.about-hex #hex-smaller::after {
-    border-top: 7px solid rgb(50,67,76);
-}
-
 #square-back {
     position: fixed;
     background-color: rgb(50,67,76);
