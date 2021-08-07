@@ -21,11 +21,14 @@ export const About = (props) => {
             <div className="d-flex flex-column">
                 <div className="content-box">
                     <div id="content-box-outer"/>
-                    <div id="scroll-arrow">
+                    {/* <div id="scroll-arrow">
                         <p>Scroll</p>
-                    </div>
+                    </div> */}
                     <h3 className="content-box-heading mb-3 ">Get to Know Me</h3>
                     <fieldset className="content-field">
+                        <div id="scroll-arrow">
+                            <p>Scroll</p>
+                        </div>
                         <div className="question-box">
                             <p className="question-text">What do you love most about software development?</p>
                         </div>
