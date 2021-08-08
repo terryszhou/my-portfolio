@@ -82,6 +82,39 @@ body {
     border-top: 33px solid rgb(220,220,220);
 }
 
+.content-box-outer {
+    position: absolute;
+    top: 8%;
+    height: 79.6%;
+    width: 50%;
+    border: 2px solid goldenrod;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.content-box-outer::before, .content-box-outer::after {
+    position: absolute;
+    content:"";
+    width: 0;
+    height: 0;
+    transform: rotate(135deg);
+    border: 50px solid transparent;
+    z-index: 1;
+}
+
+.content-box-outer::before {
+    top: -16%;
+    left: -11.5%;
+    border-top: 50px solid goldenrod;
+    box-shadow: 0px -12px 12px -12px black;
+}
+
+.content-box-outer::after {
+    bottom: -16%;
+    right: -11.5%;
+    border-bottom: 50px solid goldenrod;
+    box-shadow: 0px 12px 12px -12px black;
+}
+
 .content-field {
     position: relative;
     border: 2px solid goldenrod;
@@ -229,6 +262,18 @@ h3 {
     #skew-bg-right {
         transform: skew(-8deg);
         right: -45%;
+    }
+
+    .content-box-outer {
+        width: 54%;
+    }
+
+    .content-box-outer::before {
+        left: -23%;
+    }
+
+    .content-box-outer::after {
+        right: -23%;
     }
 
     .content-field {

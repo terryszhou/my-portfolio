@@ -20,10 +20,7 @@ export const About = (props) => {
             </div>
             <div className="d-flex flex-column">
                 <div className="content-box">
-                    <div id="content-box-outer"/>
-                    {/* <div id="scroll-arrow">
-                        <p>Scroll</p>
-                    </div> */}
+                    <div className="content-box-outer"/>
                     <h3 className="content-box-heading mb-3 ">Get to Know Me</h3>
                     <fieldset className="content-field">
                         <div id="scroll-arrow">

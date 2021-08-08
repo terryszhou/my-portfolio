@@ -1,6 +1,6 @@
 export const Contact = (props) => {
     return (
-        <div className="container pt-3">
+        <div className="container pt-1">
             <div id="skew-bg-left"/>
             <div id="skew-bg-right"/>
             <img className="bg-image" src={props.flowersWhite} alt="background"/>

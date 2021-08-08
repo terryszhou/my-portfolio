@@ -24,9 +24,9 @@
 
 .project-box {
     position: relative;
-    margin-top: 12vh;
+    margin-top: -15vh;
     margin-left: -9vw;
-    margin-bottom: 160vh;
+    margin-bottom: 175vh;
 }
 
 .project-hex {
@@ -277,5 +277,9 @@
 
     #project-bg-right {
         right: -60%;
+    }
+
+    .project-box {
+        margin-bottom: 160vh;
     }
 }
