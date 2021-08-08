@@ -186,6 +186,7 @@
     border-radius: 50%;
     filter: drop-shadow(0 0 5px white);    
     transition-duration: 0.2s;
+    z-index: 1;
 }
 
 #my-face:hover {

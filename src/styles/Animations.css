@@ -1,3 +1,11 @@
+@-webkit-keyframes bgImageFade {
+    from {
+        opacity: 0%;
+    } to {
+        opacity: 20%;
+    }
+}
+
 @keyframes bgImageFade {
     from {
         opacity: 0%;
