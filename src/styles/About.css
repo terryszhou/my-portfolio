@@ -130,8 +130,8 @@
     top: 30%;
     left: -20px;
     min-width: 85px;
-    -webkit-opacity: 90%;
-    opacity: 90%;
+    -webkit-opacity: .9;
+    opacity: .9;
 }
 
 #resume-text {

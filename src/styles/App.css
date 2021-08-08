@@ -13,7 +13,7 @@ body {
     z-index: -3;
     top: -37%;
     left: 5.1%;
-    opacity: 20%;
+    opacity: .2;
     -webkit-animation: 2s ease-in 1 bgImageFade;
     animation: 2s ease-in 1 bgImageFade;
 }
@@ -219,7 +219,7 @@ body {
     top: -0.2rem;
     right: 2rem;
     visibility: hidden;
-    opacity: 80%;
+    opacity: .8;
 }
 
 .seal-box {
@@ -232,7 +232,7 @@ body {
     top: 10%;
     left: -325px;
     width: 300px;
-    opacity: 90%;
+    opacity: .9;
     transition-duration: 0.3s;
     color: rgb(220,220,220);
     text-align: center;

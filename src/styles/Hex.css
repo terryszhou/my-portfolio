@@ -126,7 +126,7 @@
     background: goldenrod;
     top: 50px;
     left: 37px;
-    opacity: 80%;
+    opacity: .8;
     transition-duration: 0.3s;
 }
 

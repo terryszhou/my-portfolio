@@ -1,8 +1,8 @@
 @-webkit-keyframes bgImageFade {
     from {
-        opacity: 0%;
+        opacity: 0;
     } to {
-        opacity: 20%;
+        opacity: .2;
     }
 }
 
@@ -27,7 +27,7 @@
         opacity: 0
     }
     100% {
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
@@ -38,7 +38,7 @@
     }
     100% {
         transform: translateX(0);
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
@@ -49,7 +49,7 @@
     }
     100% {
         transform: translateX(0);
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
@@ -60,7 +60,7 @@
     }
     100% {
         transform: skew(-8deg) translateX(0);
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
@@ -71,21 +71,21 @@
     }
     100% {
         transform: skew(8deg) translateX(0);
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
 @-webkit-keyframes scrollArrow {
     0% {
-        opacity: 50%;
+        opacity: .5;
         transform: translateY(0);
     }
     50% {
-        opacity: 100%;
+        opacity: 1;
         transform: translateY(10px);
     }
     100% {
-        opacity: 50%;
+        opacity: .5;
         transform: translateY(0); 
     }
 }
@@ -94,9 +94,9 @@
 
 @keyframes bgImageFade {
     from {
-        opacity: 0%;
+        opacity: 0;
     } to {
-        opacity: 20%;
+        opacity: .2;
     }
 }
 
@@ -121,7 +121,7 @@
         opacity: 0
     }
     100% {
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
@@ -132,7 +132,7 @@
     }
     100% {
         transform: translateX(0);
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
@@ -143,7 +143,7 @@
     }
     100% {
         transform: translateX(0);
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
@@ -154,7 +154,7 @@
     }
     100% {
         transform: skew(-8deg) translateX(0);
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
@@ -165,21 +165,21 @@
     }
     100% {
         transform: skew(8deg) translateX(0);
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
 @keyframes scrollArrow {
     0% {
-        opacity: 50%;
+        opacity: .5;
         transform: translateY(0);
     }
     50% {
-        opacity: 100%;
+        opacity: 1;
         transform: translateY(10px);
     }
     100% {
-        opacity: 50%;
+        opacity: .5;
         transform: translateY(0); 
     }
 }
