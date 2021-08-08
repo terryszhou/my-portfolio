@@ -6,6 +6,92 @@
     }
 }
 
+@-webkit-keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes counterRotation {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@-webkit-keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@-webkit-keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@-webkit-keyframes slideLeftSkew {
+    0% {
+        transform: skew(-8deg) translateX(100%);
+        opacity: 0
+    }
+    100% {
+        transform: skew(-8deg) translateX(0);
+        opacity: 100%;
+    }
+}
+
+@-webkit-keyframes slideRightSkew {
+    0% {
+        transform: skew(8deg) translateX(-100%);
+        opacity: 0
+    }
+    100% {
+        transform: skew(8deg) translateX(0);
+        opacity: 100%;
+    }
+}
+
+@-webkit-keyframes scrollArrow {
+    0% {
+        opacity: 50%;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 100%;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 50%;
+        transform: translateY(0); 
+    }
+}
+
+/* KEYFRAMES */
+
 @keyframes bgImageFade {
     from {
         opacity: 0%;
