@@ -3,7 +3,7 @@
     width: 0;
     height: 0;
     top: -20%;
-    left: -20%;
+    left: -260px;
     border-top: 1000px solid rgb(50,67,76);
     border-right: 1000px solid transparent;
     z-index: -2;
@@ -16,7 +16,7 @@
     width: 0;
     height: 0;
     bottom: -20%;
-    right: -10%;
+    right: -130px;
     border-bottom: 1000px solid rgb(50,67,76);
     border-left: 1000px solid transparent;
     z-index: -2;
@@ -124,8 +124,8 @@
 
 #project-1 {
     position: absolute;
-    top: 36vh;
-    left: 9vw;
+    top: 250px;
+    left: 115px;
     background: rgb(99,40,52);
 }
 
@@ -139,8 +139,8 @@
 
 #project-2 {
     position: absolute;
-    top: 85.4vh;
-    left: 23.7vw;
+    top: 595px;
+    left: 303px;
     background: rgb(61,75,130);
 }
 
@@ -154,8 +154,8 @@
 
 #project-3 {
     position: absolute;
-    top: 36vh;
-    left: 38.3vw;
+    top: 250px;
+    left: 490px;
     background: rgb(117,77,180);
 }
 
@@ -169,8 +169,8 @@
 
 #project-4 {
     position: absolute;
-    top: 85.4vh;
-    left: 53vw;
+    top: 595px;
+    left: 678px;
     background: rgb(193,98,204);
 }
 
@@ -184,8 +184,8 @@
 
 #project-5 {
     position: absolute;
-    top: 36vh;
-    left: 67.7vw;
+    top: 250px;
+    left: 866px;
     background: rgb(108,37,152);
 }
 
@@ -195,31 +195,6 @@
 
 #project-5::after {
     border-top: 120px solid rgb(108,37,152);
-}
-
-@media (max-width:700px) {
-    .project-box {
-        margin-left: -14vw;
-        padding-bottom: 135vh;
-    }
-    #project-1 {
-        left: 11vw;
-    }
-    #project-2 {
-        left: 40.2vw;
-    }
-    #project-3 {
-        top: 134.8vh;
-        left: 11vw;
-    }
-    #project-4 {
-        top: 184.3vh;
-        left: 40.2vw;
-    }
-    #project-5 {
-        top: 233.5vh;
-        left: 11vw;
-    }
 }
 
 .project-pic {
@@ -274,14 +249,33 @@
 
 @media (max-width: 700px) {
     #project-bg-left {
-        left: -60%;
+        left: -500px;
     }
 
     #project-bg-right {
-        right: -60%;
+        right: -500px;
     }
 
     .project-box {
-        margin-bottom: 160vh;
+        margin-left: -14vw;
+        padding-bottom: 120vh;
+    }
+    #project-1 {
+        left: 70px;
+    }
+    #project-2 {
+        left: 258px;
+    }
+    #project-3 {
+        top: 940px;
+        left: 70px;
+    }
+    #project-4 {
+        top: 1284px;
+        left: 258px;
+    }
+    #project-5 {
+        top: 1630px;
+        left: 70px;
     }
 }
