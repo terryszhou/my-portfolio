@@ -7,6 +7,7 @@
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 25px solid rgb(220,220,220);
+    -webkit-animation: scrollArrow 2s linear infinite;
     animation: scrollArrow 2s linear infinite;
 }
 

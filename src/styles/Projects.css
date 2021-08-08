@@ -7,6 +7,7 @@
     border-top: 1000px solid rgb(50,67,76);
     border-right: 1000px solid transparent;
     z-index: -2;
+    -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
 }
 
@@ -19,6 +20,7 @@
     border-bottom: 1000px solid rgb(50,67,76);
     border-left: 1000px solid transparent;
     z-index: -2;
+    -webkit-animation: 1.5s ease-out 1 slideLeft;
     animation: 1.5s ease-out 1 slideLeft;
 }
 

@@ -14,6 +14,7 @@ body {
     top: -37%;
     left: 5.1%;
     opacity: 20%;
+    -webkit-animation: 2s ease-in 1 bgImageFade;
     animation: 2s ease-in 1 bgImageFade;
 }
 
@@ -26,6 +27,7 @@ body {
     height: 1200px;
     z-index: -2;
     transform: skew(8deg);
+    -webkit-animation: 1.4s ease-out 1 slideRightSkew;
     animation: 1.4s ease-out 1 slideRightSkew;
     box-shadow: 2px 2px 5px 2px rgb(40,40,40);
 }
@@ -39,11 +41,13 @@ body {
     height: 1200px;
     z-index: -2;
     transform: skew(-8deg);
+    -webkit-animation: 1.4s ease-out 1 slideLeftSkew;
     animation: 1.4s ease-out 1 slideLeftSkew;
     box-shadow: -2px 2px 5px 2px rgb(40,40,40);
 }
 
 .hex-box-other {
+    -webkit-animation: 1.8s ease-out 1 slideRight;
     animation: 1.8s ease-out 1 slideRight;
 }
 

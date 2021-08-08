@@ -5,6 +5,7 @@
 }
 
 .hex-box-main:hover #hex-gold {
+    -webkit-animation: rotation 8s linear infinite;
     animation: rotation 8s linear infinite;
 }
 
@@ -14,16 +15,20 @@
 }
 
 .hex-box-main:hover #hex-goldenrod {
+    -webkit-animation: counterRotation 2s linear infinite;
     animation: counterRotation 2s linear infinite;
+    -webkit-animation-delay: 0ms, 300ms;
     animation-delay: 0ms, 300ms;
 }
 
 .hex-box-main:hover #hex-greyspace-lg {
+    -webkit-animation: rotation 2s linear infinite;
     animation: rotation 2s linear infinite;
     transition-duration: 0.3s;
 }
 
 .hex-box-main:hover #hex-ring-lg {
+    -webkit-animation: rotation 2s linear infinite;
     animation: rotation 2s linear infinite;
 }
 

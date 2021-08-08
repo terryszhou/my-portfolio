@@ -7,6 +7,7 @@
     border-top: 42em solid rgb(50,67,76);
     border-right: 74em solid transparent;
     z-index: -2;
+    -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
 }
 
@@ -18,18 +19,21 @@
     bottom: -13%;
     border-bottom: 42em solid rgb(50,67,76);
     border-left: 74em solid transparent;
+    -webkit-animation: 1.5s ease-out 1 slideLeft;
     animation: 1.5s ease-out 1 slideLeft;
 }
 
 .hex-box-home {
     top: 27.5vh;
     left: 3vw;
+    -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
 }
 
 .name-box {
     position: absolute;
     top: 14%;
+    -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
 }
 
@@ -106,6 +110,7 @@
 }
 
 .pic-box {
+    -webkit-animation: 1.5s ease-out 1 fadeIn;
     animation: 1.5s ease-out 1 fadeIn;
 }
 
