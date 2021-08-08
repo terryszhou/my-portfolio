@@ -99,6 +99,7 @@ body {
     transform: rotate(135deg);
     border: 50px solid transparent;
     z-index: 1;
+    transition-duration: 0.2s;
 }
 
 .content-box-outer::before {
@@ -121,17 +122,30 @@ body {
     border-radius: 15px;
     margin: auto 20vw 10vh 20vw;
     min-width: 48%;
-    padding: 10px;
+    padding: 30px 10px 10px 10px;
     background-color: rgb(26,29,32);
     min-height: 380px;
     max-height: 400px;
     overflow: scroll;
     transition-duration: 0.2s;
+    z-index: 1;
 }
 
 .content-field:hover {
     transform: scale(1.04);
     border-radius: 0;
+    transition-duration: 0.2s;
+}
+
+.content-field:hover + .content-box-outer::before {
+    top: -13.2%;
+    left: -9%;
+    transition-duration: 0.2s;
+}
+
+.content-field:hover + .content-box-outer::after {
+    bottom: -13.2%;
+    right: -9.5%;
     transition-duration: 0.2s;
 }
 
@@ -269,14 +283,32 @@ h3 {
     }
 
     .content-box-outer::before {
-        left: -23%;
+        border: 35px solid transparent;
+        border-top: 35px solid goldenrod;
+        top: -11%;
+        left: -17%;
     }
 
     .content-box-outer::after {
-        right: -23%;
+        border: 35px solid transparent;
+        border-bottom: 35px solid goldenrod;
+        bottom: -11%;
+        right: -17%;
     }
 
     .content-field {
         width: 52%;
+    }
+
+    .content-field:hover + .content-box-outer::before {
+        top: -9.5%;
+        left: -13.5%;
+        transition-duration: 0.2s;
+    }
+    
+    .content-field:hover + .content-box-outer::after {
+        bottom: -9.5%;
+        right: -13.5%;
+        transition-duration: 0.2s;
     }
 }

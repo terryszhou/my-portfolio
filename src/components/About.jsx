@@ -20,7 +20,6 @@ export const About = (props) => {
             </div>
             <div className="d-flex flex-column">
                 <div className="content-box">
-                    <div className="content-box-outer"/>
                     <h3 className="content-box-heading mb-3 ">Get to Know Me</h3>
                     <fieldset className="content-field">
                         <div id="scroll-arrow">
@@ -66,6 +65,7 @@ export const About = (props) => {
                             <p className="answer-text">Because hexagons are the bestagons, obviously! I think they evoke both simplicity ⎔ and industriousness 🐝—like me!</p>
                         </div>
                     </fieldset>
+                    <div className="content-box-outer"/>
                 </div>
                 <div className="content-box">
                     <h3 className="content-box-heading">Key Skills</h3>

@@ -20,7 +20,6 @@ export const Contact = (props) => {
             </div>
             <div className="content-box about-corners">
                 <h3 className="mb-3 content-box-heading">Let's Get in Touch!</h3>
-                <div className="content-box-outer"/>
                 <fieldset className="content-field">
                     <div className="contact-box">
                         <a href="mailto:terryszhou@gmail.com" target="_blank" rel="noreferrer">
@@ -51,6 +50,7 @@ export const Contact = (props) => {
                         </a>
                     </div>
                 </fieldset>
+                <div className="content-box-outer"/>
             </div>
             <div className="qrbox">
                 <a href="https://hihello.me/p/c2fcf08c-ba21-4fe6-8e72-c542170b10e2" target="_blank" rel="noreferrer">
