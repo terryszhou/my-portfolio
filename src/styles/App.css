@@ -27,6 +27,7 @@ body {
     z-index: -2;
     transform: skew(8deg);
     animation: 1.4s ease-out 1 slideRightSkew;
+    box-shadow: 2px 2px 5px 2px rgb(40,40,40);
 }
 
 #skew-bg-right {
@@ -39,6 +40,7 @@ body {
     z-index: -2;
     transform: skew(-8deg);
     animation: 1.4s ease-out 1 slideLeftSkew;
+    box-shadow: -2px 2px 5px 2px rgb(40,40,40);
 }
 
 .hex-box-other {
