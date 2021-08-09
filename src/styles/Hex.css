@@ -106,6 +106,7 @@
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
+    z-index: -1;
 }
 
 #hex-gold::before {
@@ -116,7 +117,6 @@
 #hex-gold::after {
     bottom: -30px;
     border-top: 30px solid gold;
-    z-index: -1;
 }
 
 #hex-goldenrod {
