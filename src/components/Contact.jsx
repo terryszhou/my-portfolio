@@ -43,7 +43,7 @@ export const Contact = (props) => {
                         </a>
                     </div>
                     <div className="contact-box">
-                        <a href={props.resume} target="_blank" rel="noreferrer">
+                        <a href="https://s3.us-west-1.amazonaws.com/terryszhou.com/terryzhou-resume.pdf" target="_blank" rel="noreferrer">
                             <i className="contact-icon far fa-file">
                                 <p>(Here's my resume again)</p>
                             </i>

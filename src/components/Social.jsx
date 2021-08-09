@@ -44,7 +44,7 @@ export const Social = (props) => {
                         <p className="tip-text">Email</p>
                     </i>
                 </a>
-                <a href={props.resume} target="_blank" rel="noreferrer">
+                <a href="https://s3.us-west-1.amazonaws.com/terryszhou.com/terryzhou-resume.pdf" target="_blank" rel="noreferrer">
                     <i className="icon far fa-file">
                         <p className="tip-text">Resume</p>
                     </i>

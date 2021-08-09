@@ -156,7 +156,7 @@ export const About = (props) => {
                 </div>
                 <div className="content-box">
                     <h3 className="content-box-heading">Want to Know More?</h3>
-                    <a href={props.resume} target="_blank" rel="noreferrer">
+                    <a href="https://s3.us-west-1.amazonaws.com/terryszhou.com/terryzhou-resume.pdf" target="_blank" rel="noreferrer">
                         <div className="icon fas fa-download text-warning"/>
                     </a>
                     <p id="resume-text">Check out my resume!</p>
