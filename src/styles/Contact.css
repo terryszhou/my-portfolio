@@ -26,7 +26,7 @@
     width: 400px;
 }
 
-.qrbox p {
+.qr-box p {
     transition-duration: 0.3s;
     color: rgb(220,220,220);
     font-weight: bold;
@@ -34,17 +34,17 @@
     margin-top: 90px;
 }
 
-.qrbox:hover #qrcode {
+.qr-box:hover #qr-code {
     transform: scale(1.1);
     transition-duration: 0.3s;
 }
 
-.qrbox:hover p {
+.qr-box:hover p {
     transform: translateY(-70px);
     transition-duration: 0.3s;
 }
 
-#qrcode {
+#qr-code {
     border: 10px solid rgb(26,29,32);
     width: 200px;
     border-radius: 35px;
@@ -69,11 +69,11 @@
         transform: scale(1.05);
     }
 
-    .qrbox {
+    .qr-box {
         left: 22vw;
     }
 
-    #qrcode {
+    #qr-code {
         width: 160px;
     }
 }

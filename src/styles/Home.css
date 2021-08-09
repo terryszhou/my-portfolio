@@ -32,6 +32,7 @@
 
 .name-box {
     position: absolute;
+    margin-right: 10px;
     top: 95px;
     -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
@@ -110,13 +111,14 @@
 }
 
 .pic-box {
+    position: relative;
     -webkit-animation: 1.5s ease-out 1 fadeIn;
     animation: 1.5s ease-out 1 fadeIn;
 }
 
 #pic-trapezoid {
     position: absolute;
-    top: 28.5%;
+    top: 0px;
     left: 618px;
     transform: rotate(-90deg);
     border-bottom: 200px solid rgb(169, 127, 21);
@@ -128,7 +130,7 @@
 
 #pic-greyspace {
     position: absolute;
-    top: 27.5%;
+    top: -7px;
     left: 776px;
     width: 360px;
     height: 216px;
@@ -156,7 +158,7 @@
 
 #pic-hex {
     position: absolute;
-    top: 30%;
+    top: 10px;
     left: 806px;
     width: 300px;
     height: 180px;
