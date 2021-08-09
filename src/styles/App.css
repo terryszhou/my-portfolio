@@ -232,13 +232,13 @@ body {
     left: -325px;
     width: 300px;
     opacity: .9;
-    transition-duration: 0.3s;
     color: rgb(220,220,220);
     text-align: center;
+    transition-duration: 0.3s;
     z-index: 1;
 }
 
-#seal {
+#seal { 
     width: 50px;
     transition-duration: 0.3s;
 }
@@ -250,6 +250,7 @@ body {
 .seal-box:hover #seal {
     transform: scale(1.2);
     filter: brightness(1.25);
+
 }
 
 .pt-1 {

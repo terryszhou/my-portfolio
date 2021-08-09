@@ -4,8 +4,8 @@
     height: 0;
     top: -12%;
     left: -60px;
-    border-top: 42em solid rgb(50,67,76);
-    border-right: 74em solid transparent;
+    border-top: 670px solid rgb(50,67,76);
+    border-right: 1185px solid transparent;
     z-index: -2;
     -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
@@ -17,8 +17,8 @@
     height: 0;
     bottom: -13%;
     right: 0px;
-    border-bottom: 42em solid rgb(50,67,76);
-    border-left: 74em solid transparent;
+    border-bottom: 670px solid rgb(50,67,76);
+    border-left: 1185px solid transparent;
     -webkit-animation: 1.5s ease-out 1 slideLeft;
     animation: 1.5s ease-out 1 slideLeft;
 }
@@ -164,6 +164,7 @@
     height: 180px;
     background: goldenrod;
     z-index: 1;
+    filter: drop-shadow(0 0 5px goldenrod);
 }
 
 #pic-hex::before, #pic-hex::after {
@@ -214,23 +215,18 @@
         top: 0px;
     }
 
-    #pic-trapezoid {
-        visibility: hidden;
-    }
-
-    #pic-greyspace {
+    #pic-trapezoid, #pic-greyspace {
         visibility: hidden;
     }
 
     #pic-hex {
         top: 33%;
-        left: 52%;
         left: 330px;
     }
 
     .name-box {
-        left: -10%;
         top: 20%;
+        left: -10%;
     }
 
     #my-name {

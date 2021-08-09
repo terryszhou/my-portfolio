@@ -207,7 +207,7 @@
 
 .project-desc {
     position: absolute;
-    top: -60px;
+    top: -50px;
     opacity: 0;
     transition-duration: 0.3s;
 }
@@ -241,10 +241,12 @@
 .project-links a {
     color: goldenrod;
     text-decoration: none;
+    transition-duration: 0.2s;
 }
 
 .project-links a:hover {
     border-bottom: 2px solid goldenrod;
+    transition-duration: 0.2s;
 }
 
 @media (max-width: 700px) {
