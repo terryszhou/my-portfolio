@@ -26,13 +26,6 @@
     width: 400px;
 }
 
-.qrbox {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    left: 34.5vw;
-}
-
 .qrbox p {
     transition-duration: 0.3s;
     color: rgb(220,220,220);
