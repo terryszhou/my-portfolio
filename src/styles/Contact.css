@@ -26,6 +26,11 @@
     width: 400px;
 }
 
+.qr-box {
+    margin: 0 auto;
+    width: 300px;
+}
+
 .qr-box p {
     transition-duration: 0.3s;
     color: rgb(220,220,220);
@@ -67,10 +72,6 @@
 
     .contact-icon:hover {
         transform: scale(1.05);
-    }
-
-    .qr-box {
-        left: 22vw;
     }
 
     #qr-code {
