@@ -3,7 +3,7 @@
     width: 0;
     height: 0;
     top: -12%;
-    left: -5%;
+    left: -60px;
     border-top: 42em solid rgb(50,67,76);
     border-right: 74em solid transparent;
     z-index: -2;
@@ -15,8 +15,8 @@
     position: fixed;
     width: 0;
     height: 0;
-    right: 0%;
     bottom: -13%;
+    right: 0px;
     border-bottom: 42em solid rgb(50,67,76);
     border-left: 74em solid transparent;
     -webkit-animation: 1.5s ease-out 1 slideLeft;
@@ -24,15 +24,15 @@
 }
 
 .hex-box-home {
-    top: 27.5vh;
-    left: 3vw;
+    top: 190px;
+    left: 40px;
     -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
 }
 
 .name-box {
     position: absolute;
-    top: 14%;
+    top: 95px;
     -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
 }
@@ -46,8 +46,8 @@
     color: rgb(220,220,220);
     background-color: rgb(25,28,31);
     font-size: 44px;
-    top: 20vh;
-    left: 20vw;
+    top: 140px;
+    left: 255px;
 }
 
 #my-name::before {
@@ -77,8 +77,8 @@
     position: relative;
     text-align: center;
     height: 60px;
-    top: 14vh;
-    left: 16.6vw;
+    top: 98px;
+    left: 213px;
     width: 300px;
     padding-top: 10px;
     padding-left: 10px;
@@ -117,7 +117,7 @@
 #pic-trapezoid {
     position: absolute;
     top: 28.5%;
-    left: 48.2%;
+    left: 618px;
     transform: rotate(-90deg);
     border-bottom: 200px solid rgb(169, 127, 21);
     border-left: 120px solid transparent;
@@ -129,7 +129,7 @@
 #pic-greyspace {
     position: absolute;
     top: 27.5%;
-    left: 60.6%;
+    left: 776px;
     width: 360px;
     height: 216px;
     background: rgb(69,87,96);
@@ -157,7 +157,7 @@
 #pic-hex {
     position: absolute;
     top: 30%;
-    left: 63%;
+    left: 806px;
     width: 300px;
     height: 180px;
     background: goldenrod;
@@ -199,17 +199,17 @@
     transition-duration: 0.2s;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     #home-bg-upper {
-        left: -50%;
+        left: -350px;
     }
 
     #home-bg-lower {
-        right: -40%;
+        right: -300px;
     }
 
     .hex-box-home {
-        top: 0%;
+        top: 0px;
     }
 
     #pic-trapezoid {
@@ -223,6 +223,7 @@
     #pic-hex {
         top: 33%;
         left: 52%;
+        left: 330px;
     }
 
     .name-box {
@@ -232,6 +233,7 @@
 
     #my-name {
         font-size: 28px;
+        left: 130px;
         width: 200px;
     }
 
