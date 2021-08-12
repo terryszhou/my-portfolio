@@ -202,7 +202,7 @@
     transition-duration: 0.2s;
 }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
     #home-bg-upper {
         left: -350px;
     }
@@ -217,16 +217,40 @@
 
     #pic-trapezoid, #pic-greyspace {
         visibility: hidden;
+        left: 0px;
     }
 
     #pic-hex {
-        top: 33%;
-        left: 330px;
+        top: 40px;
+        left: 300px;
+        height: 115.47px;
+        width: 200px;
+    }
+
+    #pic-hex::before, #pic-hex::after {
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+    }
+    
+    #pic-hex::before {
+        top: -57.735px;
+        border-bottom: 57.735px solid goldenrod;
+    }
+    
+    #pic-hex::after {
+        bottom: -57.735px;
+        border-top: 57.735px solid goldenrod;
+    }
+
+    #my-face {
+        top: -20px;
+        left: 50px;
+        width: 50%;
     }
 
     .name-box {
         top: 20%;
-        left: -10%;
+        left: -12%;
     }
 
     #my-name {
