@@ -44,7 +44,7 @@
     text-shadow: 2px 2px 1px rgb(70,87,96);
     width: 300px;
     padding: 5px;
-    color: rgb(220,220,220);
+    color: #dcdcdc;
     background-color: rgb(25,28,31);
     font-size: 44px;
     top: 140px;
@@ -200,6 +200,24 @@
 #my-face:hover {
     transform: scale(1.1);
     transition-duration: 0.2s;
+}
+
+#test {
+    position: fixed;
+    top: -206%;
+    left: -100%;
+    z-index: -3;
+}
+
+#test::before {
+    position: absolute;
+    content:"";
+    width: 0;
+    height: 0;
+    transform: rotate(150.5deg) skew(10deg);
+    border: 1000px solid transparent;
+    border-top: 1000px solid rgb(50,67,76);
+    box-shadow: 0px -12px 12px -12px black;
 }
 
 @media only screen and (max-width: 600px) {

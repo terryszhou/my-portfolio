@@ -1,4 +1,33 @@
 export const About = (props) => {
+    const qAndAData = props.qAndA.map((e, i) => {
+        if (e.answer === "Nidoking!") {
+            return (
+                <>
+                    <div className="question-box">
+                        <p className="question-text">{e.question}</p>
+                    </div>
+                    <div className="answer-box">
+                        <p className="answer-text">
+                            {e.answer}
+                            <img className="pokemon-sprite" src={props.nidoking} alt="nidoking"/>
+                        </p>
+                    </div>
+                </>
+            )
+        } else {
+            return (
+                <>
+                    <div className="question-box">
+                        <p className="question-text">{e.question}</p>
+                    </div>
+                    <div className="answer-box">
+                        <p className="answer-text">{e.answer}</p>
+                    </div>
+                </>
+            )
+        }
+    })
+
     return (
         <div className="container pt-3">
             <img className="bg-image" src={props.flowersWhite} alt="background"/>
@@ -25,45 +54,7 @@ export const About = (props) => {
                         <div id="scroll-arrow">
                             <p>Scroll</p>
                         </div>
-                        <div className="question-box">
-                            <p className="question-text">What do you love most about software development?</p>
-                        </div>
-                        <div className="answer-box">
-                            <p className="answer-text">The creative blend of freedom and structure. A good piece of code is efficient, elegant, and eminently practical.</p>
-                        </div>
-                        <div className="question-box">
-                            <p className="question-text">What was your previous occupation?</p>
-                        </div>
-                        <div className="answer-box">
-                            <p className="answer-text">I've worked in both fine dining 🥂 and real estate 🏠. Both professions taught me a lot about teamwork and negotiation, but nothing beats the feeling of cracking a tough coding problem!</p>
-                        </div>
-                        <div className="question-box">
-                            <p className="question-text">What are your most important professional values?</p>
-                        </div>
-                        <div className="answer-box">
-                            <p className="answer-text">Honesty, communication, and a constant drive to learn and improve.</p>
-                        </div>
-                        <div className="question-box">
-                            <p className="question-text">What are your top hobbies?</p>
-                        </div>
-                        <div className="answer-box">
-                            <p className="answer-text">When I'm not coding, I'm probably reading/writing science-fiction 🤖 and fantasy 🐲 stories, or rock climbing at my local gym 💪🏽. I also make a mean stir-fry 🍲!</p>
-                        </div>
-                        <div className="question-box">
-                            <p className="question-text">Favourite Pokémon?</p>
-                        </div>
-                        <div className="answer-box">
-                            <p className="answer-text">
-                                Nidoking!
-                                <img className="pokemon-sprite" src={props.nidoking} alt="nidoking"/>
-                            </p>
-                        </div>
-                        <div className="question-box">
-                            <p className="question-text">Okay, seriously...what's with the hexagons??</p>
-                        </div>
-                        <div className="answer-box">
-                            <p className="answer-text">Because hexagons are the bestagons, obviously! I think they evoke both simplicity ⎔ and industriousness 🐝—like me!</p>
-                        </div>
+                        {qAndAData}
                     </fieldset>
                     <div className="content-box-outer"/>
                 </div>
@@ -114,42 +105,42 @@ export const About = (props) => {
                         <div className="table-responsive">
                             <table className="table table-striped table-dark table-borderless">
                                 <tbody>
-                                        <tr>
-                                            <th>Languages</th>
-                                            <td>Python</td>
-                                            <td>JavaScript/ES6</td>
-                                            <td>HTML5</td>
-                                            <td>CSS3</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Libraries</th>
-                                            <td>jQuery</td>
-                                            <td>Bootstrap</td>
-                                            <td>EJS</td>
-                                            <td>Axios</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Frameworks</th>
-                                            <td>React</td>
-                                            <td>Express</td>
-                                            <td>Node</td>
-                                            <td>Django</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Databases</th>
-                                            <td>PostgreSQL</td>
-                                            <td>Sequelize</td>
-                                            <td>MongoDB</td>
-                                            <td>Mongoose</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Other</th>
-                                            <td>RESTful Routing</td>
-                                            <td>AJAX</td>
-                                            <td>JSON</td>
-                                            <td>MERN</td>
-                                        </tr>
-                                    </tbody>
+                                    <tr>
+                                        <th>Languages</th>
+                                        <td>Python</td>
+                                        <td>JavaScript/ES6</td>
+                                        <td>HTML5</td>
+                                        <td>CSS3</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Libraries</th>
+                                        <td>jQuery</td>
+                                        <td>Bootstrap</td>
+                                        <td>EJS</td>
+                                        <td>Axios</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Frameworks</th>
+                                        <td>React</td>
+                                        <td>Express</td>
+                                        <td>Node</td>
+                                        <td>Django</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Databases</th>
+                                        <td>PostgreSQL</td>
+                                        <td>Sequelize</td>
+                                        <td>MongoDB</td>
+                                        <td>Mongoose</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Other</th>
+                                        <td>RESTful Routing</td>
+                                        <td>AJAX</td>
+                                        <td>JSON</td>
+                                        <td>MERN</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>

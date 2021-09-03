@@ -269,19 +269,15 @@ h3 {
     color: white;
 }
 
-@media only screen and (max-width: 750px) {
-    .hex-box-other {
-        left: -7%;
-    }
-
+@media only screen and (max-width: 600px) {
     #skew-bg-left {
         transform: skew(8deg);
-        left: -300px;
+        left: -350px;
     }
 
     #skew-bg-right {
         transform: skew(-8deg);
-        right: -300px;
+        right: -350px;
     }
 
     .content-box-outer {

@@ -14,6 +14,7 @@ import { Contact } from './components/Contact'
 import { Nav } from './components/Nav'
 import { Social } from './components/Social'
 
+import { qAndA } from './data/qAndA.jsx'
 import resume from './static/terryzhou-resume.pdf'
 import headshot from './images/headshot.png'
 import catCrawlerDesktop from './images/cat-crawler-desktop.png'
@@ -29,43 +30,36 @@ import flowersWhite from './images/flowers-white.png'
 export const App = () => {
     return (
         <Router>
-            <Route
-                exact path="/"
-                render={() => 
-                    <Home 
-                        headshot={headshot}
-                        flowersWhite={flowersWhite}
-                    />}
+            <Route exact path="/" render={() => 
+                <Home 
+                    headshot={headshot}
+                    flowersWhite={flowersWhite}
+                />}
             />
-            <Route
-                path="/about"
-                render={() => 
-                    <About 
-                        resume={resume}
-                        flowersWhite={flowersWhite}
-                        nidoking={nidoking}
-                    />}
+            <Route path="/about" render={() => 
+                <About
+                    qAndA={qAndA}
+                    resume={resume}
+                    flowersWhite={flowersWhite}
+                    nidoking={nidoking}
+                />}
             />
-            <Route
-                path="/projects"
-                render={() => 
-                    <Projects
-                        flowersWhite={flowersWhite}
-                        catCrawlerDesktop={catCrawlerDesktop}
-                        pokemap={pokemap}
-                        totemize={totemize}
-                        pixelRunner={pixelRunner}
-                        gameOfLife={gameOfLife}
-                    />}
+            <Route path="/projects" render={() => 
+                <Projects
+                    flowersWhite={flowersWhite}
+                    catCrawlerDesktop={catCrawlerDesktop}
+                    pokemap={pokemap}
+                    totemize={totemize}
+                    pixelRunner={pixelRunner}
+                    gameOfLife={gameOfLife}
+                />}
             />
-            <Route
-                path="/contact"
-                render={() => 
-                    <Contact
-                        resume={resume}
-                        cardQR={cardQR}
-                        flowersWhite={flowersWhite}
-                    />}
+            <Route path="/contact" render={() => 
+                <Contact
+                    resume={resume}
+                    cardQR={cardQR}
+                    flowersWhite={flowersWhite}
+                />}
             />
             <Social 
                 resume={resume}
