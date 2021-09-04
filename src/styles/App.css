@@ -86,7 +86,7 @@ body {
 
 .content-box-outer {
     position: absolute;
-    top: 8%;
+    top: 5.7vh;
     height: 57vh;
     width: 43.3vw;
     border: 2px solid goldenrod;
@@ -207,7 +207,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     position: absolute;
-    font-size: 12px;
+    font-size: clamp(6px, 1vw, 12px);
     background-color: rgb(26,29,32);
     padding: 5px;
     border-radius: 10px;

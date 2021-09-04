@@ -16,7 +16,7 @@
     width: 0;
     height: 0;
     bottom: -10vh;
-    right: 0px;
+    right: 0vw;
     border-bottom: 93vh solid rgb(50,67,76);
     border-left: 93vw solid transparent;
     -webkit-animation: 1.5s ease-out 1 slideLeft;

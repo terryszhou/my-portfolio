@@ -112,7 +112,7 @@
 }
 
 .key-icon {
-    font-size: 48px;
+    font-size: clamp(1rem, 4vw, 3rem);
     transition-duration: 0.3s;
 }
 
@@ -128,8 +128,8 @@
 
 .key-icon-tip {
     top: 30%;
-    left: -20px;
-    min-width: 85px;
+    left: -40%;
+    min-width: 6.5vw;
     -webkit-opacity: .9;
     opacity: .9;
 }
@@ -169,15 +169,5 @@
 
     .table-responsive {
         font-size: 12px;
-    }
-
-    .key-icon {
-        font-size: 36px;
-    }
-
-    .key-icon-tip {
-        font-size: 10px;
-        width: 70px;
-        left: -25px;
     }
 }
