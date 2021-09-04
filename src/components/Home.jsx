@@ -17,17 +17,15 @@ export const Home = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="name-box">
-                <h1 id="my-name">Terry S. Zhou</h1>
-                <h2 id="my-title">Full Stack Developer</h2>
-            </div>
-            <div className="pic-box">
+            <img id="my-title"  src={props.titleCard} alt="title card"/>
+            <img id="my-face" src={props.faceCard} alt="face card"/>
+            {/* <div className="pic-box">
                 <div id="pic-trapezoid"/>
                 <div id="pic-greyspace"/>
                 <div id="pic-hex">
-                    <img id="my-face" src={props.headshot} alt="headshot"/>
+                    <img id="my-face" src={props.headShot} alt="headshot"/>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

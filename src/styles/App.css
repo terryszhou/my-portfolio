@@ -171,8 +171,8 @@ body {
 
 .social {
     position: fixed;
-    right: 2%;
-    bottom: 15%;
+    right: 1%;
+    bottom: 12%;
     background-color: rgb(52,58,64);
     width: 40px;
     display: flex;

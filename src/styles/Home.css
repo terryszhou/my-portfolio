@@ -2,10 +2,10 @@
     position: fixed;
     width: 0;
     height: 0;
-    top: -12%;
-    left: -60px;
-    border-top: 670px solid rgb(50,67,76);
-    border-right: 1185px solid transparent;
+    top: -10vh;
+    left: -5vw;
+    border-top: 93vh solid rgb(50,67,76);
+    border-right: 93vw solid transparent;
     z-index: -2;
     -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
@@ -15,186 +15,44 @@
     position: fixed;
     width: 0;
     height: 0;
-    bottom: -13%;
+    bottom: -10vh;
     right: 0px;
-    border-bottom: 670px solid rgb(50,67,76);
-    border-left: 1185px solid transparent;
+    border-bottom: 93vh solid rgb(50,67,76);
+    border-left: 93vw solid transparent;
     -webkit-animation: 1.5s ease-out 1 slideLeft;
     animation: 1.5s ease-out 1 slideLeft;
 }
 
 .hex-box-home {
-    top: 190px;
-    left: 40px;
+    top: 12rem;
+    left: 2.5rem;
     -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
-}
-
-.name-box {
-    position: absolute;
-    margin-right: 10px;
-    top: 95px;
-    -webkit-animation: 1.5s ease-out 1 slideRight;
-    animation: 1.5s ease-out 1 slideRight;
-}
-
-#my-name {
-    position: relative;
-    text-align: center;
-    text-shadow: 2px 2px 1px rgb(70,87,96);
-    width: 300px;
-    padding: 5px;
-    color: #dcdcdc;
-    background-color: rgb(25,28,31);
-    font-size: 44px;
-    top: 140px;
-    left: 255px;
-}
-
-#my-name::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    top: 0rem;
-    left: -3.1rem;
-    border-left: 50px solid transparent;
-    border-top: 62px solid rgb(26,29,32);
-}
-
-#my-name::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    bottom: 0rem;
-    right: -3.1rem;
-    border-right: 50px solid transparent;
-    border-bottom: 62px solid rgb(26,29,32);
 }
 
 #my-title {
-    font-size: 28px;
-    position: relative;
-    text-align: center;
-    height: 60px;
-    top: 98px;
-    left: 213px;
-    width: 300px;
-    padding-top: 10px;
-    padding-left: 10px;
-    color: rgb(25,28,31);
-    background-color: rgb(220,220,220);
-    text-shadow: 2px 2px 1px white;
-}
-
-#my-title::before {
     position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    top: 0rem;
-    left: -3.1rem;
-    border-left: 50px solid transparent;
-    border-bottom: 60px solid rgb(220,220,220);
+    top: 15rem;
+    left: 20rem;
+    width: 30vw;
+    -webkit-animation: 1.5s ease-out 1 slideRight;
+    animation: 1.5s ease-out 1 slideRight;
+    transition-duration: 0.2s;
 }
 
-#my-title::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    bottom: 0rem;
-    right: -3.1rem;
-    border-right: 50px solid transparent;
-    border-top: 60px solid rgb(220,220,220);
-}
-
-.pic-box {
-    position: relative;
-    -webkit-animation: 1.5s ease-out 1 fadeIn;
-    animation: 1.5s ease-out 1 fadeIn;
-}
-
-#pic-trapezoid {
-    position: absolute;
-    top: 0px;
-    left: 618px;
-    transform: rotate(-90deg);
-    border-bottom: 200px solid rgb(169, 127, 21);
-    border-left: 120px solid transparent;
-    border-right: 120px solid transparent;
-    height: 0;
-    width: 475px;
-}
-
-#pic-greyspace {
-    position: absolute;
-    top: -7px;
-    left: 776px;
-    width: 360px;
-    height: 216px;
-    background: rgb(69,87,96);
-}
-
-#pic-greyspace::before, #pic-greyspace::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 180px solid transparent;
-    border-right: 180px solid transparent;
-}
-
-#pic-greyspace::before {
-    top: -108px;
-    border-bottom: 108px solid rgb(69,87,96);
-}
-
-#pic-greyspace::after {
-    bottom: -108px;
-    border-top: 108px solid rgb(69,87,96);
-}
-
-#pic-hex {
-    position: absolute;
-    top: 10px;
-    left: 806px;
-    width: 300px;
-    height: 180px;
-    background: goldenrod;
-    z-index: 1;
-    filter: drop-shadow(0 0 5px goldenrod);
-}
-
-#pic-hex::before, #pic-hex::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-}
-
-#pic-hex::before {
-    top: -90px;
-    border-bottom: 90px solid goldenrod;
-}
-
-#pic-hex::after {
-    bottom: -90px;
-    border-top: 90px solid goldenrod;
+#my-title:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
 }
 
 #my-face {
     position: absolute;
-    top: -50px;
-    left: 65px;
-    width: 60%;
-    border-radius: 50%;
-    filter: drop-shadow(0 0 5px white);    
+    top: 5rem;
+    right: 5rem;
+    width: 30vw;
+    -webkit-animation: 1.5s ease-out 1 fadeIn;
+    animation: 1.5s ease-out 1 fadeIn;
     transition-duration: 0.2s;
-    z-index: 1;
 }
 
 #my-face:hover {
@@ -202,102 +60,20 @@
     transition-duration: 0.2s;
 }
 
-#test {
-    position: fixed;
-    top: -206%;
-    left: -100%;
-    z-index: -3;
-}
-
-#test::before {
-    position: absolute;
-    content:"";
-    width: 0;
-    height: 0;
-    transform: rotate(150.5deg) skew(10deg);
-    border: 1000px solid transparent;
-    border-top: 1000px solid rgb(50,67,76);
-    box-shadow: 0px -12px 12px -12px black;
-}
-
-@media only screen and (max-width: 600px) {
-    #home-bg-upper {
-        left: -350px;
-    }
-
-    #home-bg-lower {
-        right: -300px;
-    }
-
+@media only screen and (max-width: 700px) {
     .hex-box-home {
         top: 0px;
     }
 
-    #pic-trapezoid, #pic-greyspace {
-        visibility: hidden;
-        left: 0px;
-    }
-
-    #pic-hex {
-        top: 40px;
-        left: 300px;
-        height: 115.47px;
-        width: 200px;
-    }
-
-    #pic-hex::before, #pic-hex::after {
-        border-left: 100px solid transparent;
-        border-right: 100px solid transparent;
-    }
-    
-    #pic-hex::before {
-        top: -57.735px;
-        border-bottom: 57.735px solid goldenrod;
-    }
-    
-    #pic-hex::after {
-        bottom: -57.735px;
-        border-top: 57.735px solid goldenrod;
+    #my-title {
+        top: 18rem;
+        left: 1rem;
+        width: 45vw;
     }
 
     #my-face {
-        top: -20px;
-        left: 50px;
-        width: 50%;
-    }
-
-    .name-box {
-        top: 20%;
-        left: -12%;
-    }
-
-    #my-name {
-        font-size: 28px;
-        left: 130px;
-        width: 200px;
-    }
-
-    #my-name::before {
-        border-top: 43px solid rgb(26,29,32);
-    }
-
-    #my-name::after {
-        border-bottom: 43px solid rgb(26,29,32);
-    }
-
-    #my-title {
-        font-size: 20px;
-        top: 110px;
-        left: 100px;
-        height: 45px;
-        width: 200px;
-    }
-
-    #my-title::before {
-        border-bottom: 45px solid rgb(220,220,220);
-    }
-
-    #my-title::after {
-        border-top: 45px solid rgb(220,220,220);
+        top: 12rem;
+        right: 4rem;
+        width: 35vw;
     }
 }

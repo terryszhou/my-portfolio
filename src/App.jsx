@@ -16,7 +16,9 @@ import { Social } from './components/Social'
 
 import { qAndA } from './data/qAndA.jsx'
 import resume from './static/terryzhou-resume.pdf'
-import headshot from './images/headshot.png'
+import titleCard from './images/title-card.png'
+import faceCard from './images/face-card.png'
+import headShot from './images/headshot.png'
 import catCrawlerDesktop from './images/cat-crawler-desktop.png'
 import pokemap from './images/pokemap-desktop.png'
 import totemize from './images/totemize-mobile.png'
@@ -31,8 +33,10 @@ export const App = () => {
     return (
         <Router>
             <Route exact path="/" render={() => 
-                <Home 
-                    headshot={headshot}
+                <Home
+                    titleCard={titleCard}
+                    faceCard={faceCard}
+                    headShot={headShot}
                     flowersWhite={flowersWhite}
                 />}
             />
