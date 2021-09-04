@@ -8,8 +8,8 @@ body {
 }
 
 .bg-image {
-    width: 90%;
     position: fixed;
+    width: 90%;
     z-index: -3;
     top: -37%;
     left: 5.1%;
@@ -18,14 +18,17 @@ body {
     animation: 2s ease-in 1 bgImageFade;
 }
 
-#skew-bg-left {
+#skew-bg-left, #skew-bg-right {
     position: fixed;
     background-color: rgb(50,67,76);
     top: -20%;
-    left: -190px;
-    width: 500px;
-    height: 1200px;
+    width: 40vw;
+    height: 160vh;
     z-index: -2;
+}
+
+#skew-bg-left {
+    left: -15vw;
     transform: skew(8deg);
     -webkit-animation: 1.4s ease-out 1 slideRightSkew;
     animation: 1.4s ease-out 1 slideRightSkew;
@@ -33,13 +36,7 @@ body {
 }
 
 #skew-bg-right {
-    position: fixed;
-    background-color: rgb(50,67,76);
-    top: -20%;
-    right: -190px;
-    width: 500px;
-    height: 1200px;
-    z-index: -2;
+    right: -15vw;
     transform: skew(-8deg);
     -webkit-animation: 1.4s ease-out 1 slideLeftSkew;
     animation: 1.4s ease-out 1 slideLeftSkew;
@@ -68,21 +65,20 @@ body {
     text-shadow: 1px 1px 1px white;
 }
 
-.content-box-heading::before {
+.content-box-heading::before, .content-box-heading::after {
     position: absolute;
     content: "";
     width: 0;
     height: 0;
+}
+
+.content-box-heading::before {
     left: -1.7rem;
     border-left: 28px solid transparent;
     border-bottom: 33px solid rgb(220,220,220);
 }
 
 .content-box-heading::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
     right: -1.7rem;
     border-right: 28px solid transparent;
     border-top: 33px solid rgb(220,220,220);
@@ -91,8 +87,8 @@ body {
 .content-box-outer {
     position: absolute;
     top: 8%;
-    height: 397px;
-    width: 555px;
+    height: 57vh;
+    width: 43.3vw;
     border: 2px solid goldenrod;
     box-shadow: 2px 2px 2px 2px black;
 }
@@ -110,14 +106,14 @@ body {
 
 .content-box-outer::before {
     top: -16%;
-    left: -11.5%;
+    left: -4em;
     border-top: 50px solid goldenrod;
     box-shadow: 0px -12px 12px -12px black;
 }
 
 .content-box-outer::after {
     bottom: -16%;
-    right: -11.5%;
+    right: -4em;
     border-bottom: 50px solid goldenrod;
     box-shadow: 0px 12px 12px -12px black;
 }
@@ -127,8 +123,8 @@ body {
     border: 2px solid goldenrod;
     border-radius: 15px;
     margin: auto 20vw 10vh 20vw;
-    width: 532px;
-    height: 380px;
+    width: 41.5vw;
+    height: 54.5vh;
     padding: 30px 10px 10px 10px;
     background-color: rgb(26,29,32);
     overflow: scroll;
@@ -270,16 +266,6 @@ h3 {
 }
 
 @media only screen and (max-width: 600px) {
-    #skew-bg-left {
-        transform: skew(8deg);
-        left: -350px;
-    }
-
-    #skew-bg-right {
-        transform: skew(-8deg);
-        right: -350px;
-    }
-
     .content-box-outer {
         width: 276px;
     }

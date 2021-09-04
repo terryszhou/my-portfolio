@@ -19,13 +19,6 @@ export const Home = (props) => {
             </div>
             <img id="my-title"  src={props.titleCard} alt="title card"/>
             <img id="my-face" src={props.faceCard} alt="face card"/>
-            {/* <div className="pic-box">
-                <div id="pic-trapezoid"/>
-                <div id="pic-greyspace"/>
-                <div id="pic-hex">
-                    <img id="my-face" src={props.headShot} alt="headshot"/>
-                </div>
-            </div> */}
         </div>
     )
 }
