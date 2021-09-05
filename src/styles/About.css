@@ -4,9 +4,10 @@
     right: 10%;
     width: 0;
     height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 25px solid rgb(220,220,220);
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-top: 1.5em solid rgb(220,220,220);
     -webkit-animation: scrollArrow 2s linear infinite;
     animation: scrollArrow 2s linear infinite;
 }
@@ -15,16 +16,16 @@
     position: absolute;
     content: "";
     background-color: rgb(220,220,220);
-    top: -40px;
-    left: -6.8px;
-    width: 15px;
-    height: 20px;
+    top: -2.5em;
+    left: -0.5em;
+    width: 1em;
+    height: 1.5em;
 }
 
 #scroll-arrow p {
     position: absolute;
-    top: -70px;
-    left: -35px;
+    top: -4.5em;
+    left: -2.25em;
     background-color: rgb(220,220,220);
     color: rgb(26,29,32);
     display: inline;
@@ -41,7 +42,8 @@
     padding: 10px;
     text-align: left;
     font-weight: bold;
-    max-width: 250px;
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    max-width: 25vw;
     border-radius: 15px;
     transition-duration: 0.2s;
 }
@@ -88,14 +90,15 @@
 }
 
 .pokemon-sprite {
-    width: 60px;
-    margin-bottom: 25px;
+    width: 4em;
+    margin-bottom: 1em;
 }
 
 .table-responsive {
     border-radius: 15px;
     margin-bottom: 50px;
     width: 60vw;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
     border: 2px solid goldenrod;
     box-shadow: 2px 2px 2px 2px black;
     text-align: center;
@@ -127,8 +130,8 @@
 }
 
 .key-icon-tip {
-    top: 30%;
-    left: -40%;
+    top: 1em;
+    left: -1.5em;
     min-width: 6.5vw;
     -webkit-opacity: .9;
     opacity: .9;
@@ -139,35 +142,4 @@
     font-weight: bold;
     color: rgb(220,220,220);
     margin-bottom: 100px;
-}
-
-@media only screen and (max-width: 600px) {
-    #scroll-arrow {
-        right: 15%;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-top: 18px solid rgb(220,220,220);
-    }
-
-    #scroll-arrow::before {
-        width: 10px;
-        height: 15px;
-        top: -30px;
-        left: -5px;
-    }
-
-    #scroll-arrow p {
-        font-size: 12px;
-        top: -55px;
-        left: -30px;
-    }
-
-    .question-text, .answer-text {
-        font-size: 12px;
-        max-width: 150px;
-    }
-
-    .table-responsive {
-        font-size: 12px;
-    }
 }

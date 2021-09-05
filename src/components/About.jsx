@@ -49,7 +49,7 @@ export const About = (props) => {
             </div>
             <div className="d-flex flex-column">
                 <div className="content-box">
-                    <h3 className="content-box-heading mb-3 ">Get to Know Me</h3>
+                    <h3 className="content-box-heading mb-3">Get to Know Me</h3>
                     <fieldset className="content-field">
                         <div id="scroll-arrow">
                             <p>Scroll</p>

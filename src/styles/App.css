@@ -57,8 +57,8 @@ body {
 
 .content-box-heading {
     position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px 0 10px;
+    /* font-size: clamp(1.25rem, 2.5vw, 1.75rem); */
     max-width: 300px;
     background: rgb(220,220,220);
     color: rgb(26,29,32);
@@ -73,15 +73,15 @@ body {
 }
 
 .content-box-heading::before {
-    left: -1.7rem;
-    border-left: 28px solid transparent;
-    border-bottom: 33px solid rgb(220,220,220);
+    left: -1em;
+    border-left: 1em solid transparent;
+    border-bottom: 1.18em solid rgb(220,220,220);
 }
 
 .content-box-heading::after {
-    right: -1.7rem;
-    border-right: 28px solid transparent;
-    border-top: 33px solid rgb(220,220,220);
+    right: -1em;
+    border-right: 1em solid transparent;
+    border-top: 1.18em solid rgb(220,220,220);
 }
 
 .content-box-outer {
@@ -105,14 +105,14 @@ body {
 }
 
 .content-box-outer::before {
-    top: -16%;
+    top: -4em;
     left: -4em;
     border-top: 50px solid goldenrod;
     box-shadow: 0px -12px 12px -12px black;
 }
 
 .content-box-outer::after {
-    bottom: -16%;
+    bottom: -4em;
     right: -4em;
     border-bottom: 50px solid goldenrod;
     box-shadow: 0px 12px 12px -12px black;
