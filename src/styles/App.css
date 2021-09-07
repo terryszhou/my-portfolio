@@ -139,13 +139,13 @@ body {
 }
 
 .content-box-outer:hover::before {
-    top: -13.2%;
+    top: -3.2em;
     left: -3.2em;
     transition-duration: 0.2s;
 }
 
 .content-box-outer:hover::after {
-    bottom: -13.2%;
+    bottom: -3.2em;
     right: -3.2em;
     transition-duration: 0.2s;
 }
