@@ -32,8 +32,8 @@
 
 .project-hex {
     position: relative;
-    width: 360px;
-    height: 208px;
+    width: 320px;
+    height: 192px;
 }
 
 .project-hex::before, .project-hex::after {
@@ -41,16 +41,16 @@
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 180px solid transparent;
-    border-right: 180px solid transparent;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
 }
 
 .project-hex::before {
-    top: -120px;
+    top: -96px;
 }
 
 .project-hex::after {
-    bottom: -120px;
+    bottom: -96px;
 }
 
 .project-hex:hover .project-desc {
@@ -65,8 +65,8 @@
 
 .project-hex-2 {
     position: absolute;
-    width: 370px;
-    height: 214px;
+    width: 330px;
+    height: 200px;
     top: -4px;
     left: -5px;
     background-color: rgb(70,87,96);
@@ -78,24 +78,24 @@
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 185px solid transparent;
-    border-right: 185px solid transparent;
+    border-left: 165px solid transparent;
+    border-right: 165px solid transparent;
 }
 
 .project-hex-2::before {
-    top: -125px;
-    border-bottom: 125px solid rgb(70,87,96);
+    top: -100px;
+    border-bottom: 100px solid rgb(70,87,96);
 }
 
 .project-hex-2::after {
-    bottom: -125px;
-    border-top: 125px solid rgb(70,87,96);
+    bottom: -100px;
+    border-top: 100px solid rgb(70,87,96);
 }
 
 .project-hex-3 {
     position: absolute;
-    width: 380px;
-    height: 220px;
+    width: 340px;
+    height: 208px;
     top: -8px;
     left: -10px;
     background-color: goldenrod;
@@ -107,48 +107,48 @@
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 190px solid transparent;
-    border-right: 190px solid transparent;
+    border-left: 170px solid transparent;
+    border-right: 170px solid transparent;
 }
 
 .project-hex-3::before {
-    top: -130px;
-    border-bottom: 130px solid goldenrod;
+    top: -104px;
+    border-bottom: 104px solid goldenrod;
 }
 
 .project-hex-3::after {
-    bottom: -130px;
-    border-top: 130px solid goldenrod;
+    bottom: -104px;
+    border-top: 104px solid goldenrod;
 }
 
 #project-1 {
     position: absolute;
     top: 250px;
-    left: 115px;
+    left: 155px;
     background: rgb(99,40,52);
 }
 
 #project-1::before {
-    border-bottom: 120px solid rgb(99,40,52);
+    border-bottom: 96px solid rgb(99,40,52);
 }
 
 #project-1::after {
-    border-top: 120px solid rgb(99,40,52);
+    border-top: 96px solid rgb(99,40,52);
 }
 
 #project-2 {
     position: absolute;
-    top: 595px;
-    left: 303px;
+    top: 555px;
+    left: 323px;
     background: rgb(61,75,130);
 }
 
 #project-2::before {
-    border-bottom: 120px solid rgb(61,75,130);
+    border-bottom: 96px solid rgb(61,75,130);
 }
 
 #project-2::after {
-    border-top: 120px solid rgb(61,75,130);
+    border-top: 96px solid rgb(61,75,130);
 }
 
 #project-3 {
@@ -159,41 +159,41 @@
 }
 
 #project-3::before {
-    border-bottom: 120px solid rgb(117,77,180);
+    border-bottom: 96px solid rgb(117,77,180);
 }
 
 #project-3::after {
-    border-top: 120px solid rgb(117,77,180);
+    border-top: 96px solid rgb(117,77,180);
 }
 
 #project-4 {
     position: absolute;
-    top: 595px;
-    left: 678px;
+    top: 555px;
+    left: 658px;
     background: rgb(193,98,204);
 }
 
 #project-4::before {
-    border-bottom: 120px solid rgb(193,98,204);
+    border-bottom: 96px solid rgb(193,98,204);
 }
 
 #project-4::after {
-    border-top: 120px solid rgb(193,98,204);
+    border-top: 96px solid rgb(193,98,204);
 }
 
 #project-5 {
     position: absolute;
     top: 250px;
-    left: 866px;
+    left: 826px;
     background: rgb(108,37,152);
 }
 
 #project-5::before {
-    border-bottom: 120px solid rgb(108,37,152);
+    border-bottom: 96px solid rgb(108,37,152);
 }
 
 #project-5::after {
-    border-top: 120px solid rgb(108,37,152);
+    border-top: 96px solid rgb(108,37,152);
 }
 
 .project-pic {
@@ -208,11 +208,14 @@
     position: absolute;
     top: -50px;
     opacity: 0;
+    font-size: 14px;
+    z-index: 2;
     transition-duration: 0.3s;
 }
 
 .project-desc h3 {
     color: gold;
+    font-size: 24px;
 }
 
 .project-about {
@@ -248,27 +251,31 @@
     transition-duration: 0.2s;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .project-box {
-        margin-left: -14vw;
-        padding-bottom: 120vh;
+        padding-bottom: 100vh;
     }
+
     #project-1 {
         left: 70px;
     }
+
     #project-2 {
-        left: 258px;
+        left: 238px;
     }
+
     #project-3 {
-        top: 940px;
+        top: 860px;
         left: 70px;
     }
+
     #project-4 {
-        top: 1284px;
-        left: 258px;
+        top: 1167px;
+        left: 238px;
     }
+
     #project-5 {
-        top: 1630px;
+        top: 1474px;
         left: 70px;
     }
 }
