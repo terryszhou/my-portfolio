@@ -53,13 +53,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px;
 }
 
 .content-box-heading {
     position: relative;
-    padding: 0 10px 0 10px;
-    /* font-size: clamp(1.25rem, 2.5vw, 1.75rem); */
-    max-width: 300px;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
     background: rgb(220,220,220);
     color: rgb(26,29,32);
     text-shadow: 1px 1px 1px white;
@@ -75,20 +74,22 @@ body {
 .content-box-heading::before {
     left: -1em;
     border-left: 1em solid transparent;
-    border-bottom: 1.18em solid rgb(220,220,220);
+    border-bottom: 1.2em solid rgb(220,220,220);
 }
 
 .content-box-heading::after {
     right: -1em;
     border-right: 1em solid transparent;
-    border-top: 1.18em solid rgb(220,220,220);
+    border-top: 1.2em solid rgb(220,220,220);
 }
 
 .content-box-outer {
-    position: absolute;
-    top: 5.7vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 57vh;
-    width: 43.3vw;
+    width: 43vw;
     border: 2px solid goldenrod;
     box-shadow: 2px 2px 2px 2px black;
 }
@@ -100,7 +101,7 @@ body {
     height: 0;
     transform: rotate(135deg);
     border: 50px solid transparent;
-    z-index: 1;
+    z-index: 2;
     transition-duration: 0.2s;
 }
 
@@ -122,9 +123,8 @@ body {
     position: relative;
     border: 2px solid goldenrod;
     border-radius: 15px;
-    margin: auto 20vw 10vh 20vw;
-    width: 41.5vw;
-    height: 54.5vh;
+    height: 95%;
+    width: 95%;
     padding: 30px 10px 10px 10px;
     background-color: rgb(26,29,32);
     overflow: scroll;
@@ -133,18 +133,18 @@ body {
 }
 
 .content-field:hover {
-    transform: scale(1.04);
+    transform: scale(1.06);
     border-radius: 0;
     transition-duration: 0.2s;
 }
 
-.content-field:hover + .content-box-outer::before {
+.content-box-outer:hover::before {
     top: -13.2%;
     left: -3.2em;
     transition-duration: 0.2s;
 }
 
-.content-field:hover + .content-box-outer::after {
+.content-box-outer:hover::after {
     bottom: -13.2%;
     right: -3.2em;
     transition-duration: 0.2s;
@@ -211,7 +211,7 @@ body {
     background-color: rgb(26,29,32);
     padding: 5px;
     border-radius: 10px;
-    top: -0.2rem;
+    top: -0.2em;
     right: 2rem;
     visibility: hidden;
 }
@@ -224,8 +224,8 @@ body {
 
 .seal-tip {
     top: 10%;
-    left: -325px;
-    width: 300px;
+    left: -26em;
+    width: 25em;
     opacity: 0;
     color: rgb(220,220,220);
     text-align: center;

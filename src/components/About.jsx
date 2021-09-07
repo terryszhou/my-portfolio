@@ -1,5 +1,5 @@
 export const About = (props) => {
-    const qAndAData = props.qAndA.map((e, i) => {
+    const qAndAData = props.qAndA.map(e => {
         if (e.answer === "Nidoking!") {
             return (
                 <>
@@ -50,13 +50,14 @@ export const About = (props) => {
             <div className="d-flex flex-column">
                 <div className="content-box">
                     <h3 className="content-box-heading mb-3">Get to Know Me</h3>
-                    <fieldset className="content-field">
-                        <div id="scroll-arrow">
-                            <p>Scroll</p>
-                        </div>
-                        {qAndAData}
-                    </fieldset>
-                    <div className="content-box-outer"/>
+                    <div className="content-box-outer">
+                        <fieldset className="content-field">
+                            <div id="scroll-arrow">
+                                <p>Scroll</p>
+                            </div>
+                            {qAndAData}
+                        </fieldset>
+                    </div>
                 </div>
                 <div className="content-box">
                     <h3 className="content-box-heading">Key Skills</h3>

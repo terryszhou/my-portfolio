@@ -1,6 +1,6 @@
 export const Home = (props) => {
     return (
-        <div className="container pt-3">
+        <div className="container">
             <img className="bg-image" src={props.flowersWhite} alt="background"/>
             <div id="home-bg-upper"/>
             <div id="home-bg-lower"/>

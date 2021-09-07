@@ -17,7 +17,7 @@ export const qAndA = [
     },
     {
         question: "Favourite Pokémon?",
-        answer: "Nidoking!",
+        answer: "Nidoking!"
     },
     {
         question: "Okay, seriously...what's with the hexagons??",

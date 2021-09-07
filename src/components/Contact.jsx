@@ -18,39 +18,40 @@ export const Contact = (props) => {
                 </div>
                 <h2>Contact</h2>
             </div>
-            <div className="content-box about-corners">
-                <h3 className="mb-3 content-box-heading">Let's Get in Touch!</h3>
-                <fieldset className="content-field">
-                    <div className="contact-box">
-                        <a href="mailto:terryszhou@gmail.com" target="_blank" rel="noreferrer">
-                            <i className="contact-icon fas fa-envelope">
-                                <p>terryszhou@gmail.com</p>
-                            </i>
-                        </a>
-                    </div>
-                    <div className="contact-box">
-                        <a href="https://github.com/terryszhou" target="_blank" rel="noreferrer">
-                            <i className="contact-icon fab fa-github">
-                                <p>github.com/terryszhou</p>
-                            </i>
-                        </a>
-                    </div>
-                    <div className="contact-box">
-                        <a href="https://www.linkedin.com/in/terryszhou/" target="_blank" rel="noreferrer">
-                            <i className="contact-icon fab fa-linkedin">
-                                <p>linkedin.com/in/terryszhou/</p>
-                            </i>
-                        </a>
-                    </div>
-                    <div className="contact-box">
-                        <a href="https://s3.us-west-1.amazonaws.com/terryszhou.com/terryzhou-resume.pdf" target="_blank" rel="noreferrer">
-                            <i className="contact-icon far fa-file">
-                                <p>(Here's my resume again)</p>
-                            </i>
-                        </a>
-                    </div>
-                </fieldset>
-                <div className="content-box-outer"/>
+            <div className="content-box">
+                <h3 className="content-box-heading mb-3">Let's Get in Touch!</h3>
+                <div className="content-box-outer">
+                    <fieldset className="content-field">
+                        <div className="contact-box">
+                            <a href="mailto:terryszhou@gmail.com" target="_blank" rel="noreferrer">
+                                <i className="contact-icon fas fa-envelope">
+                                    <p>terryszhou@gmail.com</p>
+                                </i>
+                            </a>
+                        </div>
+                        <div className="contact-box">
+                            <a href="https://github.com/terryszhou" target="_blank" rel="noreferrer">
+                                <i className="contact-icon fab fa-github">
+                                    <p>github.com/terryszhou</p>
+                                </i>
+                            </a>
+                        </div>
+                        <div className="contact-box">
+                            <a href="https://www.linkedin.com/in/terryszhou/" target="_blank" rel="noreferrer">
+                                <i className="contact-icon fab fa-linkedin">
+                                    <p>linkedin.com/in/terryszhou/</p>
+                                </i>
+                            </a>
+                        </div>
+                        <div className="contact-box">
+                            <a href="https://s3.us-west-1.amazonaws.com/terryszhou.com/terryzhou-resume.pdf" target="_blank" rel="noreferrer">
+                                <i className="contact-icon far fa-file">
+                                    <p>(Here's my resume again)</p>
+                                </i>
+                            </a>
+                        </div>
+                    </fieldset>
+                </div>
             </div>
             <div className="content-box qr-box">
                 <a href="https://hihello.me/p/c2fcf08c-ba21-4fe6-8e72-c542170b10e2" target="_blank" rel="noreferrer">
