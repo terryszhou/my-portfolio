@@ -25,9 +25,7 @@
 
 .project-box {
     position: relative;
-    margin-top: -15vh;
-    margin-left: -9vw;
-    margin-bottom: 175vh;
+    margin: -15vh 0 175vh -9vh;
 }
 
 .project-hex {
@@ -39,8 +37,6 @@
 .project-hex::before, .project-hex::after {
     content: "";
     position: absolute;
-    width: 0;
-    height: 0;
     border-left: 160px solid transparent;
     border-right: 160px solid transparent;
 }
@@ -76,8 +72,6 @@
 .project-hex-2::before, .project-hex-2::after {
     content: "";
     position: absolute;
-    width: 0;
-    height: 0;
     border-left: 165px solid transparent;
     border-right: 165px solid transparent;
 }
@@ -105,8 +99,6 @@
 .project-hex-3::before, .project-hex-3::after {
     content: "";
     position: absolute;
-    width: 0;
-    height: 0;
     border-left: 170px solid transparent;
     border-right: 170px solid transparent;
 }

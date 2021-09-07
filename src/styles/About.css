@@ -132,7 +132,7 @@
 .key-icon-tip {
     top: 1em;
     left: -1.5em;
-    min-width: 6.5vw;
+    width: 6.5vw;
     -webkit-opacity: .9;
     opacity: .9;
 }

@@ -91,6 +91,7 @@ body {
     align-items: center;
     height: 57vh;
     width: 43vw;
+    min-width: 18rem;
     border: 2px solid goldenrod;
     box-shadow: 2px 2px 2px 2px black;
 }
