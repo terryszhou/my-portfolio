@@ -19,7 +19,7 @@ export const Contact = (props) => {
                 <h2>Contact</h2>
             </div>
             <div className="content-box">
-                <h3 className="content-box-heading mb-3">Let's Get in Touch!</h3>
+                <h3 className="content-box-heading">Let's Get in Touch!</h3>
                 <div className="content-box-outer">
                     <fieldset className="content-field">
                         <div className="contact-box">

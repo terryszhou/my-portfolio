@@ -62,6 +62,7 @@ body {
     background: rgb(220,220,220);
     color: rgb(26,29,32);
     text-shadow: 1px 1px 1px white;
+    margin-bottom: 1rem;
 }
 
 .content-box-heading::before, .content-box-heading::after {
@@ -97,8 +98,6 @@ body {
 .content-box-outer::before, .content-box-outer::after {
     position: absolute;
     content:"";
-    width: 0;
-    height: 0;
     transform: rotate(135deg);
     border: 50px solid transparent;
     z-index: 2;
@@ -250,18 +249,15 @@ body {
 
 }
 
-.pt-1 {
-    padding-top: 3em;
+h2 {
+    text-shadow: 1px 1px 1px black;
+    color: white;
 }
 
 h2 {
     margin: 1.5em;
-    text-shadow: 1px 1px 1px black;
-    color: white;
 }
 
 h3 {
     text-align: center;
-    text-shadow: 1px 1px 1px black;
-    color: white;
 }

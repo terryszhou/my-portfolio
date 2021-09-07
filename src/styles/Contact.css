@@ -1,34 +1,34 @@
 .contact-box {
-    margin: 30px
+    margin: 1rem 0 2rem 0;
 }
 
 .contact-icon {
     position: relative;
     color: goldenrod;
-    font-size: 48px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     transition-duration: 0.2s;
 }
 
 .contact-icon:hover {
     filter: brightness(2);
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition-duration: 0.2s;
 }
 
 .contact-icon p {
     position: absolute;
-    top: 32%;
+    top: 30%;
     left: 120%;
     color: rgb(220,220,220);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 0.5em;
     font-weight: bold;
-    width: 400px;
+    width: 15em;
 }
 
 .qr-box {
     margin: 0 auto;
-    width: 300px;
+    width: 18rem;
 }
 
 .qr-box p {
@@ -46,30 +46,7 @@
 
 #qr-code {
     border: 10px solid rgb(26,29,32);
-    width: 200px;
+    width: 12rem;
     border-radius: 35px;
     transition-duration: 0.3s;
-}
-
-@media only screen and (max-width: 600px) {
-    .contact-box {
-        margin-left: 0%;
-        padding-top: 8%;
-    }
-
-    .contact-icon {
-        font-size: 24px;
-    }
-
-    .contact-icon p {
-        font-size: 16px;
-    }
-
-    .contact-icon:hover {
-        transform: scale(1.05);
-    }
-
-    #qr-code {
-        width: 160px;
-    }
 }
