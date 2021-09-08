@@ -5,18 +5,20 @@ export const Projects = (props) => {
             <div id="project-bg-left"/>
             <div id="project-bg-right"/>
             <div className="hex-box-main hex-box-other">
-                <div id="hex-ring-lg"/>
-                <div id="hex-greyspace-lg"/>
-                <div id="hex-gold">
-                    <div id="hex-goldenrod">
-                        <div id="hex-ring-sm">
-                            <div id="hex-greyspace-sm">
-                                <div id="hex-smallest"/>
+                <a className="hex-link" href="https://github.com/terryszhou/my-portfolio" target="_blank" rel="noreferrer">
+                    <div id="hex-ring-lg"/>
+                    <div id="hex-greyspace-lg"/>
+                    <div id="hex-gold">
+                        <div id="hex-goldenrod">
+                            <div id="hex-ring-sm">
+                                <div id="hex-greyspace-sm">
+                                    <div id="hex-smallest"/>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <h2>Projects</h2>
+                    <h2>Projects</h2>
+                </a>
             </div>
             <div className="project-main pt-5">
                 <div className="project-box">
@@ -39,7 +41,7 @@ export const Projects = (props) => {
                         <img className="project-pic" src={props.pokemap} alt="pokemap"/>
                         <div className="project-desc">
                             <h3>PokéMap</h3>
-                            <p className="project-about">Full stack app that combines a fully functioning Pokédex with a map of the Kanto region.</p>
+                            <p className="project-about">Full stack app combining a functioning Pokédex with a map of the Kanto region.</p>
                             <p className="project-skills">Express, React, Axios, PostgreSQL, Sequelize</p>
                             <p className="project-links">
                                 <a href="https://pokemap-kanto.herokuapp.com/" target="_blank" rel="noreferrer">Live Site </a>

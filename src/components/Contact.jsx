@@ -5,18 +5,20 @@ export const Contact = (props) => {
             <div id="skew-bg-right"/>
             <img className="bg-image" src={props.flowersWhite} alt="background"/>
             <div className="hex-box-main hex-box-other">
-                <div id="hex-ring-lg"/>
-                <div id="hex-greyspace-lg"/>
-                <div id="hex-gold">
-                    <div id="hex-goldenrod">
-                        <div id="hex-ring-sm">
-                            <div id="hex-greyspace-sm">
-                                <div id="hex-smallest"/>
+                <a className="hex-link" href="https://github.com/terryszhou/my-portfolio" target="_blank" rel="noreferrer">
+                    <div id="hex-ring-lg"/>
+                    <div id="hex-greyspace-lg"/>
+                    <div id="hex-gold">
+                        <div id="hex-goldenrod">
+                            <div id="hex-ring-sm">
+                                <div id="hex-greyspace-sm">
+                                    <div id="hex-smallest"/>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <h2>Contact</h2>
+                    <h2>Contact</h2>
+                </a>
             </div>
             <div className="content-box">
                 <h3 className="content-box-heading">Let's Get in Touch!</h3>

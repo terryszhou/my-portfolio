@@ -83,24 +83,25 @@
     clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 }
 
-.project-hex .project-desc {
-    background: rgb(99,40,52);
+.project-hex:nth-child(1)::before, .project-hex:nth-child(1) .project-desc {
+    background: linear-gradient(rgb(99,40,52), rgb(204, 124, 39))
 }
 
 .project-hex:nth-child(2)::before, .project-hex:nth-child(2) .project-desc {
-    background: rgb(61,75,130);
+    background: linear-gradient(rgb(61,75,130), rgb(103, 194, 78))
 }
 
 .project-hex:nth-child(3)::before, .project-hex:nth-child(3) .project-desc {
-    background: rgb(117,77,180);
+    background: linear-gradient(rgb(117,77,180), rgb(235, 133, 61))
 }
 
 .project-hex:nth-child(4)::before, .project-hex:nth-child(4) .project-desc {
-    background: rgb(193,98,204);
+    background: linear-gradient(rgb(193,98,204), rgb(142,232,232))
+
 }
 
 .project-hex:nth-child(5)::before, .project-hex:nth-child(5) .project-desc {
-    background: rgb(108,37,152);
+    background: linear-gradient(rgb(108,37,152), rgb(189, 54, 54))
 }
 
 .project-hex-outer {
@@ -108,7 +109,7 @@
     height: calc(var(--width) * 0.603);
     top: calc(var(--width) * 0.271);
     left: calc(var(--margin) * -0.67);
-    background: gold;
+    background: goldenrod;
     position: absolute;
     z-index: -1;
 }
@@ -118,7 +119,7 @@
     position: absolute;
     width: calc(var(--width) * 1.033);
     height: calc(var(--width) * 0.3);
-    background-color: gold;
+    background-color: goldenrod;
     clip-path: polygon(50% 0, 100% 100%, 0 100%);
 }
 
@@ -136,7 +137,7 @@
     transition-duration: 0.3s;
     position: absolute;
     left: -10%;
-    top: 16%;
+    top: 20%;
 }
 
 .project-desc {
@@ -146,6 +147,7 @@
     font-size: 10px;
     z-index: 1;
     transition-duration: 0.3s;
+    text-shadow: 1px 1px 1px rgb(40,40,40);
     clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 }
 
@@ -183,6 +185,6 @@
 }
 
 .project-links a:hover {
-    border-bottom: 2px solid goldenrod;
+    filter: brightness(1.8);
     transition-duration: 0.2s;
 }
