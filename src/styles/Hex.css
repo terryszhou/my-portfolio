@@ -4,32 +4,40 @@
     margin-bottom: 200px;
 }
 
-.hex-box-main:hover #hex-gold {
+.hex-box-main #hex-gold {
     -webkit-animation: rotation 8s linear infinite;
     animation: rotation 8s linear infinite;
+    animation-play-state: paused;
+}
+
+.hex-box-main #hex-goldenrod {
+    -webkit-animation: counterRotation 2s linear infinite;
+    animation: counterRotation 2s linear infinite;
+    -webkit-animation-delay: 0ms, 300ms;
+    animation-delay: 0ms, 300ms;
+    animation-play-state: paused;
+}
+
+.hex-box-main #hex-greyspace-lg {
+    -webkit-animation: rotation 2s linear infinite;
+    animation: rotation 2s linear infinite;
+    transition-duration: 0.3s;
+    animation-play-state: paused;
+}
+
+.hex-box-main #hex-ring-lg {
+    -webkit-animation: rotation 2s linear infinite;
+    animation: rotation 2s linear infinite;
+    animation-play-state: paused;
+}
+
+.hex-box-main:hover #hex-gold, .hex-box-main:hover #hex-goldenrod, .hex-box-main:hover #hex-greyspace-lg, .hex-box-main:hover #hex-ring-lg  {
+    animation-play-state: running;
 }
 
 .hex-box-main:hover #hex-smallest {
     transform: translateY(-45px);
     transition-duration: 0.3s;
-}
-
-.hex-box-main:hover #hex-goldenrod {
-    -webkit-animation: counterRotation 2s linear infinite;
-    animation: counterRotation 2s linear infinite;
-    -webkit-animation-delay: 0ms, 300ms;
-    animation-delay: 0ms, 300ms;
-}
-
-.hex-box-main:hover #hex-greyspace-lg {
-    -webkit-animation: rotation 2s linear infinite;
-    animation: rotation 2s linear infinite;
-    transition-duration: 0.3s;
-}
-
-.hex-box-main:hover #hex-ring-lg {
-    -webkit-animation: rotation 2s linear infinite;
-    animation: rotation 2s linear infinite;
 }
 
 #hex-ring-lg {

@@ -24,7 +24,7 @@
 }
 
 .hex-box-home {
-    top: 4rem;
+    top: 3.5rem;
     left: 0vw;
     -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
@@ -48,7 +48,7 @@
 
 #my-face {
     position: absolute;
-    top: 5rem;
+    top: 4rem;
     right: 5rem;
     width: 30vw;
     -webkit-animation: 1.5s ease-out 1 fadeIn;
