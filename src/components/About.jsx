@@ -116,18 +116,11 @@ export const About = (props) => {
                                         <td>CSS3</td>
                                     </tr>
                                     <tr>
-                                        <th>Libraries</th>
-                                        <td>jQuery</td>
-                                        <td>Bootstrap</td>
-                                        <td>EJS</td>
+                                        <th>Libraries/Frameworks</th>
+                                        <td>React.js</td>
+                                        <td>Express.js</td>
                                         <td>Axios</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Frameworks</th>
-                                        <td>React</td>
-                                        <td>Express</td>
-                                        <td>Node</td>
-                                        <td>Django</td>
+                                        <td>Bootstrap</td>
                                     </tr>
                                     <tr>
                                         <th>Databases</th>
@@ -138,10 +131,10 @@ export const About = (props) => {
                                     </tr>
                                     <tr>
                                         <th>Other</th>
+                                        <td>Node.js</td>
                                         <td>RESTful Routing</td>
                                         <td>AJAX</td>
-                                        <td>JSON</td>
-                                        <td>MERN</td>
+                                        <td>EJS</td>
                                     </tr>
                                 </tbody>
                             </table>

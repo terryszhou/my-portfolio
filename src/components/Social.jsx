@@ -11,10 +11,13 @@ export const Social = (props) => {
                         Pīnyīn: <span style={{color: "red"}}>Zhōu Sījīa</span>
                     </p>
                     <p className="text-left" style={{marginLeft: "20px"}}>
-                        <span style={{color: "red"}}>Sī</span>: (to) think
+                        <span style={{color: "red"}}>周 Zhōu</span>: The longest-lived dynasty in Chinese history.
                     </p>
                     <p className="text-left" style={{marginLeft: "20px"}}>
-                        <span style={{color: "red"}}>Jīa</span>: (with) excellence & beauty
+                        <span style={{color: "red"}}>思 Sī</span>: (to) think
+                    </p>
+                    <p className="text-left" style={{marginLeft: "20px"}}>
+                        <span style={{color: "red"}}>佳 Jīa</span>: (with) excellence & beauty
                     </p>
                 </div>
             </div>
