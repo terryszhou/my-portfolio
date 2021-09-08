@@ -27,7 +27,8 @@
     display: flex;
     --width: 208px;
     --margin: 6px;
-    --rows: calc(1.732 * var(--width) + 4 * var(--margin) - 1px);
+    /* --rows: calc(1.732 * var(--width) + 4 * var(--margin) - 1px); */
+    --rows: 383.256px;
 }
 
 .project-box {
