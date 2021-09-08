@@ -26,7 +26,7 @@ export const Projects = (props) => {
                         <div className="project-desc">
                             <h3>Cat Crawler</h3>
                             <p className="project-about">Dungeon crawler-style video game featuring WASD controls and randomly generated enemies.</p>
-                            <p className="project-skills">HTML5 Canvas API, JavaScript, CSS</p>
+                            <p className="project-skills">Canvas, JavaScript, CSS</p>
                             <p className="project-links">
                                 <a href="https://terryszhou.github.io/cat-crawler/" target="_blank" rel="noreferrer">Live Site </a>
                                 |
@@ -40,7 +40,7 @@ export const Projects = (props) => {
                         <div className="project-desc">
                             <h3>PokéMap</h3>
                             <p className="project-about">Full stack app that combines a fully functioning Pokédex with a map of the Kanto region.</p>
-                            <p className="project-skills">Express, React, Axios, PostgreSQL, Sequelize, Bootstrap</p>
+                            <p className="project-skills">Express, React, Axios, PostgreSQL, Sequelize</p>
                             <p className="project-links">
                                 <a href="https://pokemap-kanto.herokuapp.com/" target="_blank" rel="noreferrer">Live Site </a>
                                 |
@@ -53,8 +53,8 @@ export const Projects = (props) => {
                         <img className="project-pic" src={props.totemize} alt="totemize"/>
                         <div className="project-desc">
                             <h3>Totemize</h3>
-                            <p className="project-about">Full stack MERN festival app that allows users to login, create events, and find their friends on a map.</p>
-                            <p className="project-skills">Express, React, Axios, MongoDB, Mongoose, Bootstrap, JWT</p>
+                            <p className="project-about">Full stack MERN app that lets users login, create events, and find friends at a festival.</p>
+                            <p className="project-skills">Express, React, Axios, MongoDB, JWT</p>
                             <p className="project-links">
                                 <a href="https://friendly-sinoussi-f96db3.netlify.app/" target="_blank" rel="noreferrer">Live Site </a>
                                 |
@@ -81,7 +81,7 @@ export const Projects = (props) => {
                         <img className="project-pic" src={props.gameOfLife} alt="game-of-life"/>
                         <div className="project-desc">
                             <h3>Python of Life</h3>
-                            <p className="project-about">Three-day sprint based on Conway's Game of Life. Features three alternate rulesets and full user input.</p>
+                            <p className="project-about">Three-day sprint based on Conway's Game of Life. Features four separate rulesets and built-in object creation tools.</p>
                             <p className="project-skills">Python, Pygame</p>
                             <p className="project-links">
                                 <a href="https://github.com/terryszhou/p4-python-of-life/" target="_blank" rel="noreferrer">Github Repo</a>

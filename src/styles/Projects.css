@@ -41,7 +41,7 @@
     /* float: left; */
     height: 120%;
     /* shape-outside: repeating-linear-gradient(
-        rgba(0,0,0,0) 0 calc(var(--rows) - 3px), 
+        rgba(94, 83, 83, 0) 0 calc(var(--rows) - 3px), 
         rgb(0,0,0) 0 var(--rows)
     );
     -webkit-shape-outside: -webkit-repeating-linear-gradient(
@@ -141,9 +141,8 @@
 
 .project-desc {
     position: absolute;
-    top: 5px;
     opacity: 0;
-    padding: 20px;
+    padding: 25px;
     font-size: 10px;
     z-index: 1;
     transition-duration: 0.3s;
