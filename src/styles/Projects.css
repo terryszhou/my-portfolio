@@ -43,6 +43,14 @@
         rgba(0,0,0,0) 0 calc(var(--rows) - 3px), 
         rgb(0,0,0) 0 var(--rows)
     );
+    -webkit-shape-outside: repeating-linear-gradient(
+        rgba(0,0,0,0) 0 calc(var(--rows) - 3px), 
+        rgb(0,0,0) 0 var(--rows)
+    );
+    -moz-shape-outside: repeating-linear-gradient(
+        rgba(0,0,0,0) 0 calc(var(--rows) - 3px), 
+        rgb(0,0,0) 0 var(--rows)
+    );
 }
 
 .project-hex {
@@ -137,7 +145,6 @@
     padding: 20px;
     font-size: 10px;
     z-index: 1;
-    /* background: rgb(50,67,76); */
     transition-duration: 0.3s;
     clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 }
