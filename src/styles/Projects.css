@@ -40,16 +40,16 @@
     float: left;
     height: 120%;
     shape-outside: repeating-linear-gradient(
-        rgba(0,0,0,0) 0 calc(var(--rows) - 3px), 
-        rgb(0,0,0) 0 var(--rows)
+        #0000 0 calc(var(--rows) - 3px), 
+        #000 0 var(--rows)
     );
     -webkit-shape-outside: repeating-linear-gradient(
-        rgba(0,0,0,0) 0 calc(var(--rows) - 3px), 
-        rgb(0,0,0) 0 var(--rows)
+        #0000 0 calc(var(--rows) - 3px), 
+        #000 0 var(--rows)
     );
     -moz-shape-outside: repeating-linear-gradient(
-        rgba(0,0,0,0) 0 calc(var(--rows) - 3px), 
-        rgb(0,0,0) 0 var(--rows)
+        #0000 0 calc(var(--rows) - 3px), 
+        #000 0 var(--rows)
     );
 }
 
