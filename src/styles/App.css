@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgb(69,87,96);
+    background-color: var(--main-bg-color);
     padding: 10px;
 }
 
@@ -20,7 +20,7 @@ body {
 
 #skew-bg-left, #skew-bg-right {
     position: fixed;
-    background-color: rgb(50,67,76);
+    background-color: var(--main-bg-skew-color);
     top: -20%;
     width: 40vw;
     height: 160vh;
@@ -32,7 +32,7 @@ body {
     transform: skew(8deg);
     -webkit-animation: 1.4s ease-out 1 slideRightSkew;
     animation: 1.4s ease-out 1 slideRightSkew;
-    box-shadow: 2px 2px 5px 2px rgb(40,40,40);
+    box-shadow: 2px 2px 5px 2px var(--main-black);
 }
 
 #skew-bg-right {
@@ -40,7 +40,7 @@ body {
     transform: skew(-8deg);
     -webkit-animation: 1.4s ease-out 1 slideLeftSkew;
     animation: 1.4s ease-out 1 slideLeftSkew;
-    box-shadow: -2px 2px 5px 2px rgb(40,40,40);
+    box-shadow: -2px 2px 5px 2px var(--main-black);
 }
 
 .hex-box-other {
@@ -59,29 +59,12 @@ body {
 .content-box-heading {
     position: relative;
     font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-    background: rgb(220,220,220);
-    color: rgb(26,29,32);
+    background: var(--main-white);
+    color: var(--main-black);
     text-shadow: 1px 1px 1px white;
     margin-bottom: 1rem;
-}
-
-.content-box-heading::before, .content-box-heading::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-}
-
-.content-box-heading::before {
-    left: -1em;
-    border-left: 1em solid transparent;
-    border-bottom: 1.2em solid rgb(220,220,220);
-}
-
-.content-box-heading::after {
-    right: -1em;
-    border-right: 1em solid transparent;
-    border-top: 1.2em solid rgb(220,220,220);
+    padding: 0.1em 1.8em;
+    clip-path: var(--parallelogram);
 }
 
 .content-box-outer {
@@ -126,7 +109,7 @@ body {
     height: 95%;
     width: 95%;
     padding: 30px 10px 10px 10px;
-    background-color: rgb(26,29,32);
+    background-color: var(--main-black);
     overflow: scroll;
     transition-duration: 0.2s;
     z-index: 1;
@@ -157,7 +140,7 @@ body {
 .nav-link {
     text-transform: uppercase;
     font-weight: bold;
-    border: 2px solid rgb(52,58,64);
+    border: 2px solid var(--main-grey);
 }
 
 .nav-link:hover {
@@ -169,7 +152,7 @@ body {
     position: fixed;
     right: 1%;
     bottom: 12%;
-    background-color: rgb(52,58,64);
+    background-color: var(--main-grey);
     width: 40px;
     display: flex;
     flex-direction: column;
@@ -188,7 +171,7 @@ body {
 .icon {
     margin-top: 10px;
     margin-bottom: 10px;
-    color: rgb(220,220,220);
+    color: var(--main-white);
     font-size: 20px;
 }
 
@@ -208,7 +191,7 @@ body {
     font-weight: bold;
     position: absolute;
     font-size: clamp(6px, 1vw, 12px);
-    background-color: rgb(26,29,32);
+    background-color: var(--main-black);
     padding: 5px;
     border-radius: 10px;
     top: -0.2em;
@@ -227,7 +210,7 @@ body {
     left: -26em;
     width: 25em;
     opacity: 0;
-    color: rgb(220,220,220);
+    color: var(--main-white);
     text-align: center;
     transition-duration: 0.2s;
     z-index: 1;
@@ -253,9 +236,6 @@ body {
 h2 {
     text-shadow: 1px 1px 1px black;
     color: white;
-}
-
-h2 {
     margin: 1.5em;
 }
 

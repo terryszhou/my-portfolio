@@ -8,7 +8,7 @@
 #project-bg-left {
     top: -20vh;
     left: -20vw;
-    border-top: 145vh solid rgb(50,67,76);
+    border-top: 145vh solid var(--main-bg-skew-color);
     border-right: 78vw solid transparent;
     -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
@@ -17,7 +17,7 @@
 #project-bg-right {
     bottom: -20vh;
     right: -10vw;
-    border-bottom: 145vh solid rgb(50,67,76);
+    border-bottom: 145vh solid var(--main-bg-skew-color);
     border-left: 78vw solid transparent;
     -webkit-animation: 1.5s ease-out 1 slideLeft;
     animation: 1.5s ease-out 1 slideLeft;
@@ -26,9 +26,6 @@
 .project-main {
     display: flex;
     margin-bottom: 5rem;
-    --width: 13rem;
-    --margin: 6px;
-    --rows: calc(1.732 * var(--width) + 4 * var(--margin) - 1px);
 }
 
 .project-box {
@@ -158,14 +155,14 @@
 
 .project-about {
     text-align: center;
-    color: rgb(220,220,220);
+    color: var(--main-white);
     margin: 0 10%;
     font-weight: bold;
 }
 
 .project-skills {
     text-align: center;
-    color: rgb(220,220,220);
+    color: var(--main-white);
     margin: 10% 10%;
     font-weight: bold;
 }

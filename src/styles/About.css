@@ -7,7 +7,7 @@
     font-size: clamp(0.75rem, 1.5vw, 1rem);
     border-left: 1em solid transparent;
     border-right: 1em solid transparent;
-    border-top: 1.5em solid rgb(220,220,220);
+    border-top: 1.5em solid var(--main-white);
     -webkit-animation: scrollArrow 2s linear infinite;
     animation: scrollArrow 2s linear infinite;
 }
@@ -15,7 +15,7 @@
 #scroll-arrow::before {
     position: absolute;
     content: "";
-    background-color: rgb(220,220,220);
+    background-color: var(--main-white);
     top: -2.5em;
     left: -0.5em;
     width: 1em;
@@ -26,8 +26,8 @@
     position: absolute;
     top: -4.5em;
     left: -2.25em;
-    background-color: rgb(220,220,220);
-    color: rgb(26,29,32);
+    background-color: var(--main-white);
+    color: var(--main-black);
     display: inline;
     padding-left: 5px;
     padding-right: 5px;
@@ -49,15 +49,15 @@
 }
 
 .question-text {
-    background-color: rgb(52,58,64);
-    color: rgb(220,220,220);
+    background-color: var(--main-grey);
+    color: var(--main-white);
     margin-top: 10px;
     margin-right: 20vw;
 }
 
 .answer-text {
-    background-color: rgb(220,220,220);
-    color: rgb(52,58,64);
+    background-color: var(--main-white);
+    color: var(--main-grey);
 }
 
 .question-text::before, .answer-text::before {
@@ -70,13 +70,13 @@
 
 .question-text::before {
     border-right: 30px solid transparent;
-    border-top: 25px solid rgb(52,58,64);
+    border-top: 25px solid var(--main-grey);
 }
 
 .answer-text::before {
     right: 10px;
     border-left: 30px solid transparent;
-    border-top: 25px solid rgb(220,220,220);
+    border-top: 25px solid var(--main-white);
 }
 
 .answer-box {
@@ -140,6 +140,6 @@
 #resume-text {
     text-transform: uppercase;
     font-weight: bold;
-    color: rgb(220,220,220);
+    color: var(--main-white);
     margin-bottom: 6rem;
 }

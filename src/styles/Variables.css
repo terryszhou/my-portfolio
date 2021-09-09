@@ -1,0 +1,12 @@
+:root {
+    --hex: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    --parallelogram: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    --width: 13rem;
+    --margin: 6px;
+    --rows: calc(1.732 * var(--width) + 4 * var(--margin) - 1px);
+    --main-bg-color: rgb(69,87,96);
+    --main-bg-skew-color: rgb(50,67,76);
+    --main-white: rgb(220,220,220);
+    --main-black: rgb(26,29,32);
+    --main-grey: rgb(52,58,64);
+}

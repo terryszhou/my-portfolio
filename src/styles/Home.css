@@ -4,7 +4,7 @@
     height: 0;
     top: -10vh;
     left: -5vw;
-    border-top: 93vh solid rgb(50,67,76);
+    border-top: 93vh solid var(--main-bg-skew-color);
     border-right: 93vw solid transparent;
     z-index: -2;
     -webkit-animation: 1.5s ease-out 1 slideRight;
@@ -17,7 +17,7 @@
     height: 0;
     bottom: -10vh;
     right: 0vw;
-    border-bottom: 93vh solid rgb(50,67,76);
+    border-bottom: 93vh solid var(--main-bg-skew-color);
     border-left: 93vw solid transparent;
     -webkit-animation: 1.5s ease-out 1 slideLeft;
     animation: 1.5s ease-out 1 slideLeft;

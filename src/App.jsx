@@ -5,6 +5,7 @@ import './styles/Projects.css';
 import './styles/About.css';
 import './styles/Contact.css';
 import './styles/Animations.css';
+import './styles/Variables.css';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 
 import { Home } from './components/Home'
