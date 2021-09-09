@@ -1,20 +1,21 @@
-#home-bg-upper {
+#home-bg-upper, #home-bg-lower {
     position: fixed;
     width: 0;
     height: 0;
+    z-index: -2;
+    opacity: .9;
+}
+
+#home-bg-upper {
     top: -10vh;
     left: -5vw;
     border-top: 93vh solid var(--main-bg-skew-color);
     border-right: 93vw solid transparent;
-    z-index: -2;
     -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
 }
 
 #home-bg-lower {
-    position: fixed;
-    width: 0;
-    height: 0;
     bottom: -10vh;
     right: 0vw;
     border-bottom: 93vh solid var(--main-bg-skew-color);

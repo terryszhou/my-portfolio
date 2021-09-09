@@ -3,6 +3,7 @@
     width: 0;
     height: 0;
     z-index: -2;
+    opacity: .9;
 }
 
 #project-bg-left {
@@ -171,4 +172,10 @@
 .project-links a:hover {
     filter: brightness(1.8);
     transition-duration: 0.2s;
+}
+
+@media only screen and (max-width: 490px) {
+    .project-hex {
+        left: 20vw;
+    }
 }

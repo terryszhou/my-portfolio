@@ -24,7 +24,7 @@
     animation-play-state: paused;
 }
 
-.hex-box-main:hover #hex-gold, .hex-box-main:hover #hex-goldenrod, .hex-box-main:hover #hex-greyspace-lg, .hex-box-main:hover #hex-ring-lg  {
+.hex-box-main:hover #hex-gold, .hex-box-main:hover #hex-goldenrod, .hex-box-main:hover #hex-greyspace-lg, .hex-box-main:hover #hex-ring-lg, .hex-box-main:hover h2  {
     animation-play-state: running;
 }
 
@@ -150,4 +150,7 @@
     font-size: clamp(1.5rem, 3vw, 2rem);
     text-shadow: 2px 2px 1px var(--main-bg-skew-color);
     clip-path: var(--parallelogram);
+    -webkit-animation: hexHeading 2s linear infinite;
+    animation: hexHeading 2s linear infinite;
+    animation-play-state: paused;
 }

@@ -11,8 +11,8 @@ body {
     position: fixed;
     width: 90%;
     z-index: -3;
-    top: -37%;
-    left: 5.1%;
+    top: -30%;
+    left: 5%;
     opacity: .2;
     -webkit-animation: 2s ease-in 1 bgImageFade;
     animation: 2s ease-in 1 bgImageFade;
@@ -25,6 +25,7 @@ body {
     width: 40vw;
     height: 160vh;
     z-index: -2;
+    opacity: .9;
 }
 
 #skew-bg-left {
@@ -151,7 +152,7 @@ body {
 
 .social {
     position: fixed;
-    right: 1%;
+    right: 2%;
     bottom: 12%;
     background-color: var(--main-grey);
     width: 40px;
@@ -189,10 +190,11 @@ body {
 .tip-text {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+    text-align: center;
     font-weight: bold;
     position: absolute;
     font-size: clamp(6px, 1vw, 12px);
-    background-color: var(--main-black);
+    background: var(--main-black);
     padding: 5px;
     border-radius: 10px;
     top: -0.2em;
