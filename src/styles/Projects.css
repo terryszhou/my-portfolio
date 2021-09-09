@@ -35,10 +35,10 @@
 .project-box::before {
     content: "";
     width: calc(var(--width)/2 + var(--margin));
-    /* float: left; */
     height: 120%;
-    /* shape-outside: repeating-linear-gradient(
-        rgba(94, 83, 83, 0) 0 calc(var(--rows) - 3px), 
+    /* float: left;
+    shape-outside: repeating-linear-gradient(
+        rgba(0,0,0,0) 0 calc(var(--rows) - 3px), 
         rgb(0,0,0) 0 var(--rows)
     );
     -webkit-shape-outside: -webkit-repeating-linear-gradient(
@@ -58,12 +58,18 @@
     margin: var(--margin);
     display: inline-block;
     font-size: initial;
+    opacity: .8;
     /* margin-bottom: calc(var(--margin) - var(--width) * 0.2885); */
 }
 
+.project-hex:hover {
+    opacity: 1;
+}
+
 .project-hex:hover .project-desc {
-    opacity: .9;
+    opacity: .8;
     transform: scale(1.2);
+    filter: brightness(1.3);
     transition-duration: 0.3s;
 }
 
@@ -75,9 +81,8 @@
 .project-hex::before {
     content: "";
     position: absolute;
-    background: rgb(99,40,52);
     inset: 0 0 0 0;
-    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    clip-path: var(--hex);
 }
 
 .project-hex:nth-child(1)::before, .project-hex:nth-child(1) .project-desc {
@@ -94,7 +99,6 @@
 
 .project-hex:nth-child(4)::before, .project-hex:nth-child(4) .project-desc {
     background: linear-gradient(rgb(193,98,204), rgb(142,232,232))
-
 }
 
 .project-hex:nth-child(5)::before, .project-hex:nth-child(5) .project-desc {
@@ -103,30 +107,13 @@
 
 .project-hex-outer {
     width: calc(var(--width) * 1.033);
-    height: calc(var(--width) * 0.603);
-    top: calc(var(--width) * 0.271);
+    height: calc(var(--width) * 1.193);
+    top: calc(var(--width) * -0.02);
     left: calc(var(--margin) * -0.67);
     background: goldenrod;
     position: absolute;
     z-index: -1;
-}
-
-.project-hex-outer::before, .project-hex-outer::after {
-    content: "";
-    position: absolute;
-    width: calc(var(--width) * 1.033);
-    height: calc(var(--width) * 0.3);
-    background-color: goldenrod;
-    clip-path: polygon(50% 0, 100% 100%, 0 100%);
-}
-
-.project-hex-outer::before {
-    top: calc(var(--width) * -0.3);
-}
-
-.project-hex-outer::after {
-    bottom: calc(var(--width) * -0.3);
-    transform: rotate(180deg);
+    clip-path: var(--hex);
 }
 
 .project-pic {
@@ -145,7 +132,7 @@
     z-index: 1;
     transition-duration: 0.3s;
     text-shadow: 1px 1px 1px rgb(40,40,40);
-    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    clip-path: var(--hex);
 }
 
 .project-desc h3 {

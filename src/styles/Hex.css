@@ -144,8 +144,9 @@
     position: absolute;
     background: var(--main-black);
     padding: 0 1.3em 0 1.3em;
-    bottom: -3em;
-    left: 4em;
+    bottom: -4em;
+    opacity: .8;
+    left: 2.5em;
     font-size: clamp(1.5rem, 3vw, 2rem);
     text-shadow: 2px 2px 1px var(--main-bg-skew-color);
     clip-path: var(--parallelogram);
