@@ -1,5 +1,11 @@
+.contact-field {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .contact-box {
-    margin: 1rem 0 2rem 0;
+    margin: 1.5rem 0;
 }
 
 .contact-icon {
@@ -7,6 +13,7 @@
     color: goldenrod;
     font-size: clamp(1.5rem, 4vw, 2.5rem);
     transition-duration: 0.2s;
+    left: 15%;
 }
 
 .contact-icon:hover {

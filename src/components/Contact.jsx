@@ -23,7 +23,7 @@ export const Contact = (props) => {
             <div className="content-box">
                 <h3 className="content-box-heading">Let's Get in Touch!</h3>
                 <div className="content-box-outer">
-                    <fieldset className="content-field">
+                    <fieldset className="content-field contact-field">
                         <div className="contact-box">
                             <a href="mailto:terryszhou@gmail.com" target="_blank" rel="noreferrer">
                                 <i className="contact-icon fas fa-envelope">

@@ -3,7 +3,7 @@
     width: 0;
     height: 0;
     z-index: -2;
-    opacity: .9;
+    opacity: .85;
 }
 
 #home-bg-upper {
@@ -37,6 +37,7 @@
     left: 20rem;
     left: 25vw;
     width: 30vw;
+    filter: drop-shadow(0 0 0.5rem var(--main-black));
     -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
     transition-duration: 0.2s;
@@ -52,6 +53,7 @@
     top: 4rem;
     right: 5rem;
     width: 30vw;
+    filter: drop-shadow(0 0 1rem var(--main-bg-skew-color));
     -webkit-animation: 1.5s ease-out 1 fadeIn;
     animation: 1.5s ease-out 1 fadeIn;
     transition-duration: 0.2s;
@@ -64,7 +66,8 @@
 
 @media only screen and (max-width: 700px) {
     .hex-box-home {
-        top: -8rem;
+        top: -5rem;
+        left: 1rem;
     }
 
     #my-title {

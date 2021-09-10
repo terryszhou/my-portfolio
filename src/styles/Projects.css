@@ -3,7 +3,7 @@
     width: 0;
     height: 0;
     z-index: -2;
-    opacity: .9;
+    opacity: .85;
 }
 
 #project-bg-left {
@@ -41,7 +41,7 @@
     shape-outside: repeating-linear-gradient(
         #0000 0 calc(var(--rows) - 3px), 
         #000 0 var(--rows)
-    ); */
+    );  */
 }
 
 .project-hex {
@@ -125,6 +125,7 @@
     z-index: 1;
     transition-duration: 0.3s;
     text-shadow: 1px 1px 1px rgb(40,40,40);
+    border-radius: 15px;
     clip-path: var(--hex);
 }
 
