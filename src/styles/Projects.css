@@ -37,11 +37,11 @@
     content: "";
     width: calc(var(--width)/2 + var(--margin));
     height: 120%;
-    float: left;
+    /* float: left;
     shape-outside: repeating-linear-gradient(
         #0000 0 calc(var(--rows) - 3px), 
         #000 0 var(--rows)
-    );
+    ); */
 }
 
 .project-hex {
@@ -52,7 +52,7 @@
     display: inline-block;
     font-size: initial;
     opacity: .8;
-    margin-bottom: calc(var(--margin) - var(--width) * 0.2885);
+    /* margin-bottom: calc(var(--margin) - var(--width) * 0.2885); */
 }
 
 .project-hex:hover {
