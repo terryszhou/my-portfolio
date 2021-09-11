@@ -38,6 +38,7 @@
     left: 25vw;
     width: 30vw;
     filter: drop-shadow(0 0 0.5rem var(--main-black));
+    opacity: .85;
     -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
     transition-duration: 0.2s;
@@ -45,6 +46,7 @@
 
 #my-title:hover {
     transform: scale(1.1);
+    opacity: 1;
     transition-duration: 0.2s;
 }
 
@@ -53,6 +55,7 @@
     top: 4rem;
     right: 5rem;
     width: 30vw;
+    opacity: .85;
     filter: drop-shadow(0 0 1rem var(--main-bg-skew-color));
     -webkit-animation: 1.5s ease-out 1 fadeIn;
     animation: 1.5s ease-out 1 fadeIn;
@@ -60,6 +63,7 @@
 }
 
 #my-face:hover {
+    opacity: 1;
     transform: scale(1.1);
     transition-duration: 0.2s;
 }

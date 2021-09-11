@@ -17,6 +17,7 @@ export const Home = (props) => {
                             </div>
                         </div>
                     </div>
+                    <h2></h2>
                 </a>
             </div>
             <img id="my-title"  src={props.titleCard} alt="title card"/>

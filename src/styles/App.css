@@ -184,6 +184,10 @@ body {
     transition-duration: 0.1s;
 }
 
+.icon p {
+    color: var(--main-white);
+}
+
 .icon:hover {
     transform: scale(1.2);
     filter: brightness(1.2);
@@ -194,16 +198,32 @@ body {
     visibility: visible;
 }
 
-/* .social a:first-child .icon:hover {
+.social a:first-child .icon:hover {
     color: rgb(21,105,191);
 }
 
 .social a:nth-child(2) .icon:hover {
-    color: rgb(152,70,166);
+    /* color: rgb(152,70,166); */
+    background: linear-gradient(to right,
+        rgb(151,107,235), 
+        rgb(180,97,180), 
+        rgb(211,88,125)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .social a:nth-child(3) .icon:hover {
-    color: rgb(78,206,119);
+    background: linear-gradient(to right,
+        rgb(90,207,116),
+        rgb(235,191,110),
+        rgb(181,114,210),
+        rgb(45,193,222)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .social a:nth-child(4) .icon:hover {
@@ -218,20 +238,12 @@ body {
 }
 
 .social a:nth-child(5) .icon:hover {
-    background: linear-gradient(to right,
-        rgb(70,136,240) 0% 25%,
-        rgb(202,60,52) 25% 50%,
-        rgb(250,187,45) 50% 75%, 
-        rgb(58,167,87) 75% 100%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: rgb(202,60,52);
 }
 
 .social a:nth-child(6) *:hover {
     color: goldenrod;
-} */
+}
 
 .tip-text {
     font-family: Arial, Helvetica, sans-serif;
