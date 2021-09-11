@@ -69,22 +69,22 @@ export const About = (props) => {
                                 <tr>
                                     <th>
                                         <i className="key-icon fab fa-python" style={{color: "rgb(54,113,158)"}}>
-                                            <p className="tip-text key-icon-tip">Python</p>
+                                            <p className="tip-text">Python</p>
                                         </i>
                                     </th>
                                     <th>
                                         <i className="key-icon fab fa-js-square" style={{color: "rgb(233,211,56)"}}>
-                                            <p className="tip-text key-icon-tip">JavaScript</p>
+                                            <p className="tip-text">JavaScript</p>
                                         </i>
                                     </th>
                                     <th>
                                         <i className="key-icon fab fa-node-js" style={{color: "rgb(126,193,54)"}}>
-                                            <p className="tip-text key-icon-tip">Node.js</p>
+                                            <p className="tip-text">Node.js</p>
                                         </i>
                                     </th>
                                     <th>
                                         <i className="key-icon fab fa-react" style={{color: "rgb(98,208,236)"}}>
-                                            <p className="tip-text key-icon-tip">React.js</p>
+                                            <p className="tip-text">React.js</p>
                                         </i>
                                     </th>
                                     <th>
