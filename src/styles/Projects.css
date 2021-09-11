@@ -4,6 +4,7 @@
     height: 0;
     z-index: -2;
     opacity: .85;
+
 }
 
 #project-bg-left {
@@ -37,8 +38,9 @@
     content: "";
     width: calc(var(--width)/2 + var(--margin));
     height: 120%;
-    /* float: left;
-    shape-outside: repeating-linear-gradient(
+    /* background: yellow; */
+    /* float: left; */
+    /* shape-outside: repeating-linear-gradient(
         #0000 0 calc(var(--rows) - 3px), 
         #000 0 var(--rows)
     );  */

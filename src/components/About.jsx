@@ -68,32 +68,32 @@ export const About = (props) => {
                             <tbody>
                                 <tr>
                                     <th>
-                                        <i className="key-icon fab fa-python" style={{color: "rgb(54,113,158"}}>
+                                        <i className="key-icon fab fa-python" style={{color: "rgb(54,113,158)"}}>
                                             <p className="tip-text key-icon-tip">Python</p>
                                         </i>
                                     </th>
                                     <th>
-                                        <i className="key-icon fab fa-js-square" style={{color: "rgb(233,211,56"}}>
+                                        <i className="key-icon fab fa-js-square" style={{color: "rgb(233,211,56)"}}>
                                             <p className="tip-text key-icon-tip">JavaScript</p>
                                         </i>
                                     </th>
                                     <th>
-                                        <i className="key-icon fab fa-node-js" style={{color: "rgb(126,193,54"}}>
+                                        <i className="key-icon fab fa-node-js" style={{color: "rgb(126,193,54)"}}>
                                             <p className="tip-text key-icon-tip">Node.js</p>
                                         </i>
                                     </th>
                                     <th>
-                                        <i className="key-icon fab fa-react" style={{color: "rgb(98,208,236"}}>
+                                        <i className="key-icon fab fa-react" style={{color: "rgb(98,208,236)"}}>
                                             <p className="tip-text key-icon-tip">React.js</p>
                                         </i>
                                     </th>
                                     <th>
-                                        <i className="key-icon fas fa-database" style={{color: "rgb(55,146,206"}}>
+                                        <i className="key-icon fas fa-database" style={{color: "rgb(55,146,206)"}}>
                                             <p className="tip-text key-icon-tip">SQL/Mongo</p>
                                         </i>
                                     </th>
                                     <th>
-                                        <i className="key-icon fab fa-css3-alt" style={{color: "rgb(40,79,214"}}>
+                                        <i className="key-icon fab fa-css3-alt" style={{color: "rgb(40,79,214)"}}>
                                             <p className="tip-text key-icon-tip">CSS</p>
                                         </i>
                                     </th>

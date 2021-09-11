@@ -111,6 +111,9 @@
 
 .table {
     margin-bottom: 0;
+    background: rgba(40,40,40,0.85);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 
 .key-icon {
