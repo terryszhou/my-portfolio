@@ -111,7 +111,10 @@
 
 .table {
     margin-bottom: 0;
-    background: rgba(40,40,40,0.85);
+    background: linear-gradient(
+        rgba(40,40,40,.85),
+        rgba(10,10,10,.85)
+    );
 }
 
 td, th {

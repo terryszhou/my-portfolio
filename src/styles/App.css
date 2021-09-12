@@ -20,12 +20,12 @@ body {
 
 #skew-bg-left, #skew-bg-right {
     position: fixed;
-    background-color: var(--main-bg-skew-color);
-    top: -20%;
+    background: var(--main-bg-skew-color);
+    top: 0%;
     width: 40vw;
-    height: 160vh;
-    z-index: -2;
+    height: 100vh;
     opacity: .85;
+    z-index: -2;
 }
 
 #skew-bg-left {
@@ -114,7 +114,10 @@ body {
     overflow: scroll;
     transition-duration: 0.2s;
     z-index: 1;
-    background: rgba(40,40,40,0.85);
+    background: linear-gradient(
+        rgba(40,40,40,.85),
+        rgba(10,10,10,.85)
+    );
 }
 
 .content-box-outer:hover .content-field {
@@ -138,6 +141,10 @@ body {
 .navbar-dark {
     box-shadow: 0 5px 5px 8px black;
     opacity: .85;
+    background: linear-gradient(
+        rgba(40,40,40,.85),
+        rgba(10,10,10,.85)
+    );
     transition-duration: 0.2s;
 }
 
@@ -149,7 +156,7 @@ body {
 .nav-link {
     text-transform: uppercase;
     font-weight: bold;
-    border: 2px solid var(--main-grey);
+    border: 2px solid transparent;
 }
 
 .nav-link:hover {
@@ -161,7 +168,10 @@ body {
     position: fixed;
     right: 2%;
     bottom: 12%;
-    background-color: var(--main-grey);
+    background: linear-gradient(
+        rgba(52,58,54,.85),
+        rgba(32,38,34,.85)
+    );
     width: 40px;
     display: flex;
     flex-direction: column;
@@ -179,9 +189,10 @@ body {
 
 .icon {
     margin: 10px auto;
+    padding: 1px;
     color: var(--main-white);
     font-size: 1.25rem;
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
 }
 
 .icon p {
@@ -191,7 +202,7 @@ body {
 .icon:hover {
     transform: scale(1.2);
     filter: brightness(1.2);
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
 }
 
 .icon:hover .tip-text {
@@ -203,7 +214,6 @@ body {
 }
 
 .social a:nth-child(2) .icon:hover {
-    /* color: rgb(152,70,166); */
     background: linear-gradient(to right,
         rgb(151,107,235), 
         rgb(180,97,180), 
@@ -291,7 +301,6 @@ body {
 .seal-box:hover #seal {
     transform: scale(1.2);
     filter: brightness(1.25);
-
 }
 
 h2 {
