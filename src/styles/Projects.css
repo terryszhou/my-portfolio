@@ -12,8 +12,8 @@
     left: -20vw;
     border-top: 145vh solid var(--main-bg-skew-color);
     border-right: 78vw solid transparent;
-    -webkit-animation: 1.5s ease-out 1 slideRight;
     animation: 1.5s ease-out 1 slideRight;
+    -webkit-animation: 1.5s ease-out 1 slideRight;
 }
 
 #project-bg-right {
@@ -21,8 +21,8 @@
     right: -10vw;
     border-bottom: 145vh solid var(--main-bg-skew-color);
     border-left: 78vw solid transparent;
-    -webkit-animation: 1.5s ease-out 1 slideLeft;
     animation: 1.5s ease-out 1 slideLeft;
+    -webkit-animation: 1.5s ease-out 1 slideLeft;
 }
 
 .project-main {
@@ -38,7 +38,6 @@
     content: "";
     width: calc(var(--width)/2 + var(--margin));
     height: 120%;
-    /* background: yellow; */
     /* float: left; */
     /* shape-outside: repeating-linear-gradient(
         #0000 0 calc(var(--rows) - 3px), 
@@ -74,9 +73,9 @@
 }
 
 .project-hex::before {
-    content: "";
     position: absolute;
-    inset: 0 0 0 0;
+    content: "";
+    inset: 0;
     clip-path: var(--hex);
 }
 
@@ -101,22 +100,22 @@
 }
 
 .project-hex-outer {
-    width: calc(var(--width) * 1.033);
-    height: calc(var(--width) * 1.193);
+    position: absolute;
     top: calc(var(--width) * -0.02);
     left: calc(var(--margin) * -0.67);
+    width: calc(var(--width) * 1.033);
+    height: calc(var(--width) * 1.193);
     background: goldenrod;
-    position: absolute;
     z-index: -1;
     clip-path: var(--hex);
 }
 
 .project-pic {
+    position: absolute;
+    top: 20%;
+    left: -10%;
     width: 120%;
     transition-duration: 0.3s;
-    position: absolute;
-    left: -10%;
-    top: 20%;
 }
 
 .project-desc {
@@ -146,15 +145,15 @@
 .project-skills {
     text-align: center;
     color: var(--main-white);
-    margin: 10% 10%;
+    margin: 10%;
     font-weight: bold;
 }
 
 .project-links {
-    margin: 10% 10%;
+    margin: 10%;
     color: goldenrod;
-    text-align: center;
     font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
 }
 

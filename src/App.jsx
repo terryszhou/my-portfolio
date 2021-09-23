@@ -15,7 +15,8 @@ import { Contact } from './components/Contact'
 import { Nav } from './components/Nav'
 import { Social } from './components/Social'
 
-import { qAndA } from './data/qAndA.jsx'
+import { qAndA } from './data/qAndA'
+import { aboutTable } from './data/aboutTable'
 import resume from './static/terryzhou-resume.pdf'
 import titleCard from './images/title-card.png'
 import faceCard from './images/face-card.png'
@@ -44,6 +45,7 @@ export const App = () => {
             <Route path="/about" render={() => 
                 <About
                     qAndA={qAndA}
+                    aboutTable={aboutTable}
                     resume={resume}
                     flowersWhite={flowersWhite}
                     nidoking={nidoking}

@@ -2,6 +2,7 @@ export const Home = (props) => {
     return (
         <div className="container">
             <img className="bg-image" src={props.flowersWhite} alt="background"/>
+            {/* <img className="bg-image" src={props.shanghai} alt="background"/> */}
             <div id="home-bg-upper"/>
             <div id="home-bg-lower"/>
             <div className="hex-box-main hex-box-home">
@@ -17,7 +18,6 @@ export const Home = (props) => {
                             </div>
                         </div>
                     </div>
-                    <h2></h2>
                 </a>
             </div>
             <img id="my-title"  src={props.titleCard} alt="title card"/>

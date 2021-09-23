@@ -28,6 +28,15 @@ export const About = (props) => {
         }
     })
 
+    const aboutTable = props.aboutTable.map(e => {
+        return (
+            <tr>
+                <th>{e.heading}</th>
+                {e.data.map(x => {return <td>{x}</td>})}
+            </tr>
+        )
+    })
+
     return (
         <div className="container pt-3">
             <img className="bg-image" src={props.flowersWhite} alt="background"/>
@@ -107,36 +116,7 @@ export const About = (props) => {
                     <div className="table-card">
                         <div className="table-responsive">
                             <table className="table table-striped table-dark table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <th>Languages</th>
-                                        <td>Python</td>
-                                        <td>JavaScript/ES6</td>
-                                        <td>HTML5</td>
-                                        <td>CSS3</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Libraries/Frameworks</th>
-                                        <td>React.js</td>
-                                        <td>Express.js</td>
-                                        <td>Axios</td>
-                                        <td>Bootstrap</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Databases</th>
-                                        <td>PostgreSQL</td>
-                                        <td>Sequelize</td>
-                                        <td>MongoDB</td>
-                                        <td>Mongoose</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Other</th>
-                                        <td>Node.js</td>
-                                        <td>RESTful Routing</td>
-                                        <td>AJAX</td>
-                                        <td>EJS</td>
-                                    </tr>
-                                </tbody>
+                                <tbody>{aboutTable}</tbody>
                             </table>
                         </div>
                     </div>

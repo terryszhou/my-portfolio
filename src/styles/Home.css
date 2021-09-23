@@ -33,8 +33,7 @@
 
 #my-title {
     position: absolute;
-    top: 15rem;
-    left: 20rem;
+    top: 19vw;
     left: 25vw;
     width: 30vw;
     filter: drop-shadow(0 0 0.5rem var(--main-black));
@@ -52,8 +51,8 @@
 
 #my-face {
     position: absolute;
-    top: 4rem;
-    right: 5rem;
+    top: 5vw;
+    right: 6vw;
     width: 30vw;
     opacity: .85;
     filter: drop-shadow(0 0 1rem var(--main-bg-skew-color));
@@ -68,7 +67,7 @@
     transition-duration: 0.2s;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
     .hex-box-home {
         top: -5rem;
         left: 1rem;

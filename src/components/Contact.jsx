@@ -55,11 +55,11 @@ export const Contact = (props) => {
                     </fieldset>
                 </div>
             </div>
-            <div className="content-box qr-box">
+            <div className="content-box">
                 <a href="https://hihello.me/p/c2fcf08c-ba21-4fe6-8e72-c542170b10e2" target="_blank" rel="noreferrer">
                     <img id="qr-code" src={props.cardQR} alt="cardQR"/>
                 </a>
-                <p>Here's my business card!</p>
+                <p id="qr-code-text">Here's my business card!</p>
             </div>
         </div>
     )

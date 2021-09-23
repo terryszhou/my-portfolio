@@ -9,39 +9,38 @@ body {
 
 .bg-image {
     position: fixed;
-    width: 90%;
-    z-index: -3;
-    top: -30%;
-    left: 5%;
+    inset: 0rem 5%;
+    width: 100%;
     opacity: .2;
+    z-index: -3;
     -webkit-animation: 2s ease-in 1 bgImageFade;
     animation: 2s ease-in 1 bgImageFade;
 }
 
 #skew-bg-left, #skew-bg-right {
     position: fixed;
-    background: var(--main-bg-skew-color);
-    top: 0%;
+    top: 0;
     width: 40vw;
     height: 100vh;
     opacity: .85;
+    background: var(--main-bg-skew-color);
     z-index: -2;
 }
 
 #skew-bg-left {
     left: -15vw;
     transform: skew(8deg);
+    box-shadow: 2px 2px 5px 2px var(--main-grey);
     -webkit-animation: 1.4s ease-out 1 slideRightSkew;
     animation: 1.4s ease-out 1 slideRightSkew;
-    box-shadow: 2px 2px 5px 2px var(--main-grey);
 }
 
 #skew-bg-right {
     right: -15vw;
     transform: skew(-8deg);
+    box-shadow: -2px 2px 5px 2px var(--main-grey);
     -webkit-animation: 1.4s ease-out 1 slideLeftSkew;
     animation: 1.4s ease-out 1 slideLeftSkew;
-    box-shadow: -2px 2px 5px 2px var(--main-grey);
 }
 
 .hex-box-other {
@@ -74,16 +73,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 57vh;
     width: 43vw;
     min-width: 18rem;
+    height: 57vh;
     border: 2px solid goldenrod;
     box-shadow: 2px 2px 2px 2px black;
 }
 
 .content-box-outer::before, .content-box-outer::after {
     position: absolute;
-    content:"";
+    content: "";
     transform: rotate(135deg);
     border: 3.94vw solid transparent;
     z-index: 2;
@@ -108,8 +107,8 @@ body {
     position: relative;
     border: 2px solid goldenrod;
     border-radius: 15px;
-    height: 95%;
     width: 95%;
+    height: 95%;
     padding: 10px;
     overflow: scroll;
     transition-duration: 0.2s;
@@ -231,8 +230,8 @@ body {
         rgb(181,114,210),
         rgb(45,193,222)
     );
-    -webkit-background-clip: text;
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 
@@ -267,6 +266,7 @@ body {
     border-radius: 10px;
     top: -0.2em;
     right: 2rem;
+    opacity: .8;
     visibility: hidden;
 }
 
@@ -294,13 +294,12 @@ body {
 
 .seal-box:hover .tip-text {
     visibility: visible;
-    opacity: 1;
+    opacity: .85;
     transition-duration: 0.2s;
 }
 
 .seal-box:hover #seal {
-    transform: scale(1.2);
-    filter: brightness(1.25);
+    transform: scale(1.15);
 }
 
 h2 {
