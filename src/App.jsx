@@ -9,7 +9,7 @@ import './styles/Variables.css';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 
 import { Home, About, Projects, Contact, Nav, Social } from './components'
-import { qAndA, aboutTable, keyTable, projectData } from './data'
+import { qAndA, aboutTable, keyTable, projectData, contactData } from './data'
 import { titleCard, faceCard, headShot, nidoking, cardQR, sealSig, flowersWhite } from './images'
 import resume from './static/terryzhou-resume.pdf'
 
@@ -27,8 +27,8 @@ export const App = () => (
          <About
             flowersWhite={flowersWhite}
             qAndA={qAndA}
-            aboutTable={aboutTable}
             keyTable={keyTable}
+            aboutTable={aboutTable}
             resume={resume}
             nidoking={nidoking} 
          />}
@@ -42,7 +42,7 @@ export const App = () => (
       <Route path="/contact" render={() => 
          <Contact
             flowersWhite={flowersWhite}
-            resume={resume}
+            contactData={contactData}
             cardQR={cardQR}
          />}
       />

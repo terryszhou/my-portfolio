@@ -1,5 +1,7 @@
+import {Hex} from "./Hex"
+
 export const Projects = (props) => {
-   const showProjects = props.projectData.map(e => (
+   const showProjects = props.projectData.slice(0).reverse().map(e => (
       <div className="project-hex">
          <div className="project-hex-outer" />
          <img className="project-pic" src={e.source} alt={e.alt}/>
@@ -23,22 +25,7 @@ export const Projects = (props) => {
          <img className="bg-image" src={props.flowersWhite} alt="background" />
          <div id="project-bg-left" />
          <div id="project-bg-right" />
-         <div className="hex-box-main hex-box-other">
-            <a className="hex-link" href="https://github.com/terryszhou/my-portfolio" target="_blank" rel="noreferrer">
-               <div id="hex-ring-lg" />
-               <div id="hex-greyspace-lg" />
-               <div id="hex-gold">
-                  <div id="hex-goldenrod">
-                     <div id="hex-ring-sm">
-                        <div id="hex-greyspace-sm">
-                           <div id="hex-smallest" />
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <h2>Projects</h2>
-            </a>
-         </div>
+         <Hex title="Projects" />
          <div className="project-main pt-5">
             <div className="project-box">{showProjects}</div>
          </div>

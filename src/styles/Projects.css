@@ -78,28 +78,28 @@
    clip-path: var(--hex);
 }
 
-.project-hex:nth-child(1)::before, .project-hex:nth-child(1) .project-desc {
+.project-hex:nth-child(6)::before, .project-hex:nth-child(6) .project-desc {
    background: linear-gradient(rgb(99,40,52), rgb(204, 124, 39))
 }
 
-.project-hex:nth-child(2)::before, .project-hex:nth-child(2) .project-desc {
+.project-hex:nth-child(5)::before, .project-hex:nth-child(5) .project-desc {
    background: linear-gradient(rgb(61,75,130), rgb(103, 194, 78))
 }
 
-.project-hex:nth-child(3)::before, .project-hex:nth-child(3) .project-desc {
+.project-hex:nth-child(4)::before, .project-hex:nth-child(4) .project-desc {
    background: linear-gradient(rgb(117,77,180), rgb(235, 133, 61))
 }
 
-.project-hex:nth-child(4)::before, .project-hex:nth-child(4) .project-desc {
+.project-hex:nth-child(3)::before, .project-hex:nth-child(3) .project-desc {
    background: linear-gradient(rgb(193,98,204), rgb(142,232,232))
 }
 
-.project-hex:nth-child(5)::before, .project-hex:nth-child(5) .project-desc {
+.project-hex:nth-child(2)::before, .project-hex:nth-child(2) .project-desc {
    background: linear-gradient(rgb(108,37,152), rgb(189,54,54))
 }
 
-.project-hex:nth-child(6)::before, .project-hex:nth-child(6) .project-desc {
-   background: linear-gradient(rgb(230,60,42), rgb(33,34,43) 80%)
+.project-hex:nth-child(1)::before, .project-hex:nth-child(1) .project-desc {
+   background: linear-gradient(rgb(230,60,42), rgb(170,170,170) 90%)
 }
 
 .project-hex-outer {
@@ -121,7 +121,7 @@
    transition-duration: 0.3s;
 }
 
-.project-hex:nth-child(6) .project-pic {
+.project-hex:nth-child(1) .project-pic {
    width: 35%;
    left: 32%;
 }

@@ -1,32 +1,23 @@
+import {Hex} from "./Hex"
+
 export const About = (props) => {
-   const qAndAData = props.qAndA.map(e => {
-      if (e.answer === "Nidoking!") {
-         return (
-            <>
-               <div className="question-box">
-                  <p className="question-text">{e.question}</p>
-               </div>
-               <div className="answer-box">
-                  <p className="answer-text">
-                     {e.answer}
-                     <img className="pokemon-sprite" src={props.nidoking} alt="nidoking"/>
-                  </p>
-               </div>
-            </>
-         )
-      } else {
-         return (
-            <>
-               <div className="question-box">
-                  <p className="question-text">{e.question}</p>
-               </div>
-               <div className="answer-box">
-                  <p className="answer-text">{e.answer}</p>
-               </div>
-            </>
-         )
-      }
-   })
+   const qAndAData = props.qAndA.map(e => (
+         <>
+            <div className="question-box">
+               <p className="question-text">{e.question}</p>
+            </div>
+            <div className="answer-box">
+               <p className="answer-text">
+                  {e.answer}
+                  {
+                     e.answer === "Nidoking!" 
+                     && <img className="pokemon-sprite" src={props.nidoking} alt="nidoking"/>
+                  }
+               </p>
+            </div>
+         </>
+      )
+   )
 
    const keyTable = props.keyTable.map(e => (
       <th>
@@ -48,22 +39,7 @@ export const About = (props) => {
          <img className="bg-image" src={props.flowersWhite} alt="background" />
          <div id="skew-bg-left" />
          <div id="skew-bg-right" />
-         <div className="hex-box-main hex-box-other">
-            <a className="hex-link" href="https://github.com/terryszhou/my-portfolio" target="_blank" rel="noreferrer">
-               <div id="hex-ring-lg"/>
-               <div id="hex-greyspace-lg" />
-               <div id="hex-gold">
-                  <div id="hex-goldenrod">
-                     <div id="hex-ring-sm">
-                        <div id="hex-greyspace-sm">
-                           <div id="hex-smallest" />
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <h2>About</h2>
-            </a>
-         </div>
+         <Hex title="About"/>
          <div className="d-flex flex-column">
             <div className="content-box">
                <h3 className="content-box-heading">Get to Know Me</h3>
