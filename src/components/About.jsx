@@ -2,22 +2,18 @@ import {Hex} from "./Hex"
 
 export const About = (props) => {
    const qAndAData = props.qAndA.map(e => (
-         <>
-            <div className="question-box">
-               <p className="question-text">{e.question}</p>
-            </div>
-            <div className="answer-box">
-               <p className="answer-text">
-                  {e.answer}
-                  {
-                     e.answer === "Nidoking!" 
-                     && <img className="pokemon-sprite" src={props.nidoking} alt="nidoking"/>
-                  }
-               </p>
-            </div>
-         </>
-      )
-   )
+      <>
+         <div className="question-box">
+            <p className="question-text">{e.question}</p>
+         </div>
+         <div className="answer-box">
+            <p className="answer-text">
+               {e.answer}
+               {e.answer === "Nidoking!" && <img className="pokemon-sprite" src={props.nidoking} alt="nidoking"/>}
+            </p>
+         </div>
+      </>
+   ))
 
    const keyTable = props.keyTable.map(e => (
       <th>

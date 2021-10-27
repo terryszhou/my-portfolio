@@ -21,6 +21,6 @@ export const qAndA = [
     },
     {
         question: "Okay, seriously...what's with the hexagons??",
-        answer: "Because hexagons are the bestagons, obviously! I think they evoke both simplicity ⎔ and industriousness 🐝—like me!"
+        answer: <>Because <a href="https://www.youtube.com/watch?v=thOifuHs6eY" target="_blank" rel="noreferrer" style={{color: "rgb(193,141,32"}}>hexagons are the bestagons</a>, obviously! I think they evoke both creativity ⎔ and industriousness 🐝—like me!</>
     },
 ]
