@@ -1,157 +1,151 @@
 #scroll-arrow {
-    position: absolute;
-    top: 15%;
-    right: 10%;
-    width: 0;
-    height: 0;
-    font-size: clamp(0.75rem, 1.5vw, 1rem);
-    border-left: 1em solid transparent;
-    border-right: 1em solid transparent;
-    border-top: 1.5em solid var(--main-white);
-    -webkit-animation: scrollArrow 2s linear infinite;
-    animation: scrollArrow 2s linear infinite;
+   position: absolute;
+   top: 15%;
+   right: 10%;
+   width: 0;
+   height: 0;
+   font-size: clamp(0.75rem, 1.5vw, 1rem);
+   border-left: 1em solid transparent;
+   border-right: 1em solid transparent;
+   border-top: 1.5em solid var(--main-white);
+   -webkit-animation: scrollArrow 2s linear infinite;
+   animation: scrollArrow 2s linear infinite;
 }
 
 #scroll-arrow::before {
-    position: absolute;
-    content: "";
-    background-color: var(--main-white);
-    top: -2.5em;
-    left: -0.5em;
-    width: 1em;
-    height: 1.5em;
+   position: absolute;
+   content: "";
+   background-color: var(--main-white);
+   top: -2.5em;
+   left: -0.5em;
+   width: 1em;
+   height: 1.5em;
 }
 
 #scroll-arrow p {
-    position: absolute;
-    top: -4.5em;
-    left: -2.25em;
-    background-color: var(--main-white);
-    color: var(--main-black);
-    display: inline;
-    padding: 0 5px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
+   position: absolute;
+   top: -4.5em;
+   left: -2.25em;
+   background-color: var(--main-white);
+   color: var(--main-black);
+   display: inline;
+   padding: 0 5px;
+   border-radius: 20px;
+   text-transform: uppercase;
+   font-weight: bold;
 }
 
 .question-text, .answer-text {
-    position: relative;
-    display: inline-block;
-    padding: 1em;
-    text-align: left;
-    font-weight: bold;
-    font-size: clamp(0.75rem, 1.5vw, 1rem);
-    border-radius: 15px;
-    transition-duration: 0.2s;
+   position: relative;
+   display: inline-block;
+   padding: 1em;
+   text-align: left;
+   font-weight: bold;
+   font-size: clamp(0.75rem, 1.5vw, 1rem);
+   border-radius: 15px;
+   transition-duration: 0.2s;
 }
 
 .question-text {
-    background-color: var(--main-grey);
-    color: var(--main-white);
-    max-width: 30vw;
-    margin-top: 0.5em;
-    margin-right: 20vw;
+   background-color: var(--main-grey);
+   color: var(--main-white);
+   max-width: 30vw;
+   margin-top: 0.5em;
+   margin-right: 20vw;
 }
 
 .answer-text {
-    background-color: var(--main-white);
-    color: var(--main-grey);
-    max-width: 25vw;
+   background-color: var(--main-white);
+   color: var(--main-grey);
+   max-width: 25vw;
 }
 
 .question-text::before, .answer-text::before {
-    position: absolute;
-    content:"";
-    width: 0;
-    height: 0;
-    bottom: -1rem;
+   position: absolute;
+   content:"";
+   width: 0;
+   height: 0;
+   bottom: -1rem;
 }
 
 .question-text::before {
-    border-right: 30px solid transparent;
-    border-top: 25px solid var(--main-grey);
+   border-right: 30px solid transparent;
+   border-top: 25px solid var(--main-grey);
 }
 
 .answer-text::before {
-    right: 10px;
-    border-left: 30px solid transparent;
-    border-top: 25px solid var(--main-white);
+   right: 10px;
+   border-left: 30px solid transparent;
+   border-top: 25px solid var(--main-white);
 }
 
 .answer-box {
-    float: right;
+   float: right;
 }
 
 .question-text:hover, .answer-text:hover {
-    transform: scale(1.05);
-    filter: brightness(1.5);
-    transition-duration: 0.2s;
+   transform: scale(1.05);
+   filter: brightness(1.5);
+   transition-duration: 0.2s;
 }
 
 .pokemon-sprite {
-    width: 4em;
-    margin-bottom: 1em;
+   width: 4em;
+   margin-bottom: 1em;
 }
 
 .table-responsive {
-    border-radius: 15px;
-    width: 60vw;
-    font-size: clamp(0.5rem, 1.5vw, 1rem);
-    border: 2px solid goldenrod;
-    box-shadow: 2px 2px 2px 2px black;
-    text-align: center;
-    transition-duration: 0.2s;
+   border-radius: 15px;
+   width: 60vw;
+   font-size: clamp(0.5rem, 1.5vw, 1rem);
+   border: 2px solid goldenrod;
+   box-shadow: 2px 2px 2px 2px black;
+   text-align: center;
+   transition-duration: 0.2s;
 }
 
 .table-responsive:hover {
-    transform: scale(1.04);
-    transition-duration: 0.2s;
+   transform: scale(1.04);
+   transition-duration: 0.2s;
 }
 
 .table {
-    margin-bottom: 0;
-    background: linear-gradient(
-        rgba(40,40,40,.85),
-        rgba(10,10,10,.85)
-    );
-}
-
-td, th {
-    transition-duration: 0.3s;
-}
-
-td:hover, th:hover {
-    transform: scale(1.2);
-    transition-duration: 0.3s;
+   margin-bottom: 0;
+   background: linear-gradient(
+      rgba(40,40,40,.85),
+      rgba(10,10,10,.85)
+   );
 }
 
 .key-icon {
-    font-size: clamp(1rem, 4vw, 3rem);
-    transition-duration: 0.3s;
-    display: flex;
-    justify-content: center;
+   position: relative;
+   font-size: clamp(1rem, 4vw, 3rem);
+   transition-duration: 0.3s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .key-icon .tip-text {
-    top: 1em;
-    right: initial;
-    opacity: 0.9;
+   position: absolute;
+   top: 1em;
+   right: initial;
+   opacity: 0.9;
 }
 
 .key-icon:hover {
-    transform: scale(1.2);
-    filter: brightness(1.8);
-    transition-duration: 0.3s;
+   transform: scale(1.2);
+   filter: brightness(1.8);
+   transition-duration: 0.3s;
 }
 
 .key-icon:hover .tip-text {
-    visibility: visible;
+   visibility: visible;
 }
 
 #resume-text {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: var(--main-white);
-    margin-bottom: 6rem;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: var(--main-white);
+   margin-bottom: 6rem;
 }

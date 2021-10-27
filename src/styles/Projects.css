@@ -1,175 +1,174 @@
 #project-bg-left, #project-bg-right {
-    position: fixed;
-    width: 0;
-    height: 0;
-    z-index: -2;
-    opacity: .85;
-
+   position: fixed;
+   width: 0;
+   height: 0;
+   z-index: -2;
+   opacity: .85;
 }
 
 #project-bg-left {
-    top: -20vh;
-    left: -20vw;
-    border-top: 145vh solid var(--main-bg-skew-color);
-    border-right: 78vw solid transparent;
-    animation: 1.5s ease-out 1 slideRight;
-    -webkit-animation: 1.5s ease-out 1 slideRight;
+   top: -20vh;
+   left: -20vw;
+   border-top: 145vh solid var(--main-bg-skew-color);
+   border-right: 78vw solid transparent;
+   animation: 1.5s ease-out 1 slideRight;
+   -webkit-animation: 1.5s ease-out 1 slideRight;
 }
 
 #project-bg-right {
-    bottom: -20vh;
-    right: -10vw;
-    border-bottom: 145vh solid var(--main-bg-skew-color);
-    border-left: 78vw solid transparent;
-    animation: 1.5s ease-out 1 slideLeft;
-    -webkit-animation: 1.5s ease-out 1 slideLeft;
+   bottom: -20vh;
+   right: -10vw;
+   border-bottom: 145vh solid var(--main-bg-skew-color);
+   border-left: 78vw solid transparent;
+   animation: 1.5s ease-out 1 slideLeft;
+   -webkit-animation: 1.5s ease-out 1 slideLeft;
 }
 
 .project-main {
-    display: flex;
-    margin-bottom: 5rem;
+   display: flex;
+   margin-bottom: 5rem;
 }
 
 .project-box {
-    font-size: 0;
+   font-size: 0;
 }
 
 .project-box::before {
-    content: "";
-    width: calc(var(--width)/2 + var(--margin));
-    height: 120%;
-    /* float: left; */
-    /* shape-outside: repeating-linear-gradient(
-        #0000 0 calc(var(--rows) - 3px), 
-        #000 0 var(--rows)
-    );  */
+   content: "";
+   width: calc(var(--width)/2 + var(--margin));
+   height: 120%;
+   /* float: left;
+   shape-outside: repeating-linear-gradient(
+      #0000 0 calc(var(--rows) - 3px), 
+      #000 0 var(--rows)
+   );  */
 }
 
 .project-hex {
-    position: relative;
-    width: var(--width);
-    height: calc(var(--width) * 1.1547);
-    margin: var(--margin);
-    display: inline-block;
-    font-size: initial;
-    opacity: .8;
-    /* margin-bottom: calc(var(--margin) - var(--width) * 0.2885); */
+   position: relative;
+   width: var(--width);
+   height: calc(var(--width) * 1.1547);
+   margin: var(--margin);
+   display: inline-block;
+   font-size: initial;
+   opacity: .8;
+   /* margin-bottom: calc(var(--margin) - var(--width) * 0.2885); */
 }
 
 .project-hex:hover {
-    opacity: 1;
+   opacity: 1;
 }
 
 .project-hex:hover .project-desc {
-    opacity: .8;
-    transform: scale(1.2);
-    filter: brightness(1.3);
-    transition-duration: 0.3s;
+   opacity: .8;
+   transform: scale(1.2);
+   filter: brightness(1.3);
+   transition-duration: 0.3s;
 }
 
 .project-hex:hover .project-pic {
-    opacity: 0;
-    transition-duration: 0.3s;
+   opacity: 0;
+   transition-duration: 0.3s;
 }
 
 .project-hex::before {
-    position: absolute;
-    content: "";
-    inset: 0;
-    clip-path: var(--hex);
+   position: absolute;
+   content: "";
+   inset: 0;
+   clip-path: var(--hex);
 }
 
 .project-hex:nth-child(1)::before, .project-hex:nth-child(1) .project-desc {
-    background: linear-gradient(rgb(99,40,52), rgb(204, 124, 39))
+   background: linear-gradient(rgb(99,40,52), rgb(204, 124, 39))
 }
 
 .project-hex:nth-child(2)::before, .project-hex:nth-child(2) .project-desc {
-    background: linear-gradient(rgb(61,75,130), rgb(103, 194, 78))
+   background: linear-gradient(rgb(61,75,130), rgb(103, 194, 78))
 }
 
 .project-hex:nth-child(3)::before, .project-hex:nth-child(3) .project-desc {
-    background: linear-gradient(rgb(117,77,180), rgb(235, 133, 61))
+   background: linear-gradient(rgb(117,77,180), rgb(235, 133, 61))
 }
 
 .project-hex:nth-child(4)::before, .project-hex:nth-child(4) .project-desc {
-    background: linear-gradient(rgb(193,98,204), rgb(142,232,232))
+   background: linear-gradient(rgb(193,98,204), rgb(142,232,232))
 }
 
 .project-hex:nth-child(5)::before, .project-hex:nth-child(5) .project-desc {
-    background: linear-gradient(rgb(108,37,152), rgb(189, 54, 54))
+   background: linear-gradient(rgb(108,37,152), rgb(189, 54, 54))
 }
 
 .project-hex-outer {
-    position: absolute;
-    top: calc(var(--width) * -0.02);
-    left: calc(var(--margin) * -0.67);
-    width: calc(var(--width) * 1.033);
-    height: calc(var(--width) * 1.193);
-    background: goldenrod;
-    z-index: -1;
-    clip-path: var(--hex);
+   position: absolute;
+   top: calc(var(--width) * -0.02);
+   left: calc(var(--margin) * -0.67);
+   width: calc(var(--width) * 1.033);
+   height: calc(var(--width) * 1.193);
+   background: goldenrod;
+   z-index: -1;
+   clip-path: var(--hex);
 }
 
 .project-pic {
-    position: absolute;
-    top: 20%;
-    left: -10%;
-    width: 120%;
-    transition-duration: 0.3s;
+   position: absolute;
+   top: 20%;
+   left: -10%;
+   width: 120%;
+   transition-duration: 0.3s;
 }
 
 .project-desc {
-    position: absolute;
-    opacity: 0;
-    padding: 25px;
-    font-size: 10px;
-    z-index: 1;
-    transition-duration: 0.3s;
-    text-shadow: 1px 1px 1px rgb(40,40,40);
-    border-radius: 15px;
-    clip-path: var(--hex);
+   position: absolute;
+   opacity: 0;
+   padding: 25px;
+   font-size: 10px;
+   z-index: 1;
+   transition-duration: 0.3s;
+   text-shadow: 1px 1px 1px rgb(40,40,40);
+   border-radius: 15px;
+   clip-path: var(--hex);
 }
 
 .project-desc h3 {
-    color: gold;
-    font-size: 14px;
+   color: gold;
+   font-size: 14px;
 }
 
 .project-about {
-    text-align: center;
-    color: var(--main-white);
-    margin: 0 10%;
-    font-weight: bold;
+   text-align: center;
+   color: var(--main-white);
+   margin: 0 10%;
+   font-weight: bold;
 }
 
 .project-skills {
-    text-align: center;
-    color: var(--main-white);
-    margin: 10%;
-    font-weight: bold;
+   text-align: center;
+   color: var(--main-white);
+   margin: 10%;
+   font-weight: bold;
 }
 
 .project-links {
-    margin: 10%;
-    color: goldenrod;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+   margin: 10%;
+   color: goldenrod;
+   font-weight: bold;
+   text-align: center;
+   text-transform: uppercase;
 }
 
 .project-links a {
-    color: goldenrod;
-    text-decoration: none;
-    transition-duration: 0.2s;
+   color: goldenrod;
+   text-decoration: none;
+   transition-duration: 0.2s;
 }
 
 .project-links a:hover {
-    filter: brightness(1.8);
-    transition-duration: 0.2s;
+   filter: brightness(1.8);
+   transition-duration: 0.2s;
 }
 
 @media only screen and (max-width: 490px) {
-    .project-hex {
-        left: 20vw;
-    }
+   .project-hex {
+      left: 20vw;
+   }
 }

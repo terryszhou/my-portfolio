@@ -8,71 +8,49 @@ import './styles/Animations.css';
 import './styles/Variables.css';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 
-import { Home } from './components/Home'
-import { About } from './components/About'
-import { Projects } from './components/Projects'
-import { Contact } from './components/Contact'
-import { Nav } from './components/Nav'
-import { Social } from './components/Social'
-
-import { qAndA } from './data/qAndA'
-import { aboutTable } from './data/aboutTable'
+import { Home, About, Projects, Contact, Nav, Social } from './components'
+import { qAndA, aboutTable, keyTable, projectData } from './data'
+import { titleCard, faceCard, headShot, nidoking, cardQR, sealSig, flowersWhite } from './images'
 import resume from './static/terryzhou-resume.pdf'
-import titleCard from './images/title-card.png'
-import faceCard from './images/face-card.png'
-import headShot from './images/headshot.png'
-import catCrawlerDesktop from './images/cat-crawler-desktop.png'
-import pokemap from './images/pokemap-desktop.png'
-import totemize from './images/totemize-mobile.png'
-import pixelRunner from './images/pixel-runner-desktop.png'
-import gameOfLife from './images/game-of-life-desktop.png'
-import nidoking from './images/nidoking.png'
-import cardQR from './images/card-qr2.png'
-import sealSig from './images/seal-sig.png'
-import flowersWhite from './images/flowers-white.png'
 
-export const App = () => {
-    return (
-        <Router>
-            <Route exact path="/" render={() => 
-                <Home
-                    titleCard={titleCard}
-                    faceCard={faceCard}
-                    headShot={headShot}
-                    flowersWhite={flowersWhite}
-                />}
-            />
-            <Route path="/about" render={() => 
-                <About
-                    qAndA={qAndA}
-                    aboutTable={aboutTable}
-                    resume={resume}
-                    flowersWhite={flowersWhite}
-                    nidoking={nidoking}
-                />}
-            />
-            <Route path="/projects" render={() => 
-                <Projects
-                    flowersWhite={flowersWhite}
-                    catCrawlerDesktop={catCrawlerDesktop}
-                    pokemap={pokemap}
-                    totemize={totemize}
-                    pixelRunner={pixelRunner}
-                    gameOfLife={gameOfLife}
-                />}
-            />
-            <Route path="/contact" render={() => 
-                <Contact
-                    resume={resume}
-                    cardQR={cardQR}
-                    flowersWhite={flowersWhite}
-                />}
-            />
-            <Social 
-                resume={resume}
-                sealSig={sealSig}
-            />
-            <Nav />
-        </Router>
-    )
-}
+export const App = () => (
+   <Router>
+      <Route exact path="/" render={() => 
+         <Home
+            flowersWhite={flowersWhite}
+            titleCard={titleCard}
+            faceCard={faceCard}
+            headShot={headShot} 
+         />}
+      />
+      <Route path="/about" render={() => 
+         <About
+            flowersWhite={flowersWhite}
+            qAndA={qAndA}
+            aboutTable={aboutTable}
+            keyTable={keyTable}
+            resume={resume}
+            nidoking={nidoking} 
+         />}
+      />
+      <Route path="/projects" render={() => 
+         <Projects
+            flowersWhite={flowersWhite}
+            projectData={projectData}
+         />}
+      />
+      <Route path="/contact" render={() => 
+         <Contact
+            flowersWhite={flowersWhite}
+            resume={resume}
+            cardQR={cardQR}
+         />}
+      />
+      <Social 
+         resume={resume}
+         sealSig={sealSig}
+      />
+      <Nav />
+   </Router>
+)
+
