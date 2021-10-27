@@ -5,19 +5,9 @@ export const keyTable = [
       tip: "JavaScript",
    },
    {
-      class: "fa fa-mobile",
-      color: "rgb(188,81,216)",
-      tip: "App Dev",
-   },
-   {
-      class: "fab fa-cloudversify",
-      color: "rgb(240,145,37)",
-      tip: "Cloud Ops",
-   },
-   {
-      class: "fab fa-react",
-      color: "rgb(98,208,236)",
-      tip: "React",
+      class: "fab fa-python",
+      color: "rgb(38,150,170)",
+      tip: "Python",
    },
    {
       class: "fab fa-css3-alt",
@@ -25,9 +15,19 @@ export const keyTable = [
       tip: "CSS",
    },
    {
-      class: "fab fa-python",
-      color: "rgb(38,150,170)",
-      tip: "Python",
+      class: "fab fa-react",
+      color: "rgb(98,208,236)",
+      tip: "React",
+   },
+   {
+      class: "fab fa-cloudversify",
+      color: "rgb(240,145,37)",
+      tip: "Cloud Ops",
+   },
+   {
+      class: "fa fa-mobile",
+      color: "rgb(188,81,216)",
+      tip: "App Dev",
    },
    {
       class: "fas fa-database",
