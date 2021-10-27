@@ -40,7 +40,7 @@
    /* float: left;
    shape-outside: repeating-linear-gradient(
       #0000 0 calc(var(--rows) - 3px), 
-      #000 0 var(--rows)
+      #000 0 var(--rows),
    );  */
 }
 
@@ -95,7 +95,11 @@
 }
 
 .project-hex:nth-child(5)::before, .project-hex:nth-child(5) .project-desc {
-   background: linear-gradient(rgb(108,37,152), rgb(189, 54, 54))
+   background: linear-gradient(rgb(108,37,152), rgb(189,54,54))
+}
+
+.project-hex:nth-child(6)::before, .project-hex:nth-child(6) .project-desc {
+   background: linear-gradient(rgb(230,60,42), rgb(33,34,43) 80%)
 }
 
 .project-hex-outer {
@@ -117,6 +121,11 @@
    transition-duration: 0.3s;
 }
 
+.project-hex:nth-child(6) .project-pic {
+   width: 35%;
+   left: 32%;
+}
+
 .project-desc {
    position: absolute;
    opacity: 0;
@@ -127,6 +136,9 @@
    text-shadow: 1px 1px 1px rgb(40,40,40);
    border-radius: 15px;
    clip-path: var(--hex);
+   display: flex;
+   align-items: center;
+   flex-direction: column;
 }
 
 .project-desc h3 {
@@ -135,6 +147,7 @@
 }
 
 .project-about {
+   width: 100%;
    text-align: center;
    color: var(--main-white);
    margin: 0 10%;

@@ -5,7 +5,7 @@ export const aboutTable = [
    },
    {
       heading: "Libraries & Frameworks",
-      data: ["React.js", "Express.js", "Axios"]
+      data: ["React", "Express", "Axios"]
    },
    {
       heading: "App Development",

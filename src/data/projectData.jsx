@@ -3,6 +3,7 @@ import pokemap from '../images/pokemap-desktop.png'
 import totemize from '../images/totemize-mobile.png'
 import pixelRunner from '../images/pixel-runner-desktop.png'
 import gameOfLife from '../images/game-of-life-desktop.png'
+import restoic from '../images/restoic-app.png'
 
 export const projectData = [
    {
@@ -83,6 +84,23 @@ export const projectData = [
          {
             link: "https://github.com/terryszhou/p4-python-of-life/",
             linkText: "Github Repo"
+         },
+      ]
+   },
+   {
+      source: restoic,
+      alt: "restoic",
+      header: "Restoic",
+      about: "Health & fitness mobile app developed with an Austin-based startup team.",
+      skills: "React Native, XCode, Android Studio",
+      links: [
+         {
+            link: "https://apps.apple.com/tt/app/restoic-performance-mindset/id1557936632",
+            linkText: "App Store | "
+         },
+         {
+            link: "https://play.google.com/store/apps/details?id=com.restoic&hl=en_US&gl=US",
+            linkText: "Google Play"
          },
       ]
    },
