@@ -2,7 +2,7 @@ export const keyTable = [
    {
       class: "fa fa-mobile",
       color: "rgb(188,41,86)",
-      tip: "App Dev",
+      tip: "Mobile Dev",
    },
    {
       class: "fas fa-cloud-upload-alt",
@@ -34,4 +34,4 @@ export const keyTable = [
       color: "rgb(60,99,234)",
       tip: "CSS",
    },
-]
+];

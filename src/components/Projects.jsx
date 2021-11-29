@@ -18,7 +18,7 @@ export const Projects = (props) => {
             </p>
          </div>
       </div>
-   ))
+   ));
 
    return (
       <div className="container pt-1">
@@ -30,5 +30,5 @@ export const Projects = (props) => {
             <div className="project-box">{showProjects}</div>
          </div>
       </div>
-   )
-}
+   );
+};

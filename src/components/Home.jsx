@@ -9,4 +9,4 @@ export const Home = (props) => (
 		<img id="my-title"  src={props.titleCard} alt="title card" />
 		<img id="my-face" src={props.faceCard} alt="face card" />
 	</div>
-)
+);

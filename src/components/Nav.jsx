@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 export const Nav = () => (
    <div className="container">
@@ -19,4 +19,4 @@ export const Nav = () => (
          </div>
       </nav>
    </div>
-)
+);

@@ -15,8 +15,8 @@ export const contactData = [
       pTag: "linkedin.com/in/terryszhou",
    },
    {
-      href: "https://s3.us-west-1.amazonaws.com/terryszhou.com/terryzhou-resume.pdf",
+      href: "https://s3.us-west-1.amazonaws.com/terryszhou.com/terryzhou_resume.pdf",
       icon: "far fa-file",
       pTag: "(Here's my resume again)",
    },
-]
+];

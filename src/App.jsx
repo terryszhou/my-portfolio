@@ -7,11 +7,9 @@ import './styles/Contact.css';
 import './styles/Animations.css';
 import './styles/Variables.css';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
-
-import { Home, About, Projects, Contact, Nav, Social } from './components'
-import { qAndA, aboutTable, keyTable, projectData, contactData } from './data'
-import { titleCard, faceCard, headShot, nidoking, cardQR, sealSig, flowersWhite } from './images'
-import resume from './static/terryzhou-resume.pdf'
+import { Home, About, Projects, Contact, Nav, Social, Seal } from './components';
+import { qAndA, aboutTable, keyTable, projectData, contactData, socialData } from './data';
+import { titleCard, faceCard, headShot, nidoking, cardQR, sealSig, flowersWhite } from './images';
 
 export const App = () => (
    <Router>
@@ -21,36 +19,33 @@ export const App = () => (
             titleCard={titleCard}
             faceCard={faceCard}
             headShot={headShot} 
-         />}
-      />
+         />
+      }/>
       <Route path="/about" render={() => 
          <About
             flowersWhite={flowersWhite}
             qAndA={qAndA}
             keyTable={keyTable}
             aboutTable={aboutTable}
-            resume={resume}
             nidoking={nidoking} 
-         />}
-      />
+         />
+      }/>
       <Route path="/projects" render={() => 
          <Projects
             flowersWhite={flowersWhite}
             projectData={projectData}
-         />}
-      />
+         />
+      }/>
       <Route path="/contact" render={() => 
          <Contact
             flowersWhite={flowersWhite}
             contactData={contactData}
             cardQR={cardQR}
-         />}
-      />
-      <Social 
-         resume={resume}
-         sealSig={sealSig}
-      />
+         />
+      }/>
+      <Seal sealSig={sealSig} />
+      <Social socialData={socialData} />
       <Nav />
    </Router>
-)
+);
 

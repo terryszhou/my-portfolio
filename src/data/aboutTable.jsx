@@ -1,26 +1,26 @@
 export const aboutTable = [
    {
       heading: "Languages",
-      data: ["JavaScript", "HTML/CSS", "Python"]
+      data: ["JavaScript", "Python", "HTML", "CSS"]
    },
    {
       heading: "Libraries & Frameworks",
-      data: ["React", "Express", "Axios"]
+      data: ["React", "Next", "Express", "Axios"]
    },
    {
-      heading: "App Development",
-      data: ["React Native", "XCode", "Android Studio"]
+      heading: "Mobile Development",
+      data: ["React Native", "XCode", "Android Studio", "Docker"]
    },
    {
       heading: "Cloud Computing",
-      data: ["AWS", "Google Cloud", "Firebase"]
+      data: ["AWS", "Google Cloud", "Firebase", "Apple Developer"]
    },
    {
       heading: "Databases",
-      data: ["PostgreSQL", "Sequelize", "MongoDB"]
+      data: ["SQL", "Sequelize", "pgAdmin", "MongoDB"]
    },
    {
       heading: "Other",
-      data: ["Node.js", "RESTful Routing", "AJAX"]
+      data: ["Node", "RESTful APIs", "Redux", "AJAX"]
    },
-]
+];

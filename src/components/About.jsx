@@ -1,4 +1,4 @@
-import {Hex} from "./Hex"
+import {Hex} from "./Hex";
 
 export const About = (props) => {
    const qAndAData = props.qAndA.map(e => (
@@ -13,7 +13,7 @@ export const About = (props) => {
             </p>
          </div>
       </>
-   ))
+   ));
 
    const keyTable = props.keyTable.map(e => (
       <th>
@@ -21,14 +21,14 @@ export const About = (props) => {
             <p className="tip-text">{e.tip}</p>
          </i>
       </th>
-   ))
+   ));
 
    const aboutTable = props.aboutTable.map(e => (
       <tr>
          <th>{e.heading}</th>
          {e.data.map(x => <td>{x}</td>)}
       </tr>
-   ))
+   ));
 
    return (
       <div className="container pt-3">
@@ -70,12 +70,12 @@ export const About = (props) => {
             </div>
             <div className="content-box">
                <h3 className="content-box-heading">Want to Know More?</h3>
-               <a href="https://s3.us-west-1.amazonaws.com/terryszhou.com/terryzhou-resume.pdf" target="_blank" rel="noreferrer">
+               <a href="https://s3.us-west-1.amazonaws.com/terryszhou.com/terryzhou_resume.pdf" target="_blank" rel="noreferrer">
                   <div className="icon fas fa-download text-warning"/>
                </a>
                <p id="resume-text">Check out my resume!</p>
             </div>
          </div>
       </div>
-   )
-}
+   );
+};

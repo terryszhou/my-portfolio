@@ -9,7 +9,7 @@ export const Contact = (props) => {
             </i>
          </a>
       </div>
-   ))
+   ));
    
    return (
       <div className="container pt-1">

@@ -15,4 +15,4 @@ export const Hex = ({title}) => (
          {title !== "Home" && <h2>{title}</h2>}
       </a>
    </div>
-)
+);
