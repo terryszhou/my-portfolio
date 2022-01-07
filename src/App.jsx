@@ -9,14 +9,14 @@ import './styles/Variables.css';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import { Home, About, Projects, Contact, Nav, Social, Seal } from './components';
 import { qAndA, aboutTable, keyTable, projectData, contactData, socialData } from './data';
-import { titleCard, faceCard, headShot, nidoking, cardQR, sealSig, flowersWhite } from './images';
+import { titleCard2, faceCard, headShot, nidoking, cardQR, sealSig, flowersWhite } from './images';
 
 export const App = () => (
    <Router>
       <Route exact path="/" render={() => 
          <Home
             flowersWhite={flowersWhite}
-            titleCard={titleCard}
+            titleCard={titleCard2}
             faceCard={faceCard}
             headShot={headShot} 
          />
