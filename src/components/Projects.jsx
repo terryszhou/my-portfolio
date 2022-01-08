@@ -1,7 +1,7 @@
 import {Hex} from "./Hex"
 
-export const Projects = (props) => {
-   const showProjects = props.projectData.slice(0).reverse().map(e => (
+export const Projects = ({ projectData, flowersWhite }) => {
+   const showProjects = projectData.slice(0).reverse().map(e => (
       <div className="project-hex">
          <div className="project-hex-outer" />
          <img className="project-pic" src={e.source} alt={e.alt}/>
@@ -22,7 +22,7 @@ export const Projects = (props) => {
 
    return (
       <div className="container pt-1">
-         <img className="bg-image" src={props.flowersWhite} alt="background" />
+         <img className="bg-image" src={flowersWhite} alt="background" />
          <div id="project-bg-left" />
          <div id="project-bg-right" />
          <Hex title="Projects" />

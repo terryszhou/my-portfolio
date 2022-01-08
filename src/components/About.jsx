@@ -1,7 +1,7 @@
 import {Hex} from "./Hex";
 
-export const About = (props) => {
-   const qAndAData = props.qAndA.map(e => (
+export const About = ({ flowersWhite, qAndA, keyTableData, aboutTableData, nidoking }) => {
+   const qAndAData = qAndA.map(e => (
       <>
          <div className="question-box">
             <p className="question-text">{e.question}</p>
@@ -9,13 +9,13 @@ export const About = (props) => {
          <div className="answer-box">
             <p className="answer-text">
                {e.answer}
-               {e.answer === "Nidoking!" && <img className="pokemon-sprite" src={props.nidoking} alt="nidoking"/>}
+               {e.answer === "Nidoking!" && <img className="pokemon-sprite" src={nidoking} alt="nidoking"/>}
             </p>
          </div>
       </>
    ));
 
-   const keyTable = props.keyTable.map(e => (
+   const keyTable = keyTableData.map(e => (
       <th>
          <i className={`key-icon ${e.class}`} style={{color: e.color}}>
             <p className="tip-text">{e.tip}</p>
@@ -23,7 +23,7 @@ export const About = (props) => {
       </th>
    ));
 
-   const aboutTable = props.aboutTable.map(e => (
+   const aboutTable = aboutTableData.map(e => (
       <tr>
          <th>{e.heading}</th>
          {e.data.map(x => <td>{x}</td>)}
@@ -32,7 +32,7 @@ export const About = (props) => {
 
    return (
       <div className="container pt-3">
-         <img className="bg-image" src={props.flowersWhite} alt="background" />
+         <img className="bg-image" src={flowersWhite} alt="background" />
          <div id="skew-bg-left" />
          <div id="skew-bg-right" />
          <Hex title="About"/>

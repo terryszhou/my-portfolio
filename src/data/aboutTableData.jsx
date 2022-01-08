@@ -1,4 +1,4 @@
-export const aboutTable = [
+export const aboutTableData = [
    {
       heading: "Languages",
       data: ["JavaScript", "Python", "HTML", "CSS"]

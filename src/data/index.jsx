@@ -1,8 +1,8 @@
-import { aboutTable } from './aboutTable'
-import { keyTable } from './keyTable'
+import { aboutTableData } from './aboutTableData'
+import { keyTableData } from './keyTableData'
 import { projectData } from './projectData'
 import { qAndA } from './qAndA'
 import { contactData } from './contactData'
 import { socialData } from './socialData'
 
-export { aboutTable, keyTable, projectData, qAndA, contactData, socialData }
+export { aboutTableData, keyTableData, projectData, qAndA, contactData, socialData }

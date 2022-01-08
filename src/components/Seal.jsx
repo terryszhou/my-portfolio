@@ -1,6 +1,6 @@
-export const Seal = (props) => (
+export const Seal = ({ sealSig }) => (
    <div className="seal-box">
-      <img id="seal" src={props.sealSig} alt="seal" />
+      <img id="seal" src={sealSig} alt="seal" />
       <div className="tip-text seal-tip">
          <p className="text-left" style={{marginLeft: "20px"}}>
             汉字: <span style={{color: "red"}}>周思佳</span>

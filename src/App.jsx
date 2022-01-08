@@ -1,14 +1,16 @@
+import './styles/About.css';
+import './styles/Animations.css';
 import './styles/App.css';
+import './styles/Contact.css';
 import './styles/Hex.css';
 import './styles/Home.css';
 import './styles/Projects.css';
-import './styles/About.css';
-import './styles/Contact.css';
-import './styles/Animations.css';
 import './styles/Variables.css';
+
 import { BrowserRouter as Router, Route} from 'react-router-dom';
+
 import { Home, About, Projects, Contact, Nav, Social, Seal } from './components';
-import { qAndA, aboutTable, keyTable, projectData, contactData, socialData } from './data';
+import { qAndA, aboutTableData, keyTableData, projectData, contactData, socialData } from './data';
 import { titleCard2, faceCard, headShot, nidoking, cardQR, sealSig, flowersWhite } from './images';
 
 export const App = () => (
@@ -25,8 +27,8 @@ export const App = () => (
          <About
             flowersWhite={flowersWhite}
             qAndA={qAndA}
-            keyTable={keyTable}
-            aboutTable={aboutTable}
+            keyTableData={keyTableData}
+            aboutTableData={aboutTableData}
             nidoking={nidoking} 
          />
       }/>
@@ -48,4 +50,3 @@ export const App = () => (
       <Nav />
    </Router>
 );
-

@@ -1,4 +1,4 @@
-export const keyTable = [
+export const keyTableData = [
    {
       class: "fa fa-mobile",
       color: "rgb(188,41,86)",
