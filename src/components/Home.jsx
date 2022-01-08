@@ -1,4 +1,4 @@
-import { Hex } from "./Hex"
+import { Hex } from "./Hex";
 
 export const Home = ({ flowersWhite, titleCard, faceCard }) => (
 	<div className="container">
